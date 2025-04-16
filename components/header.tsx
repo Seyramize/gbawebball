@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
+import { Menu, X } from "lucide-react" // Import the X icon
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 
@@ -14,7 +14,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center">
+        {/* Logo with menu close functionality */}
+        <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
           <div className="relative h-12 w-12 overflow-hidden rounded-full">
             <Image
               src="/images/gbawe-logo.png"
@@ -83,14 +84,15 @@ export default function Header() {
           </Button>
 
           <div className="md:hidden">
+            {/* Toggle between Menu and X icons */}
             <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
-              <Menu className="h-5 w-5" />
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               <span className="sr-only">Toggle menu</span>
             </Button>
 
             {isOpen && (
-              <div className="fixed inset-0 top-16 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-                <nav className="container grid gap-6 p-6">
+              <div className="fixed inset-0 top-16 z-50 bg-black/50 backdrop-blur-md">
+                <nav className="container grid gap-6 p-6 bg-background rounded-lg shadow-lg">
                   <Link
                     href="/"
                     className={`text-lg font-medium ${pathname === "/" ? "text-amber-900" : "hover:text-amber-900"}`}
