@@ -100,15 +100,17 @@ export default function AboutPage() {
             <div className="grid gap-8 md:grid-cols-2">
               {[
                 {
+                  name: "Thomas Nii Adu Cofie",
+                  role: "Founder",
+                  image: "/placeholder.svg?height=400&width=400",
+                },
+                
+                {
                   name: "Godwin Nii Okai Cofie",
                   role: "Co-Founder",
                   image: "/placeholder.svg?height=400&width=400",
                 },
-                {
-                  name: "Thomas Nii Adu Cofie",
-                  role: "Co-Founder",
-                  image: "/placeholder.svg?height=400&width=400",
-                },
+                
               ].map((founder, i) => (
                 <div key={i} className="text-center">
                   <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
@@ -121,7 +123,7 @@ export default function AboutPage() {
             </div>
             <div className="mt-8 prose prose-lg max-w-none">
               <p className="text-center">
-                Godwin Nii Okai Cofie and Thomas Nii Adu Cofie established the academy with a shared dream: to raise a
+                Thomas Nii Adu Cofie and Godwin Nii Okai Cofie established the academy with a shared dream: to raise a
                 new generation of focused, fearless, and future-ready African athletes.
               </p>
             </div>

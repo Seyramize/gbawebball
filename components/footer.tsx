@@ -20,7 +20,7 @@ export default function Footer() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-lg font-bold text-amber-400">Gbawe Academy</h3>
+              <h3 className="text-lg font-bold text-amber-400">Gbawe Basketball Academy</h3>
             </div>
             <p className="text-gray-400">
               Train Like a Hunter.
