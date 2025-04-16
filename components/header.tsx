@@ -27,7 +27,7 @@ export default function Header() {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center justify-between space-x-3 lg:space-x-4 whitespace-nowrap">
           <Link
             href="/"
             className={`text-sm font-medium transition-colors ${pathname === "/" ? "text-amber-900" : "hover:text-amber-900"}`}
