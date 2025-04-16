@@ -139,6 +139,9 @@ export default function BlogClientPage() {
                       { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 4" },
                       { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 5" },
                       { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 6" },
+                      { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 7" },
+                      { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 8" },
+                      { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 9" },
                     ]}
                   />
                 </div>
