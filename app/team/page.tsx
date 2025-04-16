@@ -226,7 +226,7 @@ export default function TeamPage() {
               <div className="max-w-3xl mx-auto text-center mb-12">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Vipers Basketball Team</h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Our senior team competing in Accra Division 2, representing the pinnacle of the Hunter's journey.
+                  Our senior team competing in Accra Basketball League Division 2, representing the pinnacle of the Hunter's journey.
                 </p>
               </div>
 
