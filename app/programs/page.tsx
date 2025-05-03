@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function ProgramsPage() {
   return (
@@ -227,15 +228,21 @@ export default function ProgramsPage() {
         <div className="container px-4 mx-auto text-center">
           <h2 className="mb-8 text-3xl font-bold">Choose Your Path. Train Like a Hunter.</h2>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
-              Register Today
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-amber-800">
-              Meet the Coaches
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-amber-800">
-              Become a Viper
-            </Button>
+            <Link href="/contact" passHref>
+              <Button size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
+                Register Today
+              </Button>
+            </Link>
+            <Link href="/team" passHref>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-amber-800">
+                Meet the Coaches
+              </Button>
+            </Link>
+            <Link href="/culture" passHref>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-amber-800">
+                Become a Viper
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

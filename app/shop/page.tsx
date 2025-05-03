@@ -1,12 +1,23 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export default function ShopPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="w-full py-20 bg-amber-950 text-white">
-        <div className="container px-4 mx-auto text-center">
+      <section className="relative w-full py-20 bg-amber-950 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-20">
+          <Image
+            src="/images/shop/apparel-category.jpg"
+            alt="Basketball merchandise"
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="container relative z-10 px-4 mx-auto text-center">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
             Wear the Spirit. Fuel the Hunt.
           </h1>
@@ -20,61 +31,195 @@ export default function ShopPage() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* Apparel */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden p-6">
-              <h3 className="mb-4 text-xl font-bold text-amber-900">1. Apparel</h3>
-              <ul className="mb-6 space-y-2 text-gray-700">
-                <li>Official GBAWE Jerseys</li>
-                <li>Practice Tees (Hunter Cubs / Apprentices / Elite)</li>
-                <li>"Trust. Obey. Become." Hoodie</li>
-                <li>Master Hunter Shorts</li>
-              </ul>
-              <Button asChild className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
-                <Link href="/shop/apparel">Shop Apparel</Link>
-              </Button>
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/images/shop/apparel-category.jpg"
+                  alt="Gbawe Basketball Apparel"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-4 text-xl font-bold text-amber-900">1. Apparel</h3>
+                <ul className="mb-6 space-y-2 text-gray-700">
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image src="/images/shop/products/jersey.jpg" alt="Jersey" fill className="object-cover" />
+                    </div>
+                    <span>Official GBAWE Jerseys</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image
+                        src="/images/shop/products/practice-tee.png"
+                        alt="Practice Tee"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <span>Practice Tees (Hunter Cubs / Apprentices / Elite)</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image src="/images/shop/products/hoodie.png" alt="Hoodie" fill className="object-cover" />
+                    </div>
+                    <span>"Trust. Obey. Become." Hoodie</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image src="/images/shop/products/shorts.png" alt="Shorts" fill className="object-cover" />
+                    </div>
+                    <span>Master Hunter Shorts</span>
+                  </li>
+                </ul>
+                <Button asChild className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
+                  <Link href="/shop/apparel">Shop Apparel</Link>
+                </Button>
+              </div>
             </div>
 
             {/* Hunter's Fuel */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden p-6">
-              <h3 className="mb-4 text-xl font-bold text-amber-900">2. Hunter's Fuel (Juice)</h3>
-              <ul className="mb-6 space-y-2 text-gray-700">
-                <li>Natural fruit juice developed for athletes</li>
-                <li>Available in mango, pineapple, ginger-blend</li>
-                <li>100% Natural, made in Ghana</li>
-                <li>Available in-store and bulk orders for events</li>
-              </ul>
-              <Button asChild className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
-                <Link href="/shop/fuel">Buy Hunter's Fuel</Link>
-              </Button>
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/images/shop/fuel-category.jpg"
+                  alt="Hunter's Fuel Juice"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-4 text-xl font-bold text-amber-900">2. Hunter's Fuel (Juice)</h3>
+                <ul className="mb-6 space-y-2 text-gray-700">
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image
+                        src="/images/shop/products/mango-juice.png"
+                        alt="Mango Juice"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <span>Natural fruit juice developed for athletes</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image
+                        src="/images/shop/products/pineapple-juice.png"
+                        alt="Pineapple Juice"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <span>Available in mango, pineapple, ginger-blend</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image
+                        src="/images/shop/products/ginger-juice.png"
+                        alt="Ginger Juice"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <span>100% Natural, made in Ghana</span>
+                  </li>
+                  <li>Available in-store and bulk orders for events</li>
+                </ul>
+                <Button asChild className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
+                  <Link href="/shop/fuel">Buy Hunter's Fuel</Link>
+                </Button>
+              </div>
             </div>
 
             {/* Accessories */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden p-6">
-              <h3 className="mb-4 text-xl font-bold text-amber-900">3. Accessories</h3>
-              <ul className="mb-6 space-y-2 text-gray-700">
-                <li>Wristbands with "Own Your Dreams"</li>
-                <li>Basketball Notebooks</li>
-                <li>Hunter's Planner (for journaling dreams + training goals)</li>
-                <li>Vipers Posters</li>
-              </ul>
-              <Button asChild className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
-                <Link href="/shop/accessories">Shop Accessories</Link>
-              </Button>
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/images/shop/accessories-category.jpg"
+                  alt="Basketball Accessories"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-4 text-xl font-bold text-amber-900">3. Accessories</h3>
+                <ul className="mb-6 space-y-2 text-gray-700">
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image src="/images/shop/products/wristband.png" alt="Wristband" fill className="object-cover" />
+                    </div>
+                    <span>Wristbands with "Own Your Dreams"</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image src="/images/shop/products/notebook.png" alt="Notebook" fill className="object-cover" />
+                    </div>
+                    <span>Basketball Notebooks</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image src="/images/shop/products/planner.png" alt="Planner" fill className="object-cover" />
+                    </div>
+                    <span>Hunter's Planner (for journaling dreams + training goals)</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
+                      <Image src="/images/shop/products/poster.png" alt="Poster" fill className="object-cover" />
+                    </div>
+                    <span>Vipers Posters</span>
+                  </li>
+                </ul>
+                <Button asChild className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
+                  <Link href="/shop/accessories">Shop Accessories</Link>
+                </Button>
+              </div>
             </div>
 
             {/* Kingdom of Us Merch */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden p-6">
-              <h3 className="mb-4 text-xl font-bold text-amber-900">4. Kingdom of Us Merch</h3>
-              <ul className="mb-6 space-y-2 text-gray-700">
-                <li>T-shirts with cultural prints</li>
-                <li>Tote bags with African symbols</li>
-                <li>Heritage Stickers</li>
-              </ul>
-              <div className="bg-amber-100 text-amber-800 px-3 py-2 rounded-md mb-4 text-sm font-medium text-center">
-                Coming Soon
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/images/shop/kingdom-category.jpg"
+                  alt="Kingdom of Us Merchandise"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                />
               </div>
-              <Button asChild className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
-                <Link href="/shop/waitlist">Join the Waitlist</Link>
-              </Button>
+              <div className="p-6">
+                <h3 className="mb-4 text-xl font-bold text-amber-900">4. Kingdom of Us Merch</h3>
+                <ul className="mb-6 space-y-2 text-gray-700">
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0 bg-gray-100 flex items-center justify-center">
+                      <span className="text-xs text-gray-500">Soon</span>
+                    </div>
+                    <span>T-shirts with cultural prints</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0 bg-gray-100 flex items-center justify-center">
+                      <span className="text-xs text-gray-500">Soon</span>
+                    </div>
+                    <span>Tote bags with African symbols</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="relative h-8 w-8 rounded-full overflow-hidden flex-shrink-0 bg-gray-100 flex items-center justify-center">
+                      <span className="text-xs text-gray-500">Soon</span>
+                    </div>
+                    <span>Heritage Stickers</span>
+                  </li>
+                </ul>
+                <div className="bg-amber-100 text-amber-800 px-3 py-2 rounded-md mb-4 text-sm font-medium text-center">
+                  Coming Soon
+                </div>
+                <Button asChild className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
+                  <Link href="/shop/waitlist">Join the Waitlist</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

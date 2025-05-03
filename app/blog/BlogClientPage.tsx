@@ -7,7 +7,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { PlayerProfileCard } from "@/components/player-profile-card"
 import { MediaGallery } from "@/components/media-gallery"
 import { VideoPlayer } from "@/components/video-player"
-import { SubmitStoryForm } from "@/components/submit-story-form"
 
 export default function BlogClientPage() {
   // Sample featured content
@@ -39,8 +38,21 @@ export default function BlogClientPage() {
         </div>
       </section>
 
+      {/* What You'll Find Here */}
+      <section className="py-12 bg-white">
+        <div className="container px-4 mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900">What You'll Find Here</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              This is where the world sees what the Hunters are building. The Blog & Media section is a living archive of our journey — 
+              filled with game highlights, behind-the-scenes moments, player interviews, training insights, and lessons from the Hunt.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="container px-4 mx-auto">
           <div className="max-w-5xl mx-auto">
             <h2 className="mb-8 text-3xl font-bold tracking-tight text-center text-gray-900">Featured Highlight</h2>
@@ -69,7 +81,7 @@ export default function BlogClientPage() {
       </section>
 
       {/* Content Categories */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="container px-4 mx-auto">
           <h2 className="mb-12 text-3xl font-bold tracking-tight text-center text-gray-900">Browse Our Content</h2>
 
@@ -139,9 +151,6 @@ export default function BlogClientPage() {
                       { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 4" },
                       { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 5" },
                       { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 6" },
-                      { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 7" },
-                      { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 8" },
-                      { src: "/placeholder.svg?height=600&width=800", alt: "Game action shot 9" },
                     ]}
                   />
                 </div>
@@ -287,10 +296,18 @@ export default function BlogClientPage() {
                         rotation, and help defense principles.
                       </p>
                       <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-                        <li>Develops proper defensive stance and positioning</li>
-                        <li>Teaches communication and team defense concepts</li>
-                        <li>Builds defensive rotations and help principles</li>
-                        <li>Simulates game-like defensive scenarios</li>
+                        <li>
+                          <strong>Develops proper defensive stance and positioning</strong>
+                        </li>
+                        <li>
+                          <strong>Teaches communication and team defense concepts</strong>
+                        </li>
+                        <li>
+                          <strong>Builds defensive rotations and help principles</strong>
+                        </li>
+                        <li>
+                          <strong>Simulates game-like defensive scenarios</strong>
+                        </li>
                       </ul>
                       <Button className="bg-amber-500 hover:bg-amber-600 text-amber-950">Download Drill Sheet</Button>
                     </div>
@@ -342,239 +359,6 @@ export default function BlogClientPage() {
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                         />
-                      </div>
-                      <div className="p-6">
-                        <span className="text-sm text-amber-600 font-medium">{journal.author}</span>
-                        <div className="flex justify-between items-center mb-2">
-                          <h3 className="text-xl font-bold text-amber-900">{journal.title}</h3>
-                          <span className="text-sm text-gray-500">{journal.date}</span>
-                        </div>
-                        <p className="text-gray-600 mb-4">{journal.excerpt}</p>
-                        <Link href={`/blog/journal/${i}`} className="text-amber-600 hover:text-amber-700 font-medium">
-                          Read full journal →
-                        </Link>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                      
 
-                <div className="mt-12 bg-amber-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold text-amber-900 mb-4">Leadership Lessons: Captain's Notes</h3>
-                  <div className="prose prose-lg max-w-none text-gray-700">
-                    <p>
-                      Each week, our team captains share leadership insights and lessons from their experiences. Here's
-                      this week's entry:
-                    </p>
-                    <blockquote className="border-l-4 border-amber-500 pl-4 italic">
-                      "Leadership isn't about being the best player. It's about making everyone around you better. It's
-                      about setting the standard in practice, being the first one in and the last one out. It's about
-                      holding yourself and your teammates accountable to the Hunter's Way."
-                      <footer className="text-right font-normal not-italic">— Kwesi Amankwah, Vipers Captain</footer>
-                    </blockquote>
-                    <p>
-                      This week, we focus on communication as a leadership tool. How clear communication on and off the
-                      court builds trust, prevents mistakes, and creates a culture of accountability.
-                    </p>
-                  </div>
-                  <div className="mt-6 grid grid-cols-3 gap-4">
-                    <Image
-                      src="/placeholder.svg?height=300&width=400"
-                      alt="Team huddle"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
-                    />
-                    <Image
-                      src="/placeholder.svg?height=300&width=400"
-                      alt="Captain leading drill"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
-                    />
-                    <Image
-                      src="/placeholder.svg?height=300&width=400"
-                      alt="Team discussion"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-8 text-center">
-                  <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950">
-                    <Link href="/blog/journal">Read All Journals</Link>
-                  </Button>
-                </div>
-              </div>
-            </TabsContent>
-
-            {/* Dream Diaries Tab */}
-            <TabsContent value="dream" className="space-y-8">
-              <div className="max-w-5xl mx-auto">
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {[
-                    {
-                      name: "Kofi, Age 8",
-                      dream: "I want to play for the Ghana national team and win a medal.",
-                      image: "/placeholder.svg?height=400&width=400",
-                    },
-                    {
-                      name: "Ama, Age 10",
-                      dream: "I want to be the first woman from Ghana to play in the WNBA.",
-                      image: "/placeholder.svg?height=400&width=400",
-                    },
-                    {
-                      name: "Kwame, Age 12",
-                      dream: "I want to get a scholarship to study and play basketball in America.",
-                      image: "/placeholder.svg?height=400&width=400",
-                    },
-                  ].map((child, i) => (
-                    <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
-                      <div className="relative h-64">
-                        <Image
-                          src={child.image || "/placeholder.svg"}
-                          alt={child.name}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-bold text-amber-900 mb-2">{child.name}</h3>
-                        <p className="text-gray-600 italic">"{child.dream}"</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-8 text-center">
-                  <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950">
-                    <Link href="/blog/dreams">Read All Dream Diaries</Link>
-                  </Button>
-                </div>
-              </div>
-            </TabsContent>
-          </Tabs>
-        </div>
-      </section>
-
-      {/* Featured Series */}
-      <section className="py-16 bg-white">
-        <div className="container px-4 mx-auto">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="mb-10 text-3xl font-bold tracking-tight text-center text-gray-900">Featured Series</h2>
-
-            <div className="space-y-12">
-              {[
-                {
-                  title: "A Week With the Vipers",
-                  description:
-                    "Full behind-the-scenes series following our senior team through a week of preparation, practice, and game day.",
-                  image: "/placeholder.svg?height=600&width=1200",
-                  episodes: 5,
-                  videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                },
-                {
-                  title: "Hunter's Work",
-                  description:
-                    "Training day with a Master Hunter. Follow our elite players through their specialized training regimens.",
-                  image: "/placeholder.svg?height=600&width=1200",
-                  episodes: 3,
-                  videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                },
-                {
-                  title: "From Gbawe to Greatness",
-                  description:
-                    "Alumni journeys & impact stories. See where our former players are now and how the academy shaped their paths.",
-                  image: "/placeholder.svg?height=600&width=1200",
-                  episodes: 4,
-                  videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                },
-              ].map((series, i) => (
-                <div key={i} className="bg-amber-50 rounded-lg overflow-hidden shadow-md">
-                  <div className="grid md:grid-cols-2 gap-0">
-                    <div className="aspect-video relative">
-                      <VideoPlayer videoUrl={series.videoUrl} thumbnailUrl={series.image} title={series.title} />
-                    </div>
-                    <div className="p-6 flex flex-col">
-                      <div>
-                        <div className="flex justify-between items-center mb-2">
-                          <h3 className="text-2xl font-bold text-amber-900">{series.title}</h3>
-                          <span className="bg-amber-900 text-white text-xs px-2 py-1 rounded-full">
-                            {series.episodes} Episodes
-                          </span>
-                        </div>
-                        <p className="text-gray-700 mb-6">{series.description}</p>
-                      </div>
-                      <div className="mt-auto flex justify-between items-center">
-                        <Link href={`/blog/series/${i}`} className="text-amber-600 hover:text-amber-700 font-medium">
-                          View all episodes →
-                        </Link>
-                        <Button className="bg-amber-500 hover:bg-amber-600 text-amber-950">Watch Trailer</Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12 text-center">
-              <p className="mb-6 text-lg text-gray-700">
-                We don't just document results - we share the work behind the wins.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-amber-500 hover:bg-amber-600 text-amber-950 transform transition-transform hover:scale-105"
-                >
-                  <Link href="/blog/all">Read More</Link>
-                </Button>
-                <Button
-                  onClick={() => document.getElementById("submit-story-modal")?.classList.remove("hidden")}
-                  size="lg"
-                  variant="outline"
-                  className="border-amber-500 text-amber-900 hover:bg-amber-50 transform transition-transform hover:scale-105"
-                >
-                  Submit a Story
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-amber-500 text-amber-900 hover:bg-amber-50 transform transition-transform hover:scale-105"
-                >
-                  <Link href="/blog/highlights">Watch All Highlights</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Hidden Submit Story Modal */}
-      <div
-        id="submit-story-modal"
-        className="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
-      >
-        <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-          <div className="p-6">
-            <div className="flex justify-between items-center mb-6">
-              <h3 className="text-2xl font-bold text-amber-900">Submit Your Story</h3>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => document.getElementById("submit-story-modal")?.classList.add("hidden")}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                ✕
-              </Button>
-            </div>
-            <SubmitStoryForm />
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+\

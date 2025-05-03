@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function CurriculumPage() {
   return (
@@ -9,6 +11,9 @@ export default function CurriculumPage() {
           <Image src="/placeholder.svg?height=600&width=1920" alt="Basketball training" fill className="object-cover" />
         </div>
         <div className="container relative z-10 px-4 mx-auto text-center">
+          <p className="mb-4 text-xl text-amber-300 font-medium">
+            "Our curriculum is not built just to create players- but Hunters prepared for life's biggest challenges."
+          </p>
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
             Train the Body. Shape the Mind. Strengthen the Spirit.
           </h1>
@@ -20,14 +25,14 @@ export default function CurriculumPage() {
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto">
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-center text-gray-900">
-              Welcome to The Hunter's Way
+              Welcome to The Hunter's Path
             </h2>
             <div className="prose prose-lg max-w-none">
               <p>
                 This is the foundation of every session, chant, drill, and lesson at Gbawe Basketball Academy. It is not
-                just about basketball - it is about shaping focused, relentless, imaginative athletes prepared for life.
+                just about basketball — it is about shaping focused, relentless, imaginative athletes prepared for life.
               </p>
-              <p>We train our players using the Hunter's Journey:</p>
+              <p>We train our players using the Hunter's Path:</p>
               <ul>
                 <li>
                   <strong>Track</strong> - Discover your dream
@@ -150,6 +155,12 @@ export default function CurriculumPage() {
                   "A Hunter is not made by talent. A Hunter is made by intention, execution, and heart."
                 </p>
               </blockquote>
+            </div>
+
+            <div className="mt-12 text-center">
+              <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950">
+                <Link href="/programs">Explore Our Programs</Link>
+              </Button>
             </div>
           </div>
         </div>

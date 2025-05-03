@@ -49,8 +49,8 @@ export default function TeamPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
                 {[
                   {
-                    name: "Thomas Nii Adu Cofie",
-                    role: "Founder & Director",
+                    name: "Godwin Nii Okai Cofie",
+                    role: "Co-Founder & Director",
                     image: "/placeholder.svg?height=400&width=400",
                     bio: "Former national team player with a passion for developing young talent. Godwin established the academy with a vision to blend basketball excellence with cultural values.",
                     achievements: [
@@ -60,7 +60,7 @@ export default function TeamPage() {
                     ],
                   },
                   {
-                    name: "Godwin Nii Okai Cofie",
+                    name: "Thomas Nii Adu Cofie",
                     role: "Co-Founder & Technical Director",
                     image: "/placeholder.svg?height=400&width=400",
                     bio: "Basketball strategist and youth development specialist. Thomas brings tactical expertise and a deep understanding of player development pathways.",
@@ -226,7 +226,7 @@ export default function TeamPage() {
               <div className="max-w-3xl mx-auto text-center mb-12">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Vipers Basketball Team</h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Our senior team competing in Accra Basketball League Division 2, representing the pinnacle of the Hunter's journey.
+                  Our senior team competing in Accra Division 2, representing the pinnacle of the Hunter's journey.
                 </p>
               </div>
 

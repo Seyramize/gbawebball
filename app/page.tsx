@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ArrowRight, Play } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -33,7 +34,7 @@ export default function HomePage() {
             Train Like a Hunter. Trust. Obey. Become.
           </h1>
           <p className="mb-8 max-w-3xl mx-auto text-lg sm:text-xl text-gray-200">
-            The journey begins in Gbawe - where young athletes transform into disciplined warriors on and off the court.
+            The journey begins in Gbawe — where young athletes transform into disciplined warriors on and off the court.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" asChild className="bg-amber-500 hover:bg-amber-600 text-amber-950 font-bold">
@@ -44,6 +45,16 @@ export default function HomePage() {
             </Button>
             <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-amber-800">
               <Link href="/schedule">Game Schedule</Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="border-white text-white hover:bg-amber-800 flex items-center gap-2"
+            >
+              <Link href="/our-story">
+                <Play className="h-4 w-4" /> Watch our story
+              </Link>
             </Button>
           </div>
         </div>
@@ -56,7 +67,7 @@ export default function HomePage() {
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900">More Than Basketball</h2>
             <div className="prose prose-lg max-w-none">
               <p>
-                At Gbawe Basketball Academy, we develop more than skills - we shape mindsets. Every athlete is trained
+                At Gbawe Basketball Academy, we develop more than skills — we shape mindsets. Every athlete is trained
                 to think like a hunter: to track their goals, stalk them with discipline, strike with focus, and become
                 the best version of themselves.
               </p>
@@ -149,14 +160,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Culture Preview */}
       <section className="py-16 bg-amber-900 text-white">
+        <div className="container px-4 mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="mb-6 text-3xl font-bold">The Way of the Hunter</h2>
+            <p className="mb-8 text-xl">"We don't just train players. We raise hunters."</p>
+            <p className="mb-8 text-lg">
+              At Gbawe Basketball Academy, culture is our foundation. It shapes how we think, move, grow, and lead — on
+              and off the court. Every child enters the academy as a learner. Those who stay… become hunters.
+            </p>
+            <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
+              <Link href="/culture" className="flex items-center gap-2">
+                Explore Our Culture <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-amber-50">
         <div className="container px-4 mx-auto text-center">
-          <h2 className="mb-4 text-3xl font-bold">Ready to Join the Hunt?</h2>
-          <p className="mb-8 max-w-2xl mx-auto text-lg text-gray-200">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900">Ready to Join the Hunt?</h2>
+          <p className="mb-8 max-w-2xl mx-auto text-lg text-gray-700">
             Take the first step in your journey to becoming a disciplined, focused, and skilled athlete.
           </p>
-          <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
+          <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950 font-bold">
             <Link href="/contact">Contact Us Today</Link>
           </Button>
         </div>
