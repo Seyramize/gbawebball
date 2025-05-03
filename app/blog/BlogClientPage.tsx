@@ -33,7 +33,7 @@ export default function BlogClientPage() {
         </div>
         <div className="container relative z-10 px-4 mx-auto text-center">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            Inside the Hunt - Stories, Highlights & Lessons from the Court
+            Inside the Hunt - Stories, Highlights &amp; Lessons from the Court
           </h1>
         </div>
       </section>
@@ -42,10 +42,11 @@ export default function BlogClientPage() {
       <section className="py-12 bg-white">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900">What You'll Find Here</h2>
+            <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900">What You&apos;ll Find Here</h2>
             <p className="text-lg text-gray-700 mb-6">
-              This is where the world sees what the Hunters are building. The Blog & Media section is a living archive of our journey — 
-              filled with game highlights, behind-the-scenes moments, player interviews, training insights, and lessons from the Hunt.
+              This is where the world sees what the Hunters are building. The Blog &amp; Media section is a living
+              archive of our journey — filled with game highlights, behind-the-scenes moments, player interviews,
+              training insights, and lessons from the Hunt.
             </p>
           </div>
         </div>
@@ -90,8 +91,8 @@ export default function BlogClientPage() {
               <TabsList className="grid w-full max-w-4xl grid-cols-3 md:grid-cols-5">
                 <TabsTrigger value="highlights">Game Highlights</TabsTrigger>
                 <TabsTrigger value="inside-hunt">Inside The Hunt</TabsTrigger>
-                <TabsTrigger value="coach">Coach's Corner</TabsTrigger>
-                <TabsTrigger value="journal">Hunter's Journal</TabsTrigger>
+                <TabsTrigger value="coach">Coach&apos;s Corner</TabsTrigger>
+                <TabsTrigger value="journal">Hunter&apos;s Journal</TabsTrigger>
                 <TabsTrigger value="dream">Dream Diaries</TabsTrigger>
               </TabsList>
             </div>
@@ -323,7 +324,7 @@ export default function BlogClientPage() {
 
                 <div className="mt-8 text-center">
                   <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950">
-                    <Link href="/blog/coach">View All Coach's Corner</Link>
+                    <Link href="/blog/coach">View All Coach&apos;s Corner</Link>
                   </Button>
                 </div>
               </div>
@@ -359,5 +360,134 @@ export default function BlogClientPage() {
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                         />
-                      
-\
+                      </div>
+                      <div className="p-6">
+                        <span className="text-sm text-amber-600 font-medium">{journal.author}</span>
+                        <div className="flex justify-between items-center mb-2">
+                          <h3 className="text-xl font-bold text-amber-900">{journal.title}</h3>
+                          <span className="text-sm text-gray-500">{journal.date}</span>
+                        </div>
+                        <p className="text-gray-600 mb-4">{journal.excerpt}</p>
+                        <Link href={`/blog/journal/${i}`} className="text-amber-600 hover:text-amber-700 font-medium">
+                          Read full story →
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-12 bg-amber-50 p-6 rounded-lg">
+                  <h3 className="text-xl font-bold text-amber-900 mb-4">Submit Your Story</h3>
+                  <p className="text-gray-700 mb-4">
+                    Are you a Hunter with a story to tell? We want to hear about your journey, your challenges, your
+                    victories, and your dreams. Share your experience with the Hunter community.
+                  </p>
+                  <div className="flex justify-center">
+                    <Button asChild className="bg-amber-500 hover:bg-amber-600 text-amber-950">
+                      <Link href="/blog/submit">Submit Your Story</Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="mt-8 text-center">
+                  <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950">
+                    <Link href="/blog/journal">Read All Journal Entries</Link>
+                  </Button>
+                </div>
+              </div>
+            </TabsContent>
+
+            {/* Dream Diaries Tab */}
+            <TabsContent value="dream" className="space-y-8">
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Dream Diaries</h3>
+                  <p className="text-lg text-gray-700">
+                    Follow the journeys of our young dreamers as they pursue their basketball aspirations. From first
+                    dribble to first dunk, these are the stories that inspire the next generation.
+                  </p>
+                </div>
+
+                <div className="grid gap-8 md:grid-cols-3">
+                  {[
+                    {
+                      title: "Finding My Confidence",
+                      author: "Kofi, Age 12",
+                      excerpt:
+                        "When I first came to Gbawe Academy, I was scared to even shoot the ball. Now I'm leading my team in scoring.",
+                      image: "/placeholder.svg?height=400&width=600",
+                    },
+                    {
+                      title: "My First Tournament",
+                      author: "Ama, Age 14",
+                      excerpt:
+                        "I never thought I'd play in a real tournament. The feeling of wearing that jersey was something I'll never forget.",
+                      image: "/placeholder.svg?height=400&width=600",
+                    },
+                    {
+                      title: "Dreams of College Basketball",
+                      author: "Emmanuel, Age 16",
+                      excerpt:
+                        "Coach says I have what it takes to play college basketball in America. I'm working every day to make that happen.",
+                      image: "/placeholder.svg?height=400&width=600",
+                    },
+                  ].map((diary, i) => (
+                    <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
+                      <div className="relative h-48">
+                        <Image
+                          src={diary.image || "/placeholder.svg"}
+                          alt={diary.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <span className="text-sm text-amber-600 font-medium">{diary.author}</span>
+                        <h3 className="text-xl font-bold text-amber-900 mb-2">{diary.title}</h3>
+                        <p className="text-gray-600 mb-4">{diary.excerpt}</p>
+                        <Link href={`/blog/dream/${i}`} className="text-amber-600 hover:text-amber-700 font-medium">
+                          Read full diary →
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-12 bg-gradient-to-r from-amber-100 to-amber-200 p-6 rounded-lg">
+                  <div className="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                      <h3 className="text-xl font-bold text-amber-900 mb-4">Share Your Dream</h3>
+                      <p className="text-gray-700 mb-4">
+                        Every great journey begins with a dream. If you&apos;re a young player with big dreams, we want
+                        to hear from you. Share your basketball dreams and inspire others.
+                      </p>
+                      <Button asChild className="bg-amber-500 hover:bg-amber-600 text-amber-950">
+                        <Link href="/blog/dream/submit">Share Your Dream</Link>
+                      </Button>
+                    </div>
+                    <div className="relative h-64 rounded-lg overflow-hidden">
+                      <Image
+                        src="/placeholder.svg?height=400&width=600"
+                        alt="Young basketball players dreaming big"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 text-center">
+                  <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950">
+                    <Link href="/blog/dream">Read All Dream Diaries</Link>
+                  </Button>
+                </div>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </section>
+    </div>
+  )
+}
