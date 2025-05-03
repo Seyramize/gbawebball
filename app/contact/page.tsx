@@ -14,7 +14,7 @@ export default function ContactPage() {
         </div>
         <div className="container relative z-10 px-4 mx-auto text-center">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            Step Into the Hunt - Let's Talk.
+            Step Into the Hunt - Let&apos;s Talk.
           </h1>
         </div>
       </section>
@@ -27,7 +27,7 @@ export default function ContactPage() {
               Got Questions? Want to Join or Visit the Academy?
             </h2>
             <p className="mb-10 text-lg text-center text-gray-600">
-              Whether you're a parent, coach, athlete, or fan — we're here to connect.
+              Whether you&apos;re a parent, coach, athlete, or fan — we&apos;re here to connect.
             </p>
 
             <div className="grid gap-10 md:grid-cols-2">
@@ -107,7 +107,7 @@ export default function ContactPage() {
                       <Facebook className="w-6 h-6" />
                       <span className="sr-only">Facebook</span>
                     </a>
-                    {/* TikTok Icon - Using the same SVG as in footer */}
+                    {/* TikTok Icon */}
                     <a
                       href="#"
                       className="p-2 text-amber-900 hover:text-amber-600 transition-colors"
@@ -123,7 +123,7 @@ export default function ContactPage() {
                       </svg>
                       <span className="sr-only">TikTok</span>
                     </a>
-                    {/* Snapchat Icon - Using the same SVG as in footer */}
+                    {/* Snapchat Icon */}
                     <a
                       href="#"
                       className="p-2 text-amber-900 hover:text-amber-600 transition-colors"
@@ -139,7 +139,7 @@ export default function ContactPage() {
                       </svg>
                       <span className="sr-only">Snapchat</span>
                     </a>
-                    {/* WhatsApp Icon - Using the same SVG as in footer */}
+                    {/* WhatsApp Icon */}
                     <a
                       href="#"
                       className="p-2 text-amber-900 hover:text-amber-600 transition-colors"
@@ -162,7 +162,7 @@ export default function ContactPage() {
 
             <div className="mt-12 text-center">
               <p className="text-lg text-gray-700 italic">
-                Every hunter starts with a question. Reach out — we're listening.
+                Every hunter starts with a question. Reach out — we&apos;re listening.
               </p>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-amber-900 mb-3">How do I register my child?</h3>
                 <p className="text-gray-700">
                   Registration is simple! You can either fill out the contact form above, visit us in person at the
-                  academy, or call our registration line. We'll guide you through the process and schedule an
+                  academy, or call our registration line. We&apos;ll guide you through the process and schedule an
                   orientation session.
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function ContactPage() {
                   <li>Cubs: Saturday mornings and one weekday afternoon</li>
                   <li>Apprentices: Tuesday and Thursday afternoons, Saturday mornings</li>
                   <li>Elite: Monday, Wednesday, Friday afternoons, Saturday mornings</li>
-                  <li>Master Hunters & Vipers: Monday through Friday evenings, Saturday mornings</li>
+                  <li>Master Hunters &amp; Vipers: Monday through Friday evenings, Saturday mornings</li>
                 </ul>
                 <p className="mt-2 text-gray-700">Specific times will be provided during registration.</p>
               </div>
