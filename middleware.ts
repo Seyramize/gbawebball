@@ -1,66 +1,41 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
-import * as jose from "jose" // Using jose instead of jsonwebtoken for better Edge compatibility
+import { jwtVerify } from "jose"
 
-// Paths that require admin authentication
-const ADMIN_PATHS = ["/admin/dashboard", "/admin/orders", "/admin/inventory", "/admin/analytics", "/admin/discounts"]
-
-// Exclude these paths from middleware processing
-const EXCLUDED_PATHS = ["/admin/login", "/admin/setup"]
-
+// This function can be marked `async` if using `await` inside
 export async function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl
-
-  // Skip middleware for non-admin paths and excluded paths
-  if (!pathname.startsWith("/admin") || EXCLUDED_PATHS.some((path) => pathname.startsWith(path))) {
+  // Only apply middleware to admin routes
+  if (!request.nextUrl.pathname.startsWith("/admin")) {
     return NextResponse.next()
   }
 
-  // Check if the path is an admin path that needs protection
-  if (ADMIN_PATHS.some((path) => pathname.startsWith(path))) {
-    // Get the admin token from cookies
-    const adminToken = request.cookies.get("admin_token")?.value
-
-    // If no token is present, redirect to admin login
-    if (!adminToken) {
-      const url = new URL("/admin/login", request.url)
-      url.searchParams.set("from", pathname)
-      return NextResponse.redirect(url)
-    }
-
-    try {
-      // Get JWT secret from environment variable
-      const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
-
-      // Create a TextEncoder
-      const textEncoder = new TextEncoder()
-
-      // Convert the secret to Uint8Array
-      const secretKey = textEncoder.encode(JWT_SECRET)
-
-      // Verify the token using jose
-      const { payload } = await jose.jwtVerify(adminToken, secretKey)
-
-      // Check if the user has admin role
-      if (payload.role !== "admin") {
-        throw new Error("Not authorized")
-      }
-
-      // User is authenticated and authorized, proceed
-      return NextResponse.next()
-    } catch (error) {
-      // Token is invalid or expired, redirect to login
-      const url = new URL("/admin/login", request.url)
-      url.searchParams.set("from", pathname)
-      return NextResponse.redirect(url)
-    }
+  // Don't apply middleware to admin login or setup routes
+  if (request.nextUrl.pathname.startsWith("/admin/login") || request.nextUrl.pathname.startsWith("/admin/setup")) {
+    return NextResponse.next()
   }
 
-  // For other admin paths that don't need protection, proceed normally
-  return NextResponse.next()
+  const token = request.cookies.get("admin_token")?.value
+
+  if (!token) {
+    // Redirect to login if no token
+    return NextResponse.redirect(new URL("/admin/login", request.url))
+  }
+
+  try {
+    // Verify the token
+    const secret = new TextEncoder().encode(process.env.JWT_SECRET || "fallback_secret_for_development_only")
+    await jwtVerify(token, secret)
+
+    // If verification passes, continue
+    return NextResponse.next()
+  } catch (error) {
+    // If verification fails, redirect to login
+    console.error("Token verification failed:", error)
+    return NextResponse.redirect(new URL("/admin/login", request.url))
+  }
 }
 
+// Only run middleware on admin routes
 export const config = {
-  // Only run middleware on admin routes
-  matcher: ["/admin/:path*"],
+  matcher: "/admin/:path*",
 }

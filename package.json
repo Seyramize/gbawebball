@@ -62,8 +62,8 @@
     "nodemailer": "latest",
     "bcryptjs": "latest",
     "jsonwebtoken": "latest",
-    "react-paystack": "latest",
-    "jose": "latest"
+    "jose": "latest",
+    "react-paystack": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",
