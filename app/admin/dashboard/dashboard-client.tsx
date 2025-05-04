@@ -1,221 +1,318 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts"
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
+import { Alert, AlertDescription } from "@/components/ui/alert"
+import { BarChart, LineChart, PieChart } from "lucide-react"
+import Link from "next/link"
 
-// This is where you can safely use client-side functions like generateViewport
+// Add import for PdfDownloadButton at the top
+import PdfDownloadButton from "@/components/pdf-download-button"
+
 export default function DashboardClient() {
-  const [salesData, setSalesData] = useState([])
-  const [ordersData, setOrdersData] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  const [stats, setStats] = useState({
+    totalRevenue: 0,
+    totalOrders: 0,
+    totalProducts: 0,
+    totalCustomers: 0,
+  })
 
   useEffect(() => {
-    // Fetch data when component mounts
-    const fetchDashboardData = async () => {
-      try {
-        // Fetch sales data
-        const salesResponse = await fetch("/api/analytics/sales")
-        const salesData = await salesResponse.json()
+    // Simulate loading data
+    const timer = setTimeout(() => {
+      setStats({
+        totalRevenue: 12500,
+        totalOrders: 156,
+        totalProducts: 48,
+        totalCustomers: 89,
+      })
+      setLoading(false)
+    }, 1000)
 
-        // Fetch orders data
-        const ordersResponse = await fetch("/api/orders")
-        const ordersData = await ordersResponse.json()
-
-        setSalesData(salesData.data || [])
-        setOrdersData(ordersData.orders || [])
-      } catch (error) {
-        console.error("Error fetching dashboard data:", error)
-      } finally {
-        setIsLoading(false)
-      }
-    }
-
-    fetchDashboardData()
+    return () => clearTimeout(timer)
   }, [])
 
-  // Sample data for demonstration
-  const sampleSalesData = [
-    { name: "Jan", sales: 4000 },
-    { name: "Feb", sales: 3000 },
-    { name: "Mar", sales: 5000 },
-    { name: "Apr", sales: 4500 },
-    { name: "May", sales: 6000 },
-    { name: "Jun", sales: 5500 },
-  ]
-
-  const sampleProductData = [
-    { name: "Practice Tee", value: 30 },
-    { name: "Hoodie", value: 25 },
-    { name: "Shorts", value: 20 },
-    { name: "Mango Juice", value: 15 },
-    { name: "Wristband", value: 10 },
-  ]
+  if (error) {
+    return (
+      <Alert variant="destructive">
+        <AlertDescription>{error}</AlertDescription>
+      </Alert>
+    )
+  }
 
   return (
-    <Tabs defaultValue="overview" className="w-[400px]">
-      <TabsList>
-        <TabsTrigger value="overview">Overview</TabsTrigger>
-        <TabsTrigger value="orders">Orders</TabsTrigger>
-        <TabsTrigger value="inventory">Inventory</TabsTrigger>
-        <TabsTrigger value="analytics">Analytics</TabsTrigger>
-        <TabsTrigger value="discounts">Discounts</TabsTrigger>
-      </TabsList>
-      <TabsContent value="overview" className="space-y-4">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">GH₵ 12,345</div>
-              <p className="text-xs text-muted-foreground">+20.1% from last month</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Orders</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">+573</div>
-              <p className="text-xs text-muted-foreground">+12% from last month</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Products Sold</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">1,234</div>
-              <p className="text-xs text-muted-foreground">+18% from last month</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Conversion Rate</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">3.2%</div>
-              <p className="text-xs text-muted-foreground">+0.5% from last month</p>
-            </CardContent>
-          </Card>
+    <div className="space-y-6">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
+          <p className="text-muted-foreground">Welcome to your admin dashboard. Here's an overview of your business.</p>
         </div>
-
-        <div className="grid gap-4 md:grid-cols-2">
-          <Card className="col-span-1">
-            <CardHeader>
-              <CardTitle>Sales Overview</CardTitle>
-            </CardHeader>
-            <CardContent className="h-[300px]">
-              <ChartContainer
-                config={{
-                  sales: {
-                    label: "Sales",
-                    color: "hsl(var(--chart-1))",
-                  },
-                }}
-              >
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={sampleSalesData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <ChartTooltip content={<ChartTooltipContent />} />
-                    <Line
-                      type="monotone"
-                      dataKey="sales"
-                      stroke="var(--color-sales)"
-                      strokeWidth={2}
-                      activeDot={{ r: 8 }}
-                    />
-                  </LineChart>
-                </ResponsiveContainer>
-              </ChartContainer>
-            </CardContent>
-          </Card>
-
-          <Card className="col-span-1">
-            <CardHeader>
-              <CardTitle>Top Products</CardTitle>
-            </CardHeader>
-            <CardContent className="h-[300px]">
-              <ChartContainer
-                config={{
-                  value: {
-                    label: "Sales",
-                    color: "hsl(var(--chart-2))",
-                  },
-                }}
-              >
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={sampleProductData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="value" fill="var(--color-value)" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </ChartContainer>
-            </CardContent>
-          </Card>
+        {/* Replace the "Download Report" button in the dashboard header */}
+        <div className="flex items-center gap-2">
+          <PdfDownloadButton reportType="sales" buttonText="Download Report" />
+          <Button>Refresh Data</Button>
         </div>
-      </TabsContent>
+      </div>
 
-      <TabsContent value="orders">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
-          <CardHeader>
-            <CardTitle>Recent Orders</CardTitle>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              className="h-4 w-4 text-muted-foreground"
+            >
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
           </CardHeader>
           <CardContent>
-            {isLoading ? (
-              <p>Loading orders...</p>
-            ) : (
-              <div className="text-center">
-                <p>View and manage all orders in the Orders section</p>
-                <a href="/admin/orders" className="text-blue-500 hover:underline">
-                  Go to Orders Management
-                </a>
+            <div className="text-2xl font-bold">₵{stats.totalRevenue.toLocaleString()}</div>
+            <p className="text-xs text-muted-foreground">+20.1% from last month</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Orders</CardTitle>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              className="h-4 w-4 text-muted-foreground"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">{stats.totalOrders}</div>
+            <p className="text-xs text-muted-foreground">+12% from last month</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Products</CardTitle>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              className="h-4 w-4 text-muted-foreground"
+            >
+              <rect width="20" height="14" x="2" y="5" rx="2" />
+              <path d="M2 10h20" />
+            </svg>
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">{stats.totalProducts}</div>
+            <p className="text-xs text-muted-foreground">+5 new products</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Customers</CardTitle>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              className="h-4 w-4 text-muted-foreground"
+            >
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">{stats.totalCustomers}</div>
+            <p className="text-xs text-muted-foreground">+18% from last month</p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Tabs defaultValue="overview" className="space-y-4">
+        <TabsList>
+          <TabsTrigger value="overview">Overview</TabsTrigger>
+          <TabsTrigger value="orders">Orders</TabsTrigger>
+          <TabsTrigger value="inventory">Inventory</TabsTrigger>
+          <TabsTrigger value="analytics">Analytics</TabsTrigger>
+        </TabsList>
+        <TabsContent value="overview" className="space-y-4">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>Sales Overview</CardTitle>
+              </CardHeader>
+              <CardContent className="pl-2">
+                <div className="h-[200px] flex items-center justify-center">
+                  <LineChart className="h-16 w-16 text-muted-foreground" />
+                  <p className="text-muted-foreground">Sales chart will appear here</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="col-span-3">
+              <CardHeader>
+                <CardTitle>Top Products</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="h-[200px] flex items-center justify-center">
+                  <BarChart className="h-16 w-16 text-muted-foreground" />
+                  <p className="text-muted-foreground">Products chart will appear here</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>Recent Orders</CardTitle>
+                <CardDescription>You have {stats.totalOrders} total orders</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-8">
+                  {loading ? (
+                    <p className="text-center text-muted-foreground">Loading orders...</p>
+                  ) : (
+                    <>
+                      <div className="flex items-center">
+                        <div className="ml-4 space-y-1">
+                          <p className="text-sm font-medium leading-none">Order #12345</p>
+                          <p className="text-sm text-muted-foreground">John Doe - ₵120.00</p>
+                        </div>
+                        <div className="ml-auto font-medium">Processing</div>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="ml-4 space-y-1">
+                          <p className="text-sm font-medium leading-none">Order #12344</p>
+                          <p className="text-sm text-muted-foreground">Jane Smith - ₵85.50</p>
+                        </div>
+                        <div className="ml-auto font-medium">Completed</div>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="ml-4 space-y-1">
+                          <p className="text-sm font-medium leading-none">Order #12343</p>
+                          <p className="text-sm text-muted-foreground">Mike Johnson - ₵210.75</p>
+                        </div>
+                        <div className="ml-auto font-medium">Shipped</div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button variant="outline" asChild className="w-full">
+                  <Link href="/admin/orders">View All Orders</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+            <Card className="col-span-3">
+              <CardHeader>
+                <CardTitle>Inventory Status</CardTitle>
+                <CardDescription>You have {stats.totalProducts} products</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-8">
+                  {loading ? (
+                    <p className="text-center text-muted-foreground">Loading inventory...</p>
+                  ) : (
+                    <>
+                      <div className="flex items-center">
+                        <div className="ml-4 space-y-1">
+                          <p className="text-sm font-medium leading-none">Practice Tee</p>
+                          <p className="text-sm text-muted-foreground">24 in stock</p>
+                        </div>
+                        <div className="ml-auto font-medium text-green-500">In Stock</div>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="ml-4 space-y-1">
+                          <p className="text-sm font-medium leading-none">Hoodie</p>
+                          <p className="text-sm text-muted-foreground">5 in stock</p>
+                        </div>
+                        <div className="ml-auto font-medium text-amber-500">Low Stock</div>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="ml-4 space-y-1">
+                          <p className="text-sm font-medium leading-none">Shorts</p>
+                          <p className="text-sm text-muted-foreground">0 in stock</p>
+                        </div>
+                        <div className="ml-auto font-medium text-red-500">Out of Stock</div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button variant="outline" asChild className="w-full">
+                  <Link href="/admin/inventory">Manage Inventory</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+        </TabsContent>
+        <TabsContent value="orders" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Orders Management</CardTitle>
+              <CardDescription>View and manage all your orders</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="h-[400px] flex items-center justify-center">
+                <p className="text-muted-foreground">Orders management interface will appear here</p>
               </div>
-            )}
-          </CardContent>
-        </Card>
-      </TabsContent>
-
-      <TabsContent value="inventory">
-        <Card>
-          <CardHeader>
-            <CardTitle>Inventory Management</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-center">Manage your inventory, track stock levels, and reorder products</p>
-          </CardContent>
-        </Card>
-      </TabsContent>
-
-      <TabsContent value="analytics">
-        <Card>
-          <CardHeader>
-            <CardTitle>Sales Analytics</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-center">View detailed analytics about your sales, customers, and products</p>
-          </CardContent>
-        </Card>
-      </TabsContent>
-
-      <TabsContent value="discounts">
-        <Card>
-          <CardHeader>
-            <CardTitle>Discount Codes</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-center">Create and manage discount codes for your products</p>
-          </CardContent>
-        </Card>
-      </TabsContent>
-    </Tabs>
+            </CardContent>
+            <CardFooter>
+              <Button variant="outline" asChild className="w-full">
+                <Link href="/admin/orders">Go to Orders Management</Link>
+              </Button>
+            </CardFooter>
+          </Card>
+        </TabsContent>
+        <TabsContent value="inventory" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Inventory Management</CardTitle>
+              <CardDescription>Manage your product inventory</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="h-[400px] flex items-center justify-center">
+                <p className="text-muted-foreground">Inventory management interface will appear here</p>
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+        <TabsContent value="analytics" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Sales Analytics</CardTitle>
+              <CardDescription>View detailed sales analytics</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="h-[400px] flex items-center justify-center">
+                <PieChart className="h-16 w-16 text-muted-foreground" />
+                <p className="text-muted-foreground ml-4">Sales analytics will appear here</p>
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+      </Tabs>
+    </div>
   )
 }
