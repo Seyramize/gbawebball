@@ -118,6 +118,12 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+
+        <div className="mt-4 text-center">
+          <p className="text-gray-500 text-sm">
+            Developed by <a href="https://saysey.netlify.app" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-white">Sarxt Tech</a>
+          </p>
+        </div>
       </div>
     </footer>
   )

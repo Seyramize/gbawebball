@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Instagram, Youtube, Facebook } from "lucide-react"
 import Image from "next/image"
+import { ContactForm } from "./contact-form"
 
 export default function ContactPage() {
   return (
@@ -10,7 +8,7 @@ export default function ContactPage() {
       {/* Header */}
       <section className="relative w-full py-20 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <Image src="/placeholder.svg?height=600&width=1920" alt="Basketball court" fill className="object-cover" />
+          <Image src="/outdoor-basketball-court.png" alt="Basketball court" fill className="object-cover" />
         </div>
         <div className="container relative z-10 px-4 mx-auto text-center">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
@@ -34,39 +32,7 @@ export default function ContactPage() {
               {/* Form */}
               <div className="p-6 bg-amber-50 rounded-lg">
                 <h3 className="mb-6 text-xl font-bold text-amber-900">Contact Form</h3>
-                <form className="space-y-4">
-                  <div>
-                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">
-                      Full Name
-                    </label>
-                    <Input id="name" placeholder="Your name" className="w-full" />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">
-                      Email Address
-                    </label>
-                    <Input id="email" type="email" placeholder="Your email" className="w-full" />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-700">
-                      Phone Number (Optional)
-                    </label>
-                    <Input id="phone" placeholder="Your phone number" className="w-full" />
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700">
-                      Message
-                    </label>
-                    <Textarea id="message" placeholder="Your message" className="w-full min-h-[120px]" />
-                  </div>
-
-                  <Button type="submit" className="w-full bg-amber-500 hover:bg-amber-600 text-amber-950">
-                    Send Message
-                  </Button>
-                </form>
+                <ContactForm />
               </div>
 
               {/* Contact Info */}

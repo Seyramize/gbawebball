@@ -37,20 +37,31 @@ export default function HomePage() {
             The journey begins in Gbawe — where young athletes transform into disciplined warriors on and off the court.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" asChild className="bg-amber-500 hover:bg-amber-600 text-amber-950 font-bold">
+            <Button
+              size="lg"
+              asChild
+              className="bg-amber-500 hover:bg-amber-600 hover:scale-105 hover:shadow-lg transition-all duration-300 text-amber-950 font-bold"
+            >
               <Link href="/contact">Join the Academy</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-amber-800">
+            <Button
+              size="lg"
+              asChild
+              className="bg-amber-800 hover:bg-amber-900 hover:scale-105 hover:shadow-lg transition-all duration-300 text-white font-medium shadow-md"
+            >
               <Link href="/team">Meet the Hunters</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-amber-800">
+            <Button
+              size="lg"
+              asChild
+              className="bg-amber-700 hover:bg-amber-800 hover:scale-105 hover:shadow-lg transition-all duration-300 text-white font-medium shadow-md"
+            >
               <Link href="/schedule">Game Schedule</Link>
             </Button>
             <Button
               size="lg"
-              variant="outline"
               asChild
-              className="border-white text-white hover:bg-amber-800 flex items-center gap-2"
+              className="bg-amber-600 hover:bg-amber-700 hover:scale-105 hover:shadow-lg transition-all duration-300 text-white font-medium shadow-md flex items-center gap-2"
             >
               <Link href="/our-story">
                 <Play className="h-4 w-4" /> Watch our story
@@ -104,7 +115,10 @@ export default function HomePage() {
                 description: "Built on unity, respect, and the hunter's spirit",
               },
             ].map((feature, i) => (
-              <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden p-6">
+              <div
+                key={i}
+                className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden p-6"
+              >
                 <h3 className="mb-2 text-xl font-bold text-amber-900">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
@@ -141,11 +155,18 @@ export default function HomePage() {
                 description: "Where potential is sharpened. Intensity, tactical IQ, and competitive play.",
               },
             ].map((program, i) => (
-              <div key={i} className="bg-amber-50 rounded-lg overflow-hidden p-6">
+              <div
+                key={i}
+                className="bg-amber-50 rounded-lg overflow-hidden p-6 hover:shadow-md transition-shadow duration-300"
+              >
                 <h3 className="mb-1 text-xl font-bold text-amber-900">{program.title}</h3>
                 <p className="mb-4 text-sm font-medium text-amber-700">{program.ages}</p>
                 <p className="mb-6 text-gray-600">{program.description}</p>
-                <Button asChild variant="outline" className="w-full border-amber-500 text-amber-900 hover:bg-amber-100">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full border-amber-500 text-amber-900 hover:bg-amber-100 hover:border-amber-600 hover:shadow-sm transition-all duration-300"
+                >
                   <Link href="/programs">Learn More</Link>
                 </Button>
               </div>
@@ -153,7 +174,11 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950">
+            <Button
+              asChild
+              size="lg"
+              className="bg-amber-500 hover:bg-amber-600 hover:scale-105 hover:shadow-lg transition-all duration-300 text-amber-950"
+            >
               <Link href="/programs">View All Programs</Link>
             </Button>
           </div>
@@ -170,9 +195,14 @@ export default function HomePage() {
               At Gbawe Basketball Academy, culture is our foundation. It shapes how we think, move, grow, and lead — on
               and off the court. Every child enters the academy as a learner. Those who stay… become hunters.
             </p>
-            <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
+            <Button
+              asChild
+              size="lg"
+              className="bg-white hover:bg-gray-100 hover:scale-105 hover:shadow-lg transition-all duration-300 text-amber-900 font-bold"
+            >
               <Link href="/culture" className="flex items-center gap-2">
-                Explore Our Culture <ArrowRight className="h-4 w-4" />
+                Explore Our Culture{" "}
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </Button>
           </div>
@@ -186,7 +216,11 @@ export default function HomePage() {
           <p className="mb-8 max-w-2xl mx-auto text-lg text-gray-700">
             Take the first step in your journey to becoming a disciplined, focused, and skilled athlete.
           </p>
-          <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950 font-bold">
+          <Button
+            asChild
+            size="lg"
+            className="bg-amber-500 hover:bg-amber-600 hover:scale-105 hover:shadow-lg transition-all duration-300 text-amber-950 font-bold"
+          >
             <Link href="/contact">Contact Us Today</Link>
           </Button>
         </div>
