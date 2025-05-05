@@ -1,7 +1,6 @@
 import type React from "react"
 import { Inter } from "next/font/google"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { LogoutButton } from "@/components/admin/logout-button"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -16,7 +15,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           </Link>
           <nav className="flex items-center gap-4">
             <Link href="/admin/dashboard">Dashboard</Link>
+            <Link href="/admin/inventory">Inventory</Link>
             <Link href="/admin/orders">Orders</Link>
+            <Link href="/admin/schedule">Schedule</Link>
+            <Link href="/admin/media">Media</Link>
             <Link href="/">View Site</Link>
             <LogoutButton />
           </nav>

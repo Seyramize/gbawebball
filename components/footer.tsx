@@ -117,9 +117,11 @@ export default function Footer() {
               Terms of Service
             </Link>
           </div>
-          <p className="text-gray-500 text-sm mt-4 md:mt-0">
-            Developed by <a href="https://saysey.netlify.app" className="text-amber-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">Sarxt Tech</a>
-          </p>
+        </div>
+
+        <div className="mt-4 text-center text-gray-500 text-sm">
+          <span className="text-gray-400 font-medium">Developed by </span> 
+          <a href="https://saysey.netlify.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors font-medium">Sarxt Tech</a>
         </div>
       </div>
     </footer>

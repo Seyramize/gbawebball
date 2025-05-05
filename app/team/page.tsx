@@ -376,7 +376,12 @@ export default function TeamPage() {
               </div>
 
               <div className="text-center mt-12">
-                <Button className="bg-amber-500 hover:bg-amber-600 text-amber-950">View Game Schedule</Button>
+                <Button
+                  asChild
+                  className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-md"
+                >
+                  <a href="/schedule">View Game Schedule</a>
+                </Button>
               </div>
             </TabsContent>
           </Tabs>
