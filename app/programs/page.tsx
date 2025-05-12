@@ -39,7 +39,7 @@ export default function ProgramsPage() {
           <div className="max-w-4xl mx-auto space-y-16">
             {/* Hunter Cubs */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="relative h-64 md:h-[400px] rounded-lg overflow-hidden">
+              <div className="relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
                   src="/cubs.jpg?height=600&width=800"
                   alt="Hunter Cubs training"
@@ -75,7 +75,7 @@ export default function ProgramsPage() {
 
             {/* Hunter Apprentices */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="order-1 md:order-2 relative h-64 md:h-[400px] rounded-lg overflow-hidden">
+              <div className="order-1 md:order-2 relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
                   src="/apprentice.jpg?height=600&width=800"
                   alt="Hunter Apprentices training"
@@ -112,7 +112,7 @@ export default function ProgramsPage() {
 
             {/* Hunter Elite */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="relative h-64 md:h-[400px] rounded-lg overflow-hidden">
+              <div className="relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
                   src="/Elite.jpg?height=600&width=800"
                   alt="Hunter Elite training"
@@ -148,7 +148,7 @@ export default function ProgramsPage() {
 
             {/* Master Hunters */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="order-1 md:order-2 relative h-64 md:h-[400px] rounded-lg overflow-hidden">
+              <div className="order-1 md:order-2 relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
                   src="/masters.jpg?height=600&width=800"
                   alt="Master Hunters training"
@@ -185,7 +185,7 @@ export default function ProgramsPage() {
 
             {/* Vipers Basketball */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="relative h-64 md:h-[400px] rounded-lg overflow-hidden">
+              <div className="relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
                   src="/vipers.jpg?height=600&width=800"
                   alt="Vipers Basketball team"
