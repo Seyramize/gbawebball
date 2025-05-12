@@ -10,7 +10,7 @@ export default function HomePage() {
       <section className="relative w-full py-20 md:py-32 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-30">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/hoop1.jpg?height=1080&width=1920"
             alt="Basketball court"
             fill
             className="object-cover"

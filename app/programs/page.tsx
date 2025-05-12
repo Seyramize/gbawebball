@@ -39,9 +39,9 @@ export default function ProgramsPage() {
           <div className="max-w-4xl mx-auto space-y-16">
             {/* Hunter Cubs */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="relative h-64 md:h-full rounded-lg overflow-hidden">
+              <div className="relative h-64 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/cubs.jpg?height=600&width=800"
                   alt="Hunter Cubs training"
                   fill
                   className="object-cover"
@@ -75,9 +75,9 @@ export default function ProgramsPage() {
 
             {/* Hunter Apprentices */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="order-1 md:order-2 relative h-64 md:h-full rounded-lg overflow-hidden">
+              <div className="order-1 md:order-2 relative h-64 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/apprentice.jpg?height=600&width=800"
                   alt="Hunter Apprentices training"
                   fill
                   className="object-cover"
@@ -112,9 +112,9 @@ export default function ProgramsPage() {
 
             {/* Hunter Elite */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="relative h-64 md:h-full rounded-lg overflow-hidden">
+              <div className="relative h-64 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/Elite.jpg?height=600&width=800"
                   alt="Hunter Elite training"
                   fill
                   className="object-cover"
@@ -148,9 +148,9 @@ export default function ProgramsPage() {
 
             {/* Master Hunters */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="order-1 md:order-2 relative h-64 md:h-full rounded-lg overflow-hidden">
+              <div className="order-1 md:order-2 relative h-64 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/masters.jpg?height=600&width=800"
                   alt="Master Hunters training"
                   fill
                   className="object-cover"
@@ -185,9 +185,9 @@ export default function ProgramsPage() {
 
             {/* Vipers Basketball */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
-              <div className="relative h-64 md:h-full rounded-lg overflow-hidden">
+              <div className="relative h-64 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/vipers.jpg?height=600&width=800"
                   alt="Vipers Basketball team"
                   fill
                   className="object-cover"
