@@ -400,7 +400,7 @@ export default function TeamPage() {
             <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
               <a href="/contact">Contact Us</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-amber-800">
+            <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
               <a href="/programs">View Programs</a>
             </Button>
           </div>

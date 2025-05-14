@@ -165,7 +165,7 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              {/* <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-bold text-amber-900 mb-3">When are training days?</h3>
                 <p className="text-gray-700">Training schedules vary by age group, but generally:</p>
                 <ul className="list-disc list-inside mt-2 text-gray-700">
@@ -175,7 +175,7 @@ export default function ContactPage() {
                   <li>Master Hunters &amp; Vipers: Monday through Friday evenings, Saturday mornings</li>
                 </ul>
                 <p className="mt-2 text-gray-700">Specific times will be provided during registration.</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

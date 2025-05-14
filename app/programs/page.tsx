@@ -234,12 +234,12 @@ export default function ProgramsPage() {
               </Button>
             </Link>
             <Link href="/team" passHref>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-amber-800">
+              <Button size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
                 Meet the Coaches
               </Button>
             </Link>
             <Link href="/culture" passHref>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-amber-800">
+              <Button size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
                 Become a Viper
               </Button>
             </Link>
