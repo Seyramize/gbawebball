@@ -155,7 +155,7 @@ export default function CulturePage() {
               <li>Unity in the chants</li>
               <li>Fire in the eyes</li>
               <li>Ritual in the rhythm</li>
-              <li>Brotherhood in the silence</li>
+              <li>Loyalty in the silence</li>
             </ul>
 
             <p className="text-xl font-bold text-amber-900 mb-2">This is more than basketball.</p>
