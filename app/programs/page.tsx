@@ -41,7 +41,7 @@ export default function ProgramsPage() {
             <div className="grid gap-8 md:grid-cols-2 items-center">
               <div className="relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/cubs.jpg?height=600&width=800"
+                  src="/cub.jpg?height=600&width=800"
                   alt="Hunter Cubs training"
                   fill
                   className="object-cover"
@@ -77,7 +77,7 @@ export default function ProgramsPage() {
             <div className="grid gap-8 md:grid-cols-2 items-center">
               <div className="order-1 md:order-2 relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/apprentice.jpg?height=600&width=800"
+                  src="/apprent.jpg?height=600&width=800"
                   alt="Hunter Apprentices training"
                   fill
                   className="object-cover"
@@ -114,7 +114,7 @@ export default function ProgramsPage() {
             <div className="grid gap-8 md:grid-cols-2 items-center">
               <div className="relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/Elite.jpg?height=600&width=800"
+                  src="/elitee.jpg?height=600&width=800"
                   alt="Hunter Elite training"
                   fill
                   className="object-cover"
@@ -150,7 +150,7 @@ export default function ProgramsPage() {
             <div className="grid gap-8 md:grid-cols-2 items-center">
               <div className="order-1 md:order-2 relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/masters.jpg?height=600&width=800"
+                  src="/master.jpg?height=600&width=800"
                   alt="Master Hunters training"
                   fill
                   className="object-cover"
@@ -187,7 +187,7 @@ export default function ProgramsPage() {
             <div className="grid gap-8 md:grid-cols-2 items-center">
               <div className="relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/vipers.jpg?height=600&width=800"
+                  src="/viper.jpg?height=600&width=800"
                   alt="Vipers Basketball team"
                   fill
                   className="object-cover"
