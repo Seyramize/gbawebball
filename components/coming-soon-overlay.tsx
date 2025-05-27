@@ -51,14 +51,14 @@ export function ComingSoonOverlay({
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-2 sm:p-4 overflow-y-auto">
-      <div className="relative w-full max-w-2xl mx-auto sm:mx-4 md:mx-8 lg:mx-auto max-h-screen overflow-y-auto flex flex-col">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-2 xs:p-3 sm:p-4 overflow-y-auto">
+      <div className="relative w-full max-w-lg xs:max-w-xl sm:max-w-2xl mx-2 xs:mx-4 md:mx-8 lg:mx-auto max-h-screen overflow-y-auto flex flex-col">
         {/* Prominent Close Button */}
         <Button
           onClick={handleClose}
           variant="outline"
           size="lg"
-          className="absolute -top-16 right-0 bg-white/10 border-white/30 text-white hover:bg-amber-500/90 hover:text-amber-950 hover:border-amber-400 transition-all duration-200 font-semibold px-6 py-3 hidden sm:flex"
+          className="absolute -top-14 xs:-top-16 right-0 bg-white/10 border-white/30 text-white hover:bg-amber-500/90 hover:text-amber-950 hover:border-amber-400 transition-all duration-200 font-semibold px-4 py-2 xs:px-6 xs:py-3 hidden sm:flex"
         >
           <X className="h-5 w-5 mr-2" />
           Close & Go Home
@@ -69,7 +69,7 @@ export function ComingSoonOverlay({
           onClick={handleClose}
           variant="outline"
           size="icon"
-          className="sm:hidden fixed top-4 right-4 z-50 bg-white/10 border-white/30 text-white hover:bg-amber-500/90 hover:text-amber-950 hover:border-amber-400 transition-all duration-200 p-2"
+          className="sm:hidden fixed top-2 xs:top-4 right-2 xs:right-4 z-50 bg-white/10 border-white/30 text-white hover:bg-amber-500/90 hover:text-amber-950 hover:border-amber-400 transition-all duration-200 p-2"
           aria-label="Close"
         >
           <X className="h-5 w-5" />
@@ -77,7 +77,7 @@ export function ComingSoonOverlay({
 
         {/* Main Coming Soon Card */}
         <div className="bg-gradient-to-br from-amber-900 via-amber-800 to-amber-950 text-white rounded-2xl shadow-2xl overflow-hidden border border-amber-700/50">
-          <div className="relative p-4 sm:p-6 md:p-8 lg:p-12">
+          <div className="relative p-3 xs:p-4 sm:p-6 md:p-8 lg:p-12">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
               <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=400&query=basketball-pattern')] bg-repeat opacity-20"></div>
@@ -85,24 +85,24 @@ export function ComingSoonOverlay({
 
             <div className="relative z-10 text-center flex flex-col">
               {/* Icon */}
-              <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 mb-4 sm:mb-6 bg-amber-500/20 rounded-full border border-amber-500/30 mx-auto">
-                <ShoppingBag className="h-8 w-8 sm:h-10 sm:w-10 text-amber-300" />
+              <div className="inline-flex items-center justify-center w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 mb-3 xs:mb-4 sm:mb-6 bg-amber-500/20 rounded-full border border-amber-500/30 mx-auto">
+                <ShoppingBag className="h-7 w-7 xs:h-8 xs:w-8 sm:h-10 sm:w-10 text-amber-300" />
               </div>
 
               {/* Title */}
-              <h1 className="mb-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">{title}</h1>
+              <h1 className="mb-2 xs:mb-3 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">{title}</h1>
 
               {/* Description */}
-              <p className="mb-4 sm:mb-6 text-base sm:text-lg md:text-xl text-amber-100 max-w-lg mx-auto leading-relaxed">{description}</p>
+              <p className="mb-3 xs:mb-4 sm:mb-6 text-sm xs:text-base sm:text-lg md:text-xl text-amber-100 max-w-lg mx-auto leading-relaxed">{description}</p>
 
               {/* Expected Launch */}
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 mb-6 sm:mb-8 bg-amber-500/20 rounded-full border border-amber-500/30">
+              <div className="inline-flex items-center gap-2 px-2 py-1 xs:px-3 xs:py-1.5 sm:px-4 sm:py-2 mb-4 xs:mb-6 sm:mb-8 bg-amber-500/20 rounded-full border border-amber-500/30">
                 <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-amber-300" />
-                <span className="text-amber-200 font-medium text-sm sm:text-base">{expectedLaunch}</span>
+                <span className="text-amber-200 font-medium text-xs xs:text-sm sm:text-base">{expectedLaunch}</span>
               </div>
 
               {/* Features Preview */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8 text-sm">
+              <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-2 xs:gap-3 sm:gap-4 mb-4 xs:mb-6 sm:mb-8 text-xs xs:text-sm">
                 <div className="p-3 sm:p-4 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
                   <h3 className="font-semibold text-amber-200 mb-1 sm:mb-2">Official Apparel</h3>
                   <p className="text-amber-100">Jerseys, hoodies, and practice gear</p>
@@ -122,16 +122,16 @@ export function ComingSoonOverlay({
                 <Button
                   onClick={() => setShowNotifyForm(true)}
                   size="lg"
-                  className="w-full sm:w-auto bg-amber-500 hover:text-white text-amber-950 font-bold px-8 py-3 transition-all duration-200 transform hover:scale-105"
+                  className="w-full sm:w-auto bg-amber-500 hover:text-white text-amber-950 font-bold px-4 py-2 xs:px-6 xs:py-3 sm:px-8 sm:py-3 transition-all duration-200 transform hover:scale-105"
                 >
                   <Bell className="h-5 w-5 mr-2" />
-                  Notify Me When Available
+                  <span className="text-xs xs:text-sm sm:text-base md:text-lg">Notify Me When Available</span>
                 </Button>
               ) : (
                 <div className="max-w-md mx-auto w-full">
                   {!isSubscribed ? (
                     <form onSubmit={handleNotifySubmit}>
-                      <div className="flex flex-col sm:flex-row gap-3 mb-4">
+                      <div className="flex flex-col xs:flex-row gap-2 xs:gap-3 mb-3 xs:mb-4">
                         <input
                           type="email"
                           value={email}
@@ -139,12 +139,12 @@ export function ComingSoonOverlay({
                           placeholder="Enter your email"
                           required
                           disabled={isSubmitting}
-                          className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent disabled:opacity-50 w-full"
+                          className="flex-1 px-3 py-2 xs:px-4 xs:py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent disabled:opacity-50 w-full text-xs xs:text-sm"
                         />
                         <Button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold px-6 py-3 disabled:opacity-50 transition-all duration-200"
+                          className="w-full xs:w-auto bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold px-4 py-2 xs:px-6 xs:py-3 disabled:opacity-50 transition-all duration-200"
                         >
                           {isSubmitting ? (
                             <>
@@ -159,16 +159,16 @@ export function ComingSoonOverlay({
                       <p className="text-amber-200 text-sm">We'll notify you as soon as the shop launches!</p>
                     </form>
                   ) : (
-                    <div className="p-4 sm:p-6 bg-green-500/20 border border-green-400/30 rounded-lg">
-                      <div className="flex items-center justify-center mb-3">
-                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-500/30 rounded-full flex items-center justify-center">
-                          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="p-3 xs:p-4 sm:p-6 bg-green-500/20 border border-green-400/30 rounded-lg">
+                      <div className="flex items-center justify-center mb-2 xs:mb-3">
+                        <div className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 bg-green-500/30 rounded-full flex items-center justify-center">
+                          <svg className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
                       </div>
-                      <p className="text-green-200 font-medium text-base sm:text-lg mb-2">Thank you for subscribing!</p>
-                      <p className="text-green-300 text-xs sm:text-sm mb-3">We'll notify you when the shop launches.</p>
+                      <p className="text-green-200 font-medium text-sm xs:text-base sm:text-lg mb-1 xs:mb-2">Thank you for subscribing!</p>
+                      <p className="text-green-300 text-xs sm:text-sm mb-2 xs:mb-3">We'll notify you when the shop launches.</p>
                       <p className="text-green-400 text-xs">Redirecting to homepage...</p>
                     </div>
                   )}
@@ -176,9 +176,9 @@ export function ComingSoonOverlay({
               )}
 
               {/* Social Media */}
-              <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-amber-700/50">
-                <p className="text-amber-200 mb-3 sm:mb-4">Follow us for updates:</p>
-                <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+              <div className="mt-4 xs:mt-6 sm:mt-8 pt-3 xs:pt-4 sm:pt-6 border-t border-amber-700/50">
+                <p className="text-amber-200 mb-2 xs:mb-3 sm:mb-4 text-xs xs:text-sm">Follow us for updates:</p>
+                <div className="flex flex-wrap justify-center gap-2 xs:gap-3 sm:gap-4">
                   <a
                     href="#"
                     className="text-amber-300 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
@@ -219,11 +219,11 @@ export function ComingSoonOverlay({
               </div>
 
               {/* Additional Close Option */}
-              <div className="mt-4 sm:mt-6 w-full flex justify-center">
+              <div className="mt-3 xs:mt-4 sm:mt-6 w-full flex justify-center">
                 <Button
                   onClick={handleClose}
                   variant="ghost"
-                  className="w-full max-w-xs text-amber-300 hover:text-white hover:bg-amber-600 focus:text-white focus:bg-amber-600 active:text-white active:bg-amber-700 transition-all duration-200"
+                  className="w-full max-w-xs text-amber-300 hover:text-white hover:bg-amber-600 focus:text-white focus:bg-amber-600 active:text-white active:bg-amber-700 transition-all duration-200 text-xs xs:text-sm sm:text-base"
                 >
                   Return to Homepage
                 </Button>
