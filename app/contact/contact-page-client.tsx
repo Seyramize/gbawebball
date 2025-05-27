@@ -216,16 +216,16 @@ export function ContactPageClient() {
               </CardHeader>
               <CardContent>
                 <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-                  <TabsList className="grid w-full grid-cols-2 mb-8">
+                  <TabsList className="grid w-full grid-cols-2 mb-8 gap-2 sm:gap-4 p-1 sm:p-2 bg-white/70 rounded-lg">
                     <TabsTrigger
                       value="bootcamp"
-                      className="data-[state=active]:bg-amber-100 data-[state=active]:text-amber-900"
+                      className="data-[state=active]:bg-amber-100 data-[state=active]:text-amber-900 text-xs xs:text-sm sm:text-base py-2 sm:py-3 rounded-md sm:rounded-lg"
                     >
                       Boot Camp Registration
                     </TabsTrigger>
                     <TabsTrigger
                       value="merchandise"
-                      className="data-[state=active]:bg-amber-100 data-[state=active]:text-amber-900"
+                      className="data-[state=active]:bg-blue-200 data-[state=active]:text-blue-900 text-xs xs:text-sm sm:text-base py-2 sm:py-3 rounded-md sm:rounded-lg"
                     >
                       Merchandise Preorder
                     </TabsTrigger>
