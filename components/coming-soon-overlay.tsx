@@ -122,7 +122,7 @@ export function ComingSoonOverlay({
                 <Button
                   onClick={() => setShowNotifyForm(true)}
                   size="lg"
-                  className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold px-8 py-3 transition-all duration-200 transform hover:scale-105"
+                  className="w-full sm:w-auto bg-amber-500 hover:text-white text-amber-950 font-bold px-8 py-3 transition-all duration-200 transform hover:scale-105"
                 >
                   <Bell className="h-5 w-5 mr-2" />
                   Notify Me When Available
