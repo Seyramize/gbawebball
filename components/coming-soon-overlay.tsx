@@ -53,27 +53,18 @@ export function ComingSoonOverlay({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-2 xs:p-3 sm:p-4 overflow-y-auto">
       <div className="relative w-full max-w-lg xs:max-w-xl sm:max-w-2xl mx-2 xs:mx-4 md:mx-8 lg:mx-auto max-h-screen overflow-y-auto flex flex-col">
-        {/* Prominent Close Button */}
-        <Button
-          onClick={handleClose}
-          variant="outline"
-          size="lg"
-          className="absolute -top-14 xs:-top-16 right-0 bg-white/10 border-white/30 text-white hover:bg-amber-500/90 hover:text-amber-950 hover:border-amber-400 transition-all duration-200 font-semibold px-4 py-2 xs:px-6 xs:py-3 hidden sm:flex"
-        >
-          <X className="h-5 w-5 mr-2" />
-          Close & Go Home
-        </Button>
-        {/* Mobile close button */}
-        {/* Mobile close button (fix stacking and click issues) */}
-        <Button
-          onClick={handleClose}
-          variant="outline"
-          size="icon"
-          className="sm:hidden fixed top-2 xs:top-4 right-2 xs:right-4 z-50 bg-white/10 border-white/30 text-white hover:bg-amber-500/90 hover:text-amber-950 hover:border-amber-400 transition-all duration-200 p-2"
-          aria-label="Close"
-        >
-          <X className="h-5 w-5" />
-        </Button>
+        {/* Close Button on Card */}
+        <div className="w-full flex justify-end mb-2">
+          <Button
+            onClick={handleClose}
+            variant="outline"
+            size="lg"
+            className="bg-white/10 border-white/30 text-white hover:bg-amber-500/90 hover:text-amber-950 hover:border-amber-400 transition-all duration-200 font-semibold px-4 py-2 xs:px-6 xs:py-3 flex"
+          >
+            <X className="h-5 w-5 mr-2" />
+            Close
+          </Button>
+        </div>
 
         {/* Main Coming Soon Card */}
         <div className="bg-gradient-to-br from-amber-900 via-amber-800 to-amber-950 text-white rounded-2xl shadow-2xl overflow-hidden border border-amber-700/50">
@@ -223,7 +214,7 @@ export function ComingSoonOverlay({
                 <Button
                   onClick={handleClose}
                   variant="ghost"
-                  className="w-full max-w-xs text-amber-300 hover:text-white hover:bg-amber-600 focus:text-white focus:bg-amber-600 active:text-white active:bg-amber-700 transition-all duration-200 text-xs xs:text-sm sm:text-base"
+                  className="w-full max-w-xs text-amber-300 hover:text-white hover:bg-amber-600 focus:text-white focus:bg-amber-600 active:text-white active:bg-amber-700 transition-all duration-200 text-xs xs:text-sm sm:text-base block"
                 >
                   Return to Homepage
                 </Button>
