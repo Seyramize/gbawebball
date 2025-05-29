@@ -84,7 +84,7 @@ export function JoinAcademyClient() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-amber-100">
       {/* Hero Section */}
       <section
-        className="relative py-20 bg-amber-900 text-white bg-[url('/clinthoop.jpg')] bg-cover bg-center bg-no-repeat"
+        className="relative flex items-center justify-center min-h-[350px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[600px] bg-amber-900 text-white bg-[url('/clinthoop.jpg')] bg-cover bg-center bg-no-repeat"
         style={{ backgroundBlendMode: 'multiply' }}
       >
         <div className="container px-4 mx-auto text-center">
@@ -115,12 +115,18 @@ export function JoinAcademyClient() {
       <div className="container px-4 mx-auto py-16">
         {/* Tabbed Interface */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-8">
-            <TabsTrigger value="registration" className="text-lg py-3">
+          <TabsList className="flex w-full mb-8 gap-2 sm:gap-4">
+            <TabsTrigger
+              value="registration"
+              className="flex-1 text-base sm:text-lg py-2 sm:py-3 px-2 sm:px-4 rounded-md sm:rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 transition-all"
+            >
               🔰 Academy Registration
             </TabsTrigger>
-            <TabsTrigger value="monthly" className="text-lg py-3">
-              🔁 Monthly Training Packages
+            <TabsTrigger
+              value="monthly"
+              className="flex-1 text-base sm:text-lg py-2 sm:py-3 px-2 sm:px-4 rounded-md sm:rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition-all"
+            >
+              🔁 Monthly Packages
             </TabsTrigger>
           </TabsList>
 
