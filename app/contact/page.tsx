@@ -215,6 +215,9 @@ export default function ContactPage() {
                     <span className="text-sm font-medium">Facebook</span>
                   </a>
                 </div>
+                <div className="mt-4 text-center">
+                  <span className="text-sm text-amber-700 font-semibold">"The Gbawe Basketball Academy is powered by Hunters Sports Academy."</span>
+                </div>
               </CardContent>
             </Card>
           </div>

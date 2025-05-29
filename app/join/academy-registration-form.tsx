@@ -6,11 +6,11 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
-import type { FormData } from "./join-academy-client"
+import type { RegistrationFormData } from "./join-academy-client"
 
 interface Props {
-  formData: FormData
-  updateFormData: (updates: Partial<FormData>) => void
+  formData: RegistrationFormData
+  updateFormData: (updates: Partial<RegistrationFormData>) => void
 }
 
 export function AcademyRegistrationForm({ formData, updateFormData }: Props) {

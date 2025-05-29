@@ -6,14 +6,15 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
-import type { FormData } from "./join-academy-client"
+import type { RegistrationFormData, MonthlyPackageFormData } from "./join-academy-client"
 
-interface Props {
-  formData: FormData
-  updateFormData: (updates: Partial<FormData>) => void
+// Create a union type that works with both form data types
+type PaymentFormProps = {
+  formData: RegistrationFormData | MonthlyPackageFormData
+  updateFormData: (updates: Partial<RegistrationFormData> | Partial<MonthlyPackageFormData>) => void
 }
 
-export function PaymentDetailsForm({ formData, updateFormData }: Props) {
+export function PaymentDetailsForm({ formData, updateFormData }: PaymentFormProps) {
   const handlePaymentProofChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] || null
     updateFormData({ paymentProof: file })
@@ -22,8 +23,8 @@ export function PaymentDetailsForm({ formData, updateFormData }: Props) {
   return (
     <div className="space-y-6">
       <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-        <h3 className="font-semibold text-purple-900 mb-2">Step 4: Confirm Payment</h3>
-        <p className="text-sm text-purple-800">Complete your payment to finalize your registration.</p>
+        <h3 className="font-semibold text-purple-900 mb-2">Complete Your Payment</h3>
+        <p className="text-sm text-purple-800">Select your preferred payment method to finalize your registration.</p>
       </div>
 
       <div>
@@ -145,7 +146,7 @@ export function PaymentDetailsForm({ formData, updateFormData }: Props) {
           onCheckedChange={(checked) => updateFormData({ paymentTermsAgreed: checked as boolean })}
         />
         <Label htmlFor="paymentTermsAgreed" className="text-sm leading-relaxed">
-          I agree to the Gbawe Basketball Academy's terms: No training after 5th of each month if unpaid. No refunds. Communication
+          I agree to the Academy's terms: no training after 5th of each month if unpaid. No refunds. Communication
           required for hardship support. *
         </Label>
       </div>
