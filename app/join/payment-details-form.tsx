@@ -128,11 +128,12 @@ export function PaymentDetailsForm({ formData, updateFormData }: PaymentFormProp
       </div>
 
       <div>
-        <Label htmlFor="paymentProof">Upload Proof of Payment</Label>
+        <Label htmlFor="paymentProof">Upload Proof of Payment *</Label>
         <Input
           id="paymentProof"
           type="file"
           accept="image/*,.pdf"
+          required
           onChange={handlePaymentProofChange}
           className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-purple-50 file:text-purple-700 hover:file:bg-purple-100"
         />
