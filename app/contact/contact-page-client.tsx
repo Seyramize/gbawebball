@@ -16,24 +16,16 @@ export function ContactPageClient() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white">
       {/* Hero Section */}
-      <section
-        className="relative py-20 bg-gray-600 text-white"
-        style={{
-          backgroundImage: "url('/clinthoop.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-amber-900/80 pointer-events-none" aria-hidden="true"></div>
-        <div className="container px-4 mx-auto text-center relative z-10">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">Join the Gbawe Basketball Academy – Start Your Hunter Journey</h1>
+      <section className="relative py-20 bg-amber-900 text-white">
+        <div className="container px-4 mx-auto text-center">
+          <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">Join the Academy</h1>
           <p className="mb-8 max-w-2xl mx-auto text-xl text-amber-100">
-            Become part of Ghana’s most purposeful basketball academy. Join your age group, receive your official Hunter’s Pack, and begin your journey to greatness through discipline, strategy, and execution!
+            Register for our Summer Boot Camp 2024 or preorder official academy merchandise!
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Badge variant="secondary" className="bg-amber-100 text-amber-900 px-4 py-2">
               <Calendar className="h-4 w-4 mr-2" />
-              September 1, 2025
+              June 6-11, 2024
             </Badge>
             <Badge variant="secondary" className="bg-amber-100 text-amber-900 px-4 py-2">
               <Clock className="h-4 w-4 mr-2" />
@@ -41,7 +33,7 @@ export function ContactPageClient() {
             </Badge>
             <Badge variant="secondary" className="bg-amber-100 text-amber-900 px-4 py-2">
               <MapPin className="h-4 w-4 mr-2" />
-              Gbawe Basketball Court
+              Dansoman Court
             </Badge>
           </div>
         </div>
@@ -53,15 +45,15 @@ export function ContactPageClient() {
           <div className="lg:col-span-1">
             <Card className="h-fit">
               <CardHeader>
-                <CardTitle className="text-amber-900">Gbawe Basketball Academy</CardTitle>
-                <CardDescription>Basketball Academy Training Program</CardDescription>
+                <CardTitle className="text-amber-900">Summer Boot Camp 2024</CardTitle>
+                <CardDescription>5-Day intensive basketball training program</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start gap-3">
                   <Calendar className="h-5 w-5 text-amber-600 mt-1" />
                   <div>
-                    <p className="font-medium text-gray-900">Start Date</p>
-                    <p className="text-gray-600">September 1, 2025</p>
+                    <p className="font-medium text-gray-900">Dates</p>
+                    <p className="text-gray-600">June 6-11, 2024</p>
                   </div>
                 </div>
 
@@ -77,7 +69,7 @@ export function ContactPageClient() {
                   <MapPin className="h-5 w-5 text-amber-600 mt-1" />
                   <div>
                     <p className="font-medium text-gray-900">Location</p>
-                    <p className="text-gray-600">Gbawe Basketball Court</p>
+                    <p className="text-gray-600">Dansoman Court</p>
                   </div>
                 </div>
 
@@ -215,7 +207,7 @@ export function ContactPageClient() {
               <CardHeader>
                 <CardTitle className="text-amber-900">Registration & Merchandise</CardTitle>
                 <CardDescription>
-                  Register for the Academy or Preorder official academy merchandise.
+                  Register for the Summer Boot Camp or preorder official academy merchandise.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -225,11 +217,11 @@ export function ContactPageClient() {
                       value="bootcamp"
                       className="data-[state=active]:bg-amber-100 data-[state=active]:text-amber-900"
                     >
-                      Academy Registration
+                      Boot Camp Registration
                     </TabsTrigger>
                     <TabsTrigger
                       value="merchandise"
-                      className="data-[state=active]:bg-blue-100 data-[state=active]:text-blue-900"
+                      className="data-[state=active]:bg-amber-100 data-[state=active]:text-amber-900"
                     >
                       Merchandise Preorder
                     </TabsTrigger>
@@ -237,9 +229,10 @@ export function ContactPageClient() {
 
                   <TabsContent value="bootcamp" className="space-y-6">
                     <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-                      <h3 className="font-semibold text-amber-900 mb-2">Academy 2025 Registration</h3>
+                      <h3 className="font-semibold text-amber-900 mb-2">Summer Boot Camp 2024 Registration</h3>
                       <p className="text-sm text-amber-800">
-                        Register for our Basketball Academy training program, starting from September 1, 2025. Open to all age groups from 6 years and above. A confirmation message will be sent after review.
+                        Register for our 5-day intensive basketball training program. Open to all age groups from 6
+                        years and above. A confirmation message will be sent after review.
                       </p>
                     </div>
                     <BootCampForm />
@@ -249,7 +242,7 @@ export function ContactPageClient() {
                     <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                       <h3 className="font-semibold text-blue-900 mb-2">Official Academy Merchandise</h3>
                       <p className="text-sm text-blue-800">
-                        Preorder official Gbawe Basketball Academy merchandise. Limited quantities available
+                        Preorder official Gbawe Basketball Academy summer camp merchandise. Limited quantities available
                         — place your order early to secure your gear. Payment will be confirmed via MoMo or at camp.
                       </p>
                     </div>

@@ -213,7 +213,7 @@ export function BootCampForm() {
         ) : (
           <>
             <Send className="mr-2 h-4 w-4" />
-            Register for the Academy
+            Register for Boot Camp
           </>
         )}
       </Button>
