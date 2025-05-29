@@ -14,7 +14,10 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-amber-900 text-white">
+      <section
+        className="relative py-20 bg-amber-900 text-white bg-[url('/outdoor-basketball-court.png')] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundBlendMode: 'multiply' }}
+      >
         <div className="container px-4 mx-auto text-center">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">Contact Us</h1>
           <p className="mb-8 max-w-2xl mx-auto text-xl text-amber-100">
