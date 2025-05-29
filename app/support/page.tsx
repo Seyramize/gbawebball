@@ -198,22 +198,22 @@ export default function SupportPage() {
 
                 <div className="space-y-2">
                   <Label>Donation Amount</Label>
-                  <RadioGroup defaultValue="50" className="flex flex-wrap gap-4">
+                  <RadioGroup defaultValue="600" className="flex flex-wrap gap-4">
                     <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="25" id="amount-25" />
-                      <Label htmlFor="amount-25">$25</Label>
+                      <RadioGroupItem value="300" id="amount-300" />
+                      <Label htmlFor="amount-300">GH₵300</Label>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="50" id="amount-50" />
-                      <Label htmlFor="amount-50">$50</Label>
+                      <RadioGroupItem value="600" id="amount-600" />
+                      <Label htmlFor="amount-600">GH₵600</Label>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="100" id="amount-100" />
-                      <Label htmlFor="amount-100">$100</Label>
+                      <RadioGroupItem value="1200" id="amount-1200" />
+                      <Label htmlFor="amount-1200">GH₵1,200</Label>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="250" id="amount-250" />
-                      <Label htmlFor="amount-250">$250</Label>
+                      <RadioGroupItem value="3000" id="amount-3000" />
+                      <Label htmlFor="amount-3000">GH₵3,000</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="custom" id="amount-custom" />

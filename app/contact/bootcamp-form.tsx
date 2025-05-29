@@ -36,7 +36,7 @@ export function BootCampForm() {
           </div>
           <h3 className="text-lg font-semibold text-green-900 mb-2">Registration Submitted Successfully!</h3>
           <p className="text-green-800 mb-4">
-            Thank you for registering for the Gbawes Basketball Academy Summer Boot Camp 2024!
+            Thank you for registering for the GBAWE Basketball Academy Summer Boot Camp 2024!
           </p>
           <p className="text-sm text-green-700">
             A confirmation message will be sent to your email after review. We look forward to seeing you at Dansoman
@@ -130,6 +130,40 @@ export function BootCampForm() {
         <div>
           <Label htmlFor="emergencyContact">Emergency Contact Number *</Label>
           <Input id="emergencyContact" name="emergencyContact" type="tel" required />
+        </div>
+      </div>
+
+      {/* Payment Options */}
+      <div className="space-y-4">
+        <h3 className="text-lg font-semibold text-gray-900 border-b pb-2">Payment Options</h3>
+
+        <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
+          <p className="text-sm text-amber-800 mb-3">
+            Please select your preferred payment method. Payment details will be provided upon registration
+            confirmation.
+          </p>
+
+          <div>
+            <Label className="text-base font-medium">Select Payment Method *</Label>
+            <RadioGroup name="paymentMethod" className="mt-2" required>
+              <div className="flex items-center space-x-2 p-3 border border-gray-200 rounded-lg hover:bg-gray-50">
+                <RadioGroupItem value="mobile-money" id="mobile-money" />
+                <Label htmlFor="mobile-money" className="flex-1 cursor-pointer">
+                  <div className="font-medium">Mobile Money</div>
+                  <div className="text-sm text-gray-600">
+                    Pay via MTN Mobile Money, Vodafone Cash, or AirtelTigo Money
+                  </div>
+                </Label>
+              </div>
+              <div className="flex items-center space-x-2 p-3 border border-gray-200 rounded-lg hover:bg-gray-50">
+                <RadioGroupItem value="cash" id="cash" />
+                <Label htmlFor="cash" className="flex-1 cursor-pointer">
+                  <div className="font-medium">Cash</div>
+                  <div className="text-sm text-gray-600">Pay in cash at the academy or during registration</div>
+                </Label>
+              </div>
+            </RadioGroup>
+          </div>
         </div>
       </div>
 

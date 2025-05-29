@@ -73,9 +73,10 @@ export function MerchandiseForm() {
               <SelectValue placeholder="Select your category" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="player-under-12">Player (Under 12)</SelectItem>
-              <SelectItem value="player-under-15">Player (Under 15)</SelectItem>
-              <SelectItem value="player-under-18">Player (Under 18)</SelectItem>
+              <SelectItem value="hunter-cubs">Hunter Cubs (6–9)</SelectItem>
+              <SelectItem value="hunter-apprentices">Hunter Apprentices (10–13)</SelectItem>
+              <SelectItem value="hunter-elite">Hunter Elite (14–17)</SelectItem>
+              <SelectItem value="master-hunters">Master Hunters (18+)</SelectItem>
               <SelectItem value="coach">Coach</SelectItem>
               <SelectItem value="parent-guardian">Parent/Guardian</SelectItem>
               <SelectItem value="fan-supporter">Fan/Supporter</SelectItem>
