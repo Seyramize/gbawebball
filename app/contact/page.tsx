@@ -218,9 +218,7 @@ export default function ContactPage() {
                     <span className="text-sm font-medium">Facebook</span>
                   </a>
                 </div>
-                <div className="mt-4 text-center">
-                  <span className="text-sm text-amber-700 font-semibold">"The Gbawe Basketball Academy is powered by Hunters Sports Academy."</span>
-                </div>
+                
               </CardContent>
             </Card>
           </div>
@@ -237,7 +235,7 @@ export default function ContactPage() {
             </Card>
 
             <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-              <h3 className="font-semibold text-blue-900 mb-3">Ready to Join the Academy?</h3>
+              <h3 className="font-semibold text-blue-900 mb-3">Ready to Join The Hunt?</h3>
               <p className="text-blue-800 mb-4">
                 Start your basketball journey with us! Complete our registration process to become part of the Gbawe
                 Basketball Academy family.
@@ -246,7 +244,7 @@ export default function ContactPage() {
                 href="/join"
                 className="inline-flex items-center px-6 py-3 bg-amber-600 text-white font-medium rounded-lg hover:bg-amber-700 transition-colors"
               >
-                Join the Academy
+                Join The Hunt
               </a>
             </div>
 

@@ -18,7 +18,7 @@ export function ContactPageClient() {
       {/* Hero Section */}
       <section className="relative py-20 bg-amber-900 text-white">
         <div className="container px-4 mx-auto text-center">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">Join the Academy</h1>
+          <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">Join The Hunt</h1>
           <p className="mb-8 max-w-2xl mx-auto text-xl text-amber-100">
             Register for our Summer Boot Camp 2024 or preorder official academy merchandise!
           </p>

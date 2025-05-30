@@ -18,7 +18,7 @@ export function ContactFAQs() {
               How do I register my child for the academy?
             </AccordionTrigger>
             <AccordionContent className="text-gray-600">
-              You can register directly on our website through the "Join the Academy" page. Simply fill out the form,
+              You can register directly on our website through the "Join The Hunt" page. Simply fill out the form,
               select your child's age category, and choose your preferred training package. You'll receive a
               confirmation email with next steps.
             </AccordionContent>

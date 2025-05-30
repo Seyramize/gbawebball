@@ -69,8 +69,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-lg font-bold text-amber-400">Follow Us</h3>
-            <div className="flex flex-wrap gap-4">
+          <h3 className="mb-4 text-lg font-bold text-amber-400">Follow Us</h3>
+          <div className="flex flex-wrap gap-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
                 <span className="sr-only">Instagram</span>
@@ -101,6 +101,11 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">Snapchat</span>
               </a>
+              <div>
+                <span className=" text-amber-400 font-bold text-xs md:text-sm  rounded-lg shadow-md w-fit">
+                  The Gbawe Basketball Academy is powered by Hunters Sports Academy.
+                </span>
+              </div>
             </div>
           </div>
         </div>

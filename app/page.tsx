@@ -42,7 +42,7 @@ export default function HomePage() {
               asChild
               className="bg-amber-500 hover:bg-amber-600 hover:scale-105 hover:shadow-lg transition-all duration-300 text-amber-950 font-bold"
             >
-              <Link href="/contact">Join the Academy</Link>
+              <Link href="/contact">Join The Hunt</Link>
             </Button>
             <Button
               size="lg"

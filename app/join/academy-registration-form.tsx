@@ -22,7 +22,7 @@ export function AcademyRegistrationForm({ formData, updateFormData }: Props) {
   return (
     <div className="space-y-6">
       <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-        <h3 className="font-semibold text-amber-900 mb-2">Join the Academy</h3>
+        <h3 className="font-semibold text-amber-900 mb-2">Join The Hunt</h3>
         <p className="text-sm text-amber-800">
           Complete your one-time registration to become part of the Gbawe Basketball Academy family.
         </p>

@@ -118,7 +118,7 @@ export default function Header() {
 
           <div className="flex items-center space-x-4">
             <Button asChild size="sm" className="hidden md:flex bg-amber-500 hover:bg-amber-600 text-amber-950">
-              <Link href="/join">Join the Academy</Link>
+              <Link href="/join">Join The Hunt</Link>
             </Button>
 
             <div className="md:hidden">
@@ -216,7 +216,7 @@ export default function Header() {
 
               <Button asChild className="mt-4 bg-amber-500 hover:bg-amber-600 text-amber-950">
                 <Link href="/join" onClick={() => setIsOpen(false)}>
-                  Join the Academy
+                  Join The Hunt
                 </Link>
               </Button>
             </nav>
