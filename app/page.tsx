@@ -224,6 +224,14 @@ export default function HomePage() {
             <Link href="/contact">Contact Us Today</Link>
           </Button>
         </div>
+        <Button
+                asChild
+                size="lg"
+                className="w-full bg-amber-600 hover:bg-amber-700 text-white border-2 border-amber-400 shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-amber-600/30 hover:-translate-y-1"
+              >
+                <Link href="https://gbawebballfoundation.vercel.app/" target="_blank" rel="noopener noreferrer"> Support The Foundation</Link>
+              </Button>
+            
       </section>
     </div>
   )
