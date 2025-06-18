@@ -104,7 +104,7 @@ export default function AboutPage() {
                 {
                   name: "Thomas Nii Adu Cofie",
                   role: "Founder",
-                  image: "/placeholder.svg?height=400&width=400",
+                  image: "/tommy.jpg?height=400&width=400",
                 },
                 {
                   name: "Godwin Nii Okai Cofie",
@@ -114,7 +114,7 @@ export default function AboutPage() {
               ].map((founder, i) => (
                 <div key={i} className="text-center">
                   <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
-                    <Image src={founder.image || "/placeholder.svg"} alt={founder.name} fill className="object-cover" />
+                    <Image src={founder.image || "/tommy.jpg"} alt={founder.name} fill className="object-cover" />
                   </div>
                   <h3 className="mb-1 text-xl font-bold text-gray-900">{founder.name}</h3>
                   <p className="text-gray-600">{founder.role}</p>

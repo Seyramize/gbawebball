@@ -49,9 +49,9 @@ export default function TeamPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
                 {[
                   {
-                    name: "Godwin Nii Okai Cofie",
-                    role: "Co-Founder & Director",
-                    image: "/placeholder.svg?height=400&width=400",
+                    name: "Thomas Nii Adu Cofie",
+                    role: "Founder & Director",
+                    image: "/tommy.jpg?height=400&width=400",
                     bio: "Former national team player with a passion for developing young talent. Godwin established the academy with a vision to blend basketball excellence with cultural values.",
                     achievements: [
                       "Ghana National Team (2005-2010)",
@@ -60,7 +60,7 @@ export default function TeamPage() {
                     ],
                   },
                   {
-                    name: "Thomas Nii Adu Cofie",
+                    name: "Godwin Nii Okai Cofie",
                     role: "Co-Founder & Technical Director",
                     image: "/placeholder.svg?height=400&width=400",
                     bio: "Basketball strategist and youth development specialist. Thomas brings tactical expertise and a deep understanding of player development pathways.",

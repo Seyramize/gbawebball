@@ -216,22 +216,23 @@ export default function HomePage() {
           <p className="mb-8 max-w-2xl mx-auto text-lg text-gray-700">
             Take the first step in your journey to becoming a disciplined, focused, and skilled athlete.
           </p>
-          <Button
-            asChild
-            size="lg"
-            className="bg-amber-500 hover:bg-amber-600 hover:scale-105 hover:shadow-lg transition-all duration-300 text-amber-950 font-bold"
-          >
-            <Link href="/contact">Contact Us Today</Link>
-          </Button>
+          <div className="flex flex-col md:flex-row justify-center gap-4">
+            <Button
+              asChild
+              size="lg"
+              className="bg-amber-500 hover:bg-amber-600 hover:scale-105 hover:shadow-lg transition-all duration-300 text-amber-950 font-bold"
+            >
+              <Link href="/contact">Contact Us Today</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              className="bg-amber-600 hover:bg-amber-700 text-white border-2 border-amber-400 shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-amber-600/30 hover:-translate-y-1"
+            >
+              <Link href="https://gbawebballfoundation.vercel.app/" target="_blank" rel="noopener noreferrer"> Support The Foundation</Link>
+            </Button>
+          </div>
         </div>
-        <Button
-                asChild
-                size="lg"
-                className="w-full bg-amber-600 hover:bg-amber-700 text-white border-2 border-amber-400 shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-amber-600/30 hover:-translate-y-1"
-              >
-                <Link href="https://gbawebballfoundation.vercel.app/" target="_blank" rel="noopener noreferrer"> Support The Foundation</Link>
-              </Button>
-            
       </section>
     </div>
   )
