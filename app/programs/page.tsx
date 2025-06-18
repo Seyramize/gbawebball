@@ -228,7 +228,7 @@ export default function ProgramsPage() {
         <div className="container px-4 mx-auto text-center">
           <h2 className="mb-8 text-3xl font-bold">Choose Your Path. Train Like a Hunter.</h2>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/contact" passHref>
+            <Link href="/join" passHref>
               <Button size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
                 Register Today
               </Button>

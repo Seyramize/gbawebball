@@ -179,7 +179,7 @@ export default function CulturePage() {
               <Link href="/team">Meet the Coaches</Link>
             </Button>
             <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
-              <Link href="/contact">Register for the Academy</Link>
+              <Link href="/join">Register for the Academy</Link>
             </Button>
           </div>
         </div>
