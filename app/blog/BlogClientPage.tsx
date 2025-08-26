@@ -412,21 +412,21 @@ export default function BlogClientPage() {
                   {[
                     {
                       title: "Finding My Confidence",
-                      author: "Kofi, Age 12",
+                      author: "Kofi, Height: 5'10ft",
                       excerpt:
                         "When I first came to Gbawe Academy, I was scared to even shoot the ball. Now I'm leading my team in scoring.",
                       image: "/placeholder.svg?height=400&width=600",
                     },
                     {
                       title: "My First Tournament",
-                      author: "Ama, Age 14",
+                      author: "Ama, Height: 5'10ft",
                       excerpt:
                         "I never thought I'd play in a real tournament. The feeling of wearing that jersey was something I'll never forget.",
                       image: "/placeholder.svg?height=400&width=600",
                     },
                     {
                       title: "Dreams of College Basketball",
-                      author: "Emmanuel, Age 16",
+                      author: "Emmanuel, Height: 6'2ft",
                       excerpt:
                         "Coach says I have what it takes to play college basketball in America. I'm working every day to make that happen.",
                       image: "/placeholder.svg?height=400&width=600",

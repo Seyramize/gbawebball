@@ -8,7 +8,7 @@ export default function DreamDiariesPage() {
     {
       id: 1,
       title: "Finding My Confidence",
-      author: "Kofi, Age 12",
+      author: "Kofi, Height: 5'10",
       date: "April 5, 2023",
       excerpt:
         "When I first came to Gbawe Academy, I was scared to even shoot the ball. Now I'm leading my team in scoring.",
@@ -39,7 +39,7 @@ export default function DreamDiariesPage() {
     {
       id: 2,
       title: "My First Tournament",
-      author: "Ama, Age 14",
+      author: "Ama, Height: 5'10",
       date: "March 20, 2023",
       excerpt:
         "I never thought I'd play in a real tournament. The feeling of wearing that jersey was something I'll never forget.",
@@ -72,7 +72,7 @@ export default function DreamDiariesPage() {
     {
       id: 3,
       title: "Dreams of College Basketball",
-      author: "Emmanuel, Age 16",
+      author: "Emmanuel, Height: 6'2",
       date: "March 10, 2023",
       excerpt:
         "Coach says I have what it takes to play college basketball in America. I'm working every day to make that happen.",
@@ -83,7 +83,7 @@ export default function DreamDiariesPage() {
         
         At first, I thought he was joking. Me? A kid from Gbawe, playing basketball in America? But Coach Daniel was serious. He explained that he's been in contact with some of his connections—former teammates and coaches who now work with college programs in the U.S. He showed me videos of college games, the massive arenas filled with thousands of fans, the high level of play, the opportunities for education alongside basketball.
         
-        Coach Daniel said my combination of size (I'm already 6'7" at 16 years old), athleticism, and work ethic makes me the type of prospect that American colleges look for. But he was also honest about the challenges. My academics need to improve. My game needs to become more polished. And the competition for these opportunities is fierce—players from all over the world are fighting for the same scholarships.
+        Coach Daniel said my combination of size (I'm already 6'2" at 16 years old), athleticism, and work ethic makes me the type of prospect that American colleges look for. But he was also honest about the challenges. My academics need to improve. My game needs to become more polished. And the competition for these opportunities is fierce—players from all over the world are fighting for the same scholarships.
         
         Since that conversation, I've been on fire with determination. I've started waking up at 5 AM to work on my game before school. I've asked my teachers for extra assignments to improve my grades. I've been watching college basketball games on YouTube whenever I can get internet access, studying the players, the systems, the level of play I need to reach.
         
@@ -105,7 +105,7 @@ export default function DreamDiariesPage() {
     {
       id: 4,
       title: "Learning to Lead",
-      author: "Kwame, Age 15",
+      author: "Kwame, Height: 6'0",
       date: "February 25, 2023",
       excerpt:
         "Being named team captain was an honor, but I quickly learned that leadership is about much more than wearing a 'C' on my jersey.",

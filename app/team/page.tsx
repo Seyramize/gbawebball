@@ -107,18 +107,6 @@ export default function TeamPage() {
                     image: "/placeholder.svg?height=400&width=400",
                     bio: "Ensures the smooth running of all academy programs and facilities.",
                   },
-                  {
-                    name: "Kwame Boateng",
-                    role: "Community Outreach Director",
-                    image: "/placeholder.svg?height=400&width=400",
-                    bio: "Builds partnerships with schools and community organizations across Ghana.",
-                  },
-                  {
-                    name: "Abena Osei",
-                    role: "Youth Development Coordinator",
-                    image: "/placeholder.svg?height=400&width=400",
-                    bio: "Oversees the Hunter Cubs and Apprentices programs with a focus on holistic development.",
-                  },
                 ].map((person, i) => (
                   <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
                     <div className="relative h-64">
