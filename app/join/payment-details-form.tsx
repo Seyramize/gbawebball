@@ -147,8 +147,7 @@ export function PaymentDetailsForm({ formData, updateFormData }: PaymentFormProp
           onCheckedChange={(checked) => updateFormData({ paymentTermsAgreed: checked as boolean })}
         />
         <Label htmlFor="paymentTermsAgreed" className="text-sm leading-relaxed">
-          I agree to the Academy's terms: no training after 5th of each month if unpaid. No refunds. Communication
-          required for hardship support. *
+          I agree to the Academy's terms: Hunters keep their spot by settling fees by the 5th each month. No refunds. If the hunt gets tough, apply for support *
         </Label>
       </div>
     </div>

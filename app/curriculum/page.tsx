@@ -6,9 +6,9 @@ export default function CurriculumPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="relative w-full py-20 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <Image src="/placeholder.svg?height=600&width=1920" alt="Basketball training" fill className="object-cover" />
+          <Image src="/curr.jpg?height=600&width=1920" alt="Basketball training" fill className="object-cover object-top" />
         </div>
         <div className="container relative z-10 px-4 mx-auto text-center">
           <p className="mb-4 text-xl text-amber-300 font-medium">

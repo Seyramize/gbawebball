@@ -21,13 +21,13 @@ export default function BlogClientPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="relative w-full py-20 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
-            src="/placeholder.svg?height=600&width=1920"
+            src="/blogpic.jpg?height=600&width=1920"
             alt="Basketball game"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="100vw"
           />
         </div>

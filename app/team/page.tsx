@@ -7,13 +7,13 @@ export default function TeamPage() {
   return (
     <div className="flex flex-col">
       {/* Header */}
-      <section className="relative w-full py-20 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
-            src="/placeholder.svg?height=600&width=1920"
+            src="/images/gbawe-logo.png?height=600&width=1920"
             alt="Basketball team"
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="100vw"
           />
         </div>
@@ -30,9 +30,10 @@ export default function TeamPage() {
         <div className="container px-4 mx-auto">
           <Tabs defaultValue="leadership" className="w-full">
             <div className="flex justify-center mb-8">
-              <TabsList className="grid w-full max-w-md grid-cols-3">
+              <TabsList className="grid w-full max-w-md grid-cols-4">
                 <TabsTrigger value="leadership">Leadership</TabsTrigger>
                 <TabsTrigger value="coaches">Coaches</TabsTrigger>
+                <TabsTrigger value="technical">Techies</TabsTrigger>
                 <TabsTrigger value="vipers">Vipers Team</TabsTrigger>
               </TabsList>
             </div>
@@ -62,7 +63,7 @@ export default function TeamPage() {
                   {
                     name: "Godwin Nii Okai Cofie",
                     role: "Co-Founder & Technical Director",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/gidi.jpg?height=400&width=400",
                     bio: "Basketball strategist and youth development specialist. Thomas brings tactical expertise and a deep understanding of player development pathways.",
                     achievements: [
                       "FIBA Africa Coaching License",
@@ -104,7 +105,7 @@ export default function TeamPage() {
                   {
                     name: "Akosua Mensah",
                     role: "Operations Manager",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/akos.jpg?height=400&width=400",
                     bio: "Ensures the smooth running of all academy programs and facilities.",
                   },
                 ].map((person, i) => (
@@ -142,28 +143,60 @@ export default function TeamPage() {
                   {
                     name: "Coach Daniel Adjei",
                     role: "Head Coach, Vipers",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/hc.jpg?height=400&width=400",
                     bio: "Former professional player with 15 years of coaching experience. Specializes in defensive systems and team culture building.",
                     specialties: ["Defense", "Team Strategy", "Leadership"],
                   },
                   {
                     name: "Coach Mercy Tagoe",
                     role: "Head Coach, Hunter Elite",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/ac.jpg?height=400&width=400",
                     bio: "National team veteran who brings international experience and tactical knowledge to our elite youth program.",
                     specialties: ["Player Development", "Game IQ", "Competitive Preparation"],
                   },
+                ].map((coach, i) => (
+                  <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
+                    <div className="relative h-64">
+                      <Image
+                        src={coach.image || "/placeholder.svg"}
+                        alt={coach.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-amber-900">{coach.name}</h3>
+                      <p className="text-amber-700 mb-3">{coach.role}</p>
+                      <p className="text-gray-600 mb-4">{coach.bio}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {coach.specialties.map((specialty, j) => (
+                          <Badge key={j} variant="secondary" className="bg-amber-100 text-amber-800">
+                            {specialty}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </TabsContent>
+
+            {/* Technical Staff */}
+            <TabsContent value="technical" className="space-y-8">
+              <div className="max-w-3xl mx-auto text-center mb-12">
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Technical Staff</h2>
+                <p className="mt-4 text-lg text-gray-600">
+                  Our experienced technical staff blend technical expertise with mentorship to develop complete athletes.
+                </p>
+              </div>
+
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                {[
                   {
-                    name: "Coach Emmanuel Quaye",
-                    role: "Head Coach, Hunter Apprentices",
-                    image: "/placeholder.svg?height=400&width=400",
-                    bio: "Youth development specialist focused on building strong fundamentals and basketball habits.",
-                    specialties: ["Fundamentals", "Skill Development", "Team Concepts"],
-                  },
-                  {
-                    name: "Coach Ama Nkrumah",
+                    name: "Kwame Kyei",
                     role: "Head Coach, Hunter Cubs",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/nf.jpg?height=400&width=400",
                     bio: "Early childhood educator and basketball enthusiast who makes learning the game fun and engaging.",
                     specialties: ["Fun Learning", "Motor Skills", "Basketball Introduction"],
                   },
@@ -242,59 +275,83 @@ export default function TeamPage() {
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                 {[
                   {
-                    name: "Kwesi Amankwah",
+                    name: "Emmanuel Basepoaw",
                     number: 5,
                     position: "Point Guard",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/amb.jpg?height=400&width=400",
                     height: "6'1\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "David Acheampong",
+                    name: "William Agyapong Ntiamoah",
                     number: 23,
                     position: "Shooting Guard",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/wil.jpg?height=400&width=400",
                     height: "6'3\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Michael Osei",
+                    name: "Jeffery Nana Sey",
                     number: 8,
                     position: "Small Forward",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/sey.jpg?height=400&width=400",
                     height: "6'5\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Samuel Boateng",
+                    name: "Clement Nana Osei Dodoo",
                     number: 34,
                     position: "Power Forward",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/cle.jpg?height=400&width=400",
                     height: "6'7\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Joseph Mensah",
+                    name: "Samuel Akakpo",
                     number: 42,
                     position: "Center",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/osko.jpg?height=400&width=400",
                     height: "6'9\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Eric Danso",
+                    name: "Wisdom Emmanuel Oyedeji",
                     number: 11,
                     position: "Point Guard",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/ss1.jpg?height=400&width=400",
                     height: "6'0\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Benjamin Owusu",
+                    name: "⁠⁠Wilfred Oko Sackey",
                     number: 15,
                     position: "Shooting Guard",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/oko.jpg?height=400&width=400",
                     height: "6'4\"",
+                    academy: "Hunter Elite Graduate",
+                  },
+                  {
+                    name: "Francis Appiah",
+                    number: 45,
+                    position: "Center",
+                    image: "/1.jpg?height=400&width=400",
+                    height: "6'10\"",
+                    academy: "Hunter Elite Graduate",
+                  },
+                  {
+                    name: "Richard Ofori",
+                    number: 3,
+                    position: "Point Guard",
+                    image: "/2.jpg?height=400&width=400",
+                    height: "5'11\"",
+                    academy: "Hunter Elite Graduate",
+                  },
+                  {
+                    name: "Emmanuel Addo",
+                    number: 24,
+                    position: "Shooting Guard",
+                    image: "/3.jpg?height=400&width=400",
+                    height: "6'2\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
@@ -306,7 +363,7 @@ export default function TeamPage() {
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Daniel Agyei",
+                    name: "Sa-ad Suleiman",
                     number: 32,
                     position: "Power Forward",
                     image: "/placeholder.svg?height=400&width=400",
@@ -314,27 +371,35 @@ export default function TeamPage() {
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Francis Appiah",
-                    number: 45,
-                    position: "Center",
+                    name: "Andy Mawuli",
+                    number: 21,
+                    position: "Small Forward",
                     image: "/placeholder.svg?height=400&width=400",
-                    height: "6'10\"",
+                    height: "6'6\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Richard Ofori",
-                    number: 3,
-                    position: "Point Guard",
+                    name: "Joseph Appiah Adjei",
+                    number: 32,
+                    position: "Power Forward",
                     image: "/placeholder.svg?height=400&width=400",
-                    height: "5'11\"",
+                    height: "6'8\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Emmanuel Addo",
-                    number: 24,
-                    position: "Shooting Guard",
+                    name: "⁠⁠Franklin Yartey",
+                    number: 10,
+                    position: "Small Forward",
                     image: "/placeholder.svg?height=400&width=400",
-                    height: "6'2\"",
+                    height: "6'6\"",
+                    academy: "Hunter Elite Graduate",
+                  },
+                  {
+                    name: "⁠⁠Seyram Yao Alifo",
+                    number: 9,
+                    position: "Power Forward",
+                    image: "/placeholder.svg?height=400&width=400",
+                    height: "6'8\"",
                     academy: "Hunter Elite Graduate",
                   },
                 ].map((player, i) => (
