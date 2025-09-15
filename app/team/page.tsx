@@ -53,7 +53,7 @@ export default function TeamPage() {
                     name: "Thomas Nii Adu Cofie",
                     role: "Founder & Director",
                     image: "/tommy.jpg?height=400&width=400",
-                    bio: "Former national team player with a passion for developing young talent. Godwin established the academy with a vision to blend basketball excellence with cultural values.",
+                    bio: "Former national team player with a passion for developing young talent. Thomas established the academy with a vision to blend basketball excellence with cultural values.",
                     achievements: [
                       "Ghana National Team (2005-2010)",
                       "Coach of the Year (2018)",
@@ -64,11 +64,21 @@ export default function TeamPage() {
                     name: "Godwin Nii Okai Cofie",
                     role: "Co-Founder & Technical Director",
                     image: "/gidi.jpg?height=400&width=400",
-                    bio: "Basketball strategist and youth development specialist. Thomas brings tactical expertise and a deep understanding of player development pathways.",
+                    bio: "Basketball strategist and youth development specialist. Godwin brings tactical expertise and a deep understanding of player development pathways.",
                     achievements: [
                       "FIBA Africa Coaching License",
                       "Ghana Basketball Association Board Member",
                       "Youth Coach of the Year (2019)",
+                    ],
+                  },
+                  {
+                    name: "Berlinda Anum Tettey Tackie",
+                    role: "Head of Operations",
+                    image: "/akos.jpg?height=400&width=400",
+                    bio: "Basketball strategist and youth development specialist. Berlinda brings tactical expertise and a deep understanding of player development pathways.",
+                    achievements: [
+                      "Head of Operations",
+                      "Operations Manager",
                     ],
                   },
                 ].map((person, i) => (
@@ -100,10 +110,10 @@ export default function TeamPage() {
                 ))}
               </div>
 
-              <div className="grid gap-8 md:grid-cols-3">
+              {/* <div className="grid gap-8 md:grid-cols-3">
                 {[
                   {
-                    name: "Akosua Mensah",
+                    name: "Berlinda Anum Tettey Tackie",
                     role: "Operations Manager",
                     image: "/akos.jpg?height=400&width=400",
                     bio: "Ensures the smooth running of all academy programs and facilities.",
@@ -126,7 +136,7 @@ export default function TeamPage() {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </TabsContent>
 
             {/* Coaching Staff */}
@@ -141,16 +151,23 @@ export default function TeamPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {[
                   {
-                    name: "Coach Daniel Adjei",
-                    role: "Head Coach, Vipers",
+                    name: "David Nuertey Tetteh",
+                    role: "Head Boys Coach",
                     image: "/hc.jpg?height=400&width=400",
                     bio: "Former professional player with 15 years of coaching experience. Specializes in defensive systems and team culture building.",
                     specialties: ["Defense", "Team Strategy", "Leadership"],
                   },
                   {
-                    name: "Coach Mercy Tagoe",
-                    role: "Head Coach, Hunter Elite",
+                    name: "Kenneth Akpah",
+                    role: "Head Girls Coach",
                     image: "/ac.jpg?height=400&width=400",
+                    bio: "National team veteran who brings international experience and tactical knowledge to our elite youth program.",
+                    specialties: ["Player Development", "Game IQ", "Competitive Preparation"],
+                  },
+                  {
+                    name: "Nelly Nana Akosua Antwiwaa Antwi",
+                    role: "Assistant Girl's Coach",
+                    image: "/nf.jpg?height=400&width=400",
                     bio: "National team veteran who brings international experience and tactical knowledge to our elite youth program.",
                     specialties: ["Player Development", "Game IQ", "Competitive Preparation"],
                   },
@@ -196,7 +213,7 @@ export default function TeamPage() {
                   {
                     name: "Kwame Kyei",
                     role: "Head Coach, Hunter Cubs",
-                    image: "/nf.jpg?height=400&width=400",
+                    image: "/placeholder.svg?height=400&width=400",
                     bio: "Early childhood educator and basketball enthusiast who makes learning the game fun and engaging.",
                     specialties: ["Fun Learning", "Motor Skills", "Basketball Introduction"],
                   },
@@ -277,7 +294,7 @@ export default function TeamPage() {
                   {
                     name: "Emmanuel Basepoaw",
                     number: 5,
-                    position: "Point Guard",
+                    position: "Combo Guard",
                     image: "/amb.jpg?height=400&width=400",
                     height: "6'1\"",
                     academy: "Hunter Elite Graduate",
@@ -285,7 +302,7 @@ export default function TeamPage() {
                   {
                     name: "William Agyapong Ntiamoah",
                     number: 23,
-                    position: "Shooting Guard",
+                    position: "Forward/Center",
                     image: "/wil.jpg?height=400&width=400",
                     height: "6'3\"",
                     academy: "Hunter Elite Graduate",
@@ -293,7 +310,7 @@ export default function TeamPage() {
                   {
                     name: "Jeffery Nana Sey",
                     number: 8,
-                    position: "Small Forward",
+                    position: "Combo Guard",
                     image: "/sey.jpg?height=400&width=400",
                     height: "6'5\"",
                     academy: "Hunter Elite Graduate",
@@ -301,7 +318,7 @@ export default function TeamPage() {
                   {
                     name: "Clement Nana Osei Dodoo",
                     number: 34,
-                    position: "Power Forward",
+                    position: "Combo Guard",
                     image: "/cle.jpg?height=400&width=400",
                     height: "6'7\"",
                     academy: "Hunter Elite Graduate",
@@ -309,7 +326,7 @@ export default function TeamPage() {
                   {
                     name: "Samuel Akakpo",
                     number: 42,
-                    position: "Center",
+                    position: "Small Forward",
                     image: "/osko.jpg?height=400&width=400",
                     height: "6'9\"",
                     academy: "Hunter Elite Graduate",
@@ -317,7 +334,7 @@ export default function TeamPage() {
                   {
                     name: "Wisdom Emmanuel Oyedeji",
                     number: 11,
-                    position: "Point Guard",
+                    position: "Forward",
                     image: "/ss1.jpg?height=400&width=400",
                     height: "6'0\"",
                     academy: "Hunter Elite Graduate",
@@ -325,13 +342,13 @@ export default function TeamPage() {
                   {
                     name: "⁠⁠Wilfred Oko Sackey",
                     number: 15,
-                    position: "Shooting Guard",
+                    position: "Guard",
                     image: "/oko.jpg?height=400&width=400",
                     height: "6'4\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Francis Appiah",
+                    name: "Derek Ameti",
                     number: 45,
                     position: "Center",
                     image: "/1.jpg?height=400&width=400",
@@ -339,25 +356,25 @@ export default function TeamPage() {
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Richard Ofori",
+                    name: "Daniel Mensah Davordzie",
                     number: 3,
-                    position: "Point Guard",
+                    position: "Forward",
                     image: "/2.jpg?height=400&width=400",
                     height: "5'11\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Emmanuel Addo",
+                    name: "Matthew Tettey Osabutey",
                     number: 24,
-                    position: "Shooting Guard",
+                    position: "Center",
                     image: "/3.jpg?height=400&width=400",
                     height: "6'2\"",
                     academy: "Hunter Elite Graduate",
                   },
                   {
-                    name: "Isaac Asante",
+                    name: "Tabi Anthony Yaw Ariba",
                     number: 21,
-                    position: "Small Forward",
+                    position: "Combo Guard",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'6\"",
                     academy: "Hunter Elite Graduate",
@@ -365,7 +382,7 @@ export default function TeamPage() {
                   {
                     name: "Sa-ad Suleiman",
                     number: 32,
-                    position: "Power Forward",
+                    position: "Forward",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'8\"",
                     academy: "Hunter Elite Graduate",
@@ -373,7 +390,7 @@ export default function TeamPage() {
                   {
                     name: "Andy Mawuli",
                     number: 21,
-                    position: "Small Forward",
+                    position: "Forward/Center",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'6\"",
                     academy: "Hunter Elite Graduate",
@@ -381,7 +398,7 @@ export default function TeamPage() {
                   {
                     name: "Joseph Appiah Adjei",
                     number: 32,
-                    position: "Power Forward",
+                    position: "Guard",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'8\"",
                     academy: "Hunter Elite Graduate",
@@ -389,7 +406,7 @@ export default function TeamPage() {
                   {
                     name: "⁠⁠Franklin Yartey",
                     number: 10,
-                    position: "Small Forward",
+                    position: "Guard",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'6\"",
                     academy: "Hunter Elite Graduate",
@@ -397,7 +414,7 @@ export default function TeamPage() {
                   {
                     name: "⁠⁠Seyram Yao Alifo",
                     number: 9,
-                    position: "Power Forward",
+                    position: "Forward",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'8\"",
                     academy: "Hunter Elite Graduate",

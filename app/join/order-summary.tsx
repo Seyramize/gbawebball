@@ -15,11 +15,12 @@ export function OrderSummary({ formData, onSubmit }: Props) {
     let total = 50 // Registration fee
 
     // Monthly plan
-    if (formData.monthlyPlan === "basic") total += 80
-    else if (formData.monthlyPlan === "hunter-plus") total += 200
-    else if (formData.monthlyPlan === "quarter") total += 228
-    else if (formData.monthlyPlan === "elite") total += 150
-
+    if (formData.monthlyPlan === "basic") total += 300
+    else if (formData.monthlyPlan === "hunter-plus") total += 855
+    else if (formData.monthlyPlan === "halfyear") total += 1674
+    else if (formData.monthlyPlan === "elite") total += 450
+    else if (formData.monthlyPlan === "year") total += 3240
+    else if (formData.monthlyPlan === "nonmember") total += 100
     // Hunter's Pack
     if (formData.huntersPackSelected) {
       total += 120
@@ -31,20 +32,24 @@ export function OrderSummary({ formData, onSubmit }: Props) {
 
   const getMonthlyPlanName = () => {
     const plans: Record<string, string> = {
-      basic: "Basic Hunter",
-      "hunter-plus": "Hunter+ Pack",
-      quarter: "Quarter Hunter",
+      basic: "Hunter Membership",
+      "hunter-plus": "Quarter Hunter Pack",
+      halfyear: "Half-Year Hunter",
+      year: "Year Hunter",
       elite: "Elite Add-On",
+      nonmember: "Non-Member access",
     }
     return plans[formData.monthlyPlan] || ""
   }
 
   const getMonthlyPlanPrice = () => {
     const prices: Record<string, number> = {
-      basic: 80,
-      "hunter-plus": 200,
-      quarter: 228,
-      elite: 150,
+      basic: 300,
+      "hunter-plus": 855,
+      halfyear: 1674,
+      year: 3240,
+      elite: 450,
+      nonmember: 100,
     }
     return prices[formData.monthlyPlan] || 0
   }
