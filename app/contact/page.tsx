@@ -40,7 +40,7 @@ export default function ContactPage() {
               <CardContent className="space-y-4">
                 <div>
                   <p className="font-medium text-gray-900">Gbawe Basketball Academy</p>
-                  <p className="text-gray-600">Near Gbawe Cluster of Schools</p>
+                  <p className="text-gray-600">Inside Gbawe Cluster of Schools</p>
                   <p className="text-gray-600">Gbawe, Ghana</p>
                 </div>
                 <div className="bg-amber-50 p-4 rounded-lg">
@@ -70,7 +70,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-amber-600 mt-1" />
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600">gbaweacademy@huntmail.com</p>
+                    <p className="text-gray-600">info@gbaweacademy.com</p>
                   </div>
                 </div>
               </CardContent>

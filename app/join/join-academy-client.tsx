@@ -142,7 +142,7 @@ export function JoinAcademyClient() {
                     <li>• FREE first month of training</li>
                     <li>• Welcome orientation session</li>
                   </ul>
-                  <div className="mt-3 text-lg font-bold text-amber-900">Total Package: GHS 200</div>
+                  <div className="mt-3 text-lg font-bold text-amber-900">Total Package: GHS 700</div>
                 </div>
               </CardHeader>
             </Card>

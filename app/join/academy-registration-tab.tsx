@@ -178,11 +178,6 @@ export function AcademyRegistrationTab({ formData, updateFormData }: Props) {
 
       {/* Submit Button */}
       <div className="flex justify-end gap-4">
-        <Button
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg"
-            >
-              <Link href="https://gbawebballfoundation.vercel.app/" target="_blank" rel="noopener noreferrer"> Support The Foundation</Link>
-            </Button>
         <Button onClick={handleSubmit} className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg">
           Complete Registration
         </Button>

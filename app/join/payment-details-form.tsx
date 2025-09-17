@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Link from "next/link"
 
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -147,7 +148,11 @@ export function PaymentDetailsForm({ formData, updateFormData }: PaymentFormProp
           onCheckedChange={(checked) => updateFormData({ paymentTermsAgreed: checked as boolean })}
         />
         <Label htmlFor="paymentTermsAgreed" className="text-sm leading-relaxed">
-          I agree to the Academy's terms: Hunters keep their spot by settling fees by the 5th each month. No refunds. If the hunt gets tough, apply for support *
+          I agree to the Academy's terms: Hunters keep their spot by settling fees by the 5th each month. No refunds. If the hunt gets tough,{" "}
+          <Link href="https://gbawebballfoundation.vercel.app/" className="text-purple-600 hover:text-purple-800 underline">
+            apply for support
+          </Link>{" "}
+          *
         </Label>
       </div>
     </div>
