@@ -62,8 +62,8 @@ export default function Footer() {
               Gbawe, Ghana
               <br />
               <br />
-              <a href="mailto:gbaweacademy@huntmail.com" className="hover:text-white transition-colors">
-                gbaweacademy@huntmail.com
+              <a href="mailto:info@gbawebasketball.com" className="hover:text-white transition-colors">
+                info@gbawebasketball.com
               </a>
             </address>
           </div>

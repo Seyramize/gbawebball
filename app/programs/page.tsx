@@ -8,7 +8,7 @@ export default function ProgramsPage() {
       {/* Header */}
       <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <Image src="/placeholder.svg?height=600&width=1920" alt="Basketball court" fill className="object-cover" />
+          <Image src="/13.jpg?height=600&width=1920" alt="Basketball court" fill className="object-cover object-top" />
         </div>
         <div className="container relative z-10 px-4 mx-auto text-center">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">

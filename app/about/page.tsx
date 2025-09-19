@@ -8,7 +8,7 @@ export default function AboutPage() {
       {/* Header */}
       <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <Image src="/placeholder.svg?height=600&width=1920" alt="Basketball court" fill className="object-cover" />
+          <Image src="/12.jpg?height=600&width=1920" alt="Basketball court" fill className="object-cover object-top" />
         </div>
         <div className="container relative z-10 px-4 mx-auto text-center">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
@@ -109,7 +109,7 @@ export default function AboutPage() {
                 {
                   name: "Godwin Nii Okai Cofie",
                   role: "Co-Founder",
-                  image: "/placeholder.svg?height=400&width=400",
+                  image: "/gidi.jpg?height=400&width=400",
                 },
               ].map((founder, i) => (
                 <div key={i} className="text-center">

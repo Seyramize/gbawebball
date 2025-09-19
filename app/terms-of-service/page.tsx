@@ -86,8 +86,8 @@ export default function TermsOfServicePage() {
           <h2 className="text-2xl font-semibold mt-8 mb-4">9. Contact Information</h2>
           <p>
             If you have any questions about these Terms of Service, please contact us at:{" "}
-            <a href="mailto:gbaweacademy@huntmail.com" className="text-amber-600 hover:text-amber-700">
-              gbaweacademy@huntmail.com
+            <a href="mailto:info@gbawebasketball.com" className="text-amber-600 hover:text-amber-700">
+              info@gbawebasketball.com
             </a>
           </p>
         </div>

@@ -82,8 +82,8 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-2xl font-semibold mt-8 mb-4">7. Contact Information</h2>
           <p>
             To ask questions or comment about this privacy policy and our privacy practices, contact us at:{" "}
-            <a href="mailto:gbaweacademy@huntmail.com" className="text-amber-600 hover:text-amber-700">
-              gbaweacademy@huntmail.com
+            <a href="mailto:info@gbawebasketball.com" className="text-amber-600 hover:text-amber-700">
+              info@gbawebasketball.com
             </a>
           </p>
         </div>
