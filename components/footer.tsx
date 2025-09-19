@@ -126,7 +126,7 @@ export default function Footer() {
 
         <div className="mt-4 text-center text-gray-500 text-sm">
           <span className="text-gray-400 font-medium">Developed by </span> 
-          <a href="https://saysey.netlify.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors font-medium">Sarxt Tech</a>
+          <a href="https://saysey.netlify.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors font-medium">SeyTech</a>
         </div>
       </div>
     </footer>
