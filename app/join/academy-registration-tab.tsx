@@ -38,7 +38,7 @@ export function AcademyRegistrationTab({ formData, updateFormData }: Props) {
 
   const handleSubmit = () => {
     // Validate required fields
-    const requiredFields = ["playerName", "age", "guardianContact", "trainingCategory", "homeLocation", "paymentMethod", "playerPhoto"]
+    const requiredFields = ["playerName", "age", "email", "guardianContact", "trainingCategory", "homeLocation", "paymentMethod", "playerPhoto"]
 
     const missingFields = requiredFields.filter((field) => !formData[field as keyof RegistrationFormData])
 
@@ -91,6 +91,17 @@ export function AcademyRegistrationTab({ formData, updateFormData }: Props) {
                   type="number"
                   min="6"
                   max="99"
+                />
+              </div>
+
+              <div>
+                <Label htmlFor="email">Email Address *</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={(e) => updateFormData({ email: e.target.value })}
+                  placeholder="your.email@example.com"
                 />
               </div>
 

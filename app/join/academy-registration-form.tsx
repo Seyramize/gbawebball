@@ -55,6 +55,20 @@ export function AcademyRegistrationForm({ formData, updateFormData }: Props) {
         </div>
       </div>
 
+      
+
+      <div>
+        <Label htmlFor="email">Email Address *</Label>
+        <Input
+          id="email"
+          type="email"
+          value={formData.email}
+          onChange={(e) => updateFormData({ email: e.target.value })}
+          placeholder="your.email@example.com"
+          required
+        />
+      </div>
+
       <div>
         <Label htmlFor="guardianContact">Guardian Contact Number *</Label>
         <Input

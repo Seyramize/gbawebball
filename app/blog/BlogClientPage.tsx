@@ -263,19 +263,19 @@ export default function BlogClientPage() {
                       id: 1,
                       title: "Defensive Principles: The Hunter's Approach",
                       coach: "Coach David Nuertey Tetteh",
-                      date: "April 5, 2025",
+                      date: "September 20, 2025",
                       description:
                         "Breaking down our defensive philosophy and key principles that make our defense elite.",
-                      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
                       thumbnailUrl: "/hc.jpg?height=600&width=800",
                     },
                     {
                       id: 2,
                       title: "Building Basketball IQ: Reading the Game",
                       coach: "Coach Kenneth Akpah",
-                      date: "March 22, 2025",
+                      date: "September 20, 2025",
                       description: "How we develop decision-making skills and game intelligence in our players.",
-                      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
                       thumbnailUrl: "/ac.jpg?height=600&width=800",
                     },
                   ].map((post, i) => (

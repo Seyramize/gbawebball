@@ -155,7 +155,7 @@ export default function TeamPage() {
                     name: "David Nuertey Tetteh",
                     role: "Head Boys Coach",
                     image: "/hc.jpg?height=400&width=400",
-                    bio: "Coach David Nuertey Tetteh is a seasoned basketball coach with nearly a decade of experience in shaping young athletes and building competitive programs. At St. John’s Grammar School, he guided teams to remarkable achievements, including winning the Greater Accra Girls Basketball Championship (2024&2025), the HoopRave National SHS 3x3 Tournament (2025), and securing consistent top finishes in the Greater Accra Super Zonals. As the new Head Boys Coach of Gbawe Basketball Academy, Coach David brings leadership, technical expertise, and a championship mindset. His vision is to transform the Academy into a recognized hub for basketball excellence—developing disciplined athletes, nurturing future stars, and raising talents who can compete at the highest levels both locally and internationally.",
+                    bio: "Coach David is a seasoned basketball coach with nearly a decade of experience developing young athletes and winning championships. As Head Boys Coach of Gbawe Basketball Academy, he brings leadership, technical expertise, and a championship mindset to building the next generation of talent.",
                     specialties: ["Two-time Greater Accra Champions", "National U16 FIBA 3x3 Champions", "Three-time Zonal Champions"],
                   },
                   {

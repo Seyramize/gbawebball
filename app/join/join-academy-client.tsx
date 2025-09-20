@@ -13,6 +13,7 @@ export interface RegistrationFormData {
   // Academy Registration
   playerName: string
   age: string
+  email: string
   guardianContact: string
   trainingCategory: string
   playerPhoto: File | null
@@ -48,6 +49,7 @@ export function JoinAcademyClient() {
   const [registrationData, setRegistrationData] = useState<RegistrationFormData>({
     playerName: "",
     age: "",
+    email: "",
     guardianContact: "",
     trainingCategory: "",
     playerPhoto: null,
