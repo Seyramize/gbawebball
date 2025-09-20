@@ -230,10 +230,18 @@ export default function BlogClientPage() {
                   </p>
                   <MediaGallery
                     images={[
-                      { src: "/placeholder.svg?height=600&width=800", alt: "Morning workout" },
-                      { src: "/placeholder.svg?height=600&width=800", alt: "Skill development" },
-                      { src: "/placeholder.svg?height=600&width=800", alt: "Team scrimmage" },
-                      { src: "/placeholder.svg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/t.jpg?height=600&width=800", alt: "Morning workout" },
+                      { src: "/acb.jpg?height=600&width=800", alt: "Skill development" },
+                      { src: "/agc.jpg?height=600&width=800", alt: "Team scrimmage" },
+                      { src: "/y.jpg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/e.jpg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/13.jpg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/q.jpg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/r.jpg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/12.jpg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/curr.jpg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/sit.jpg?height=600&width=800", alt: "Recovery session" },
+                      { src: "/blogpic.jpg?height=600&width=800", alt: "Recovery session" },
                     ]}
                   />
                 </div>

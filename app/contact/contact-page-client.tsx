@@ -135,7 +135,7 @@ export function ContactPageClient() {
               <CardContent>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/gbawe_basketballacademy/"
                     className="p-2 text-amber-900 hover:text-amber-600 transition-colors rounded-lg hover:bg-amber-50"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -145,7 +145,7 @@ export function ContactPageClient() {
                   </a>
 
                   <a
-                    href="#"
+                    href="https://www.youtube.com/@GbaweBasketballAcademy"
                     className="p-2 text-amber-900 hover:text-amber-600 transition-colors rounded-lg hover:bg-amber-50"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -155,7 +155,7 @@ export function ContactPageClient() {
                   </a>
 
                   <a
-                    href="#"
+                    href="https://www.facebook.com/share/17DsvuX15q/?mibextid=LQQJ4d"
                     className="p-2 text-amber-900 hover:text-amber-600 transition-colors rounded-lg hover:bg-amber-50"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -165,7 +165,7 @@ export function ContactPageClient() {
                   </a>
 
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/@gbawebasketballacademy?is_from_webapp=1&sender_device=pc"
                     className="p-2 text-amber-900 hover:text-amber-600 transition-colors rounded-lg hover:bg-amber-50"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -174,7 +174,7 @@ export function ContactPageClient() {
                     <span className="sr-only">TikTok</span>
                   </a>
 
-                  <a
+                  {/* <a
                     href="#"
                     className="p-2 text-amber-900 hover:text-amber-600 transition-colors rounded-lg hover:bg-amber-50"
                   >
@@ -182,7 +182,7 @@ export function ContactPageClient() {
                       <path d="M12.206 1.5c1.284.003 4.392.08 5.986 3.574.52 1.136.425 3.039.284 4.585l-.035.391c-.025.287-.046.543-.059.787.087.044.342.164.815.164.3 0 .662-.062 1.048-.184.193-.061.364-.092.513-.092.215 0 .39.046.525.137.22.145.356.37.356.59 0 .398-.36.798-1.444 1.118-.14.041-.302.09-.47.142-.51.157-.76.295-.76.462 0 .073.035.18.103.27.292.39 1.263 1.013 2.44 1.226.12.022.22.133.22.255 0 .405-.44.621-.532.703-.33.3-.772.453-1.957.453-.257 0-.514-.012-.763-.024l-.136-.007c-.157-.007-.31-.015-.456-.015-.319 0-.573.035-.784.107-.42.142-.794.283-1.178.43-1.004.385-2.147.821-3.834.821-.063 0-.124-.001-.185-.004-.057.003-.115.004-.174.004-1.687 0-2.83-.436-3.834-.821-.384-.147-.758-.288-1.179-.43-.207-.071-.459-.105-.775-.105-.147 0-.3.008-.458.015l-.135.007c-.25.012-.506.024-.764.024-1.184 0-1.626-.152-1.956-.453-.091-.082-.532-.298-.532-.703 0-.122.1-.233.22-.255 1.178-.213 2.148-.835 2.44-1.226.068-.09.103-.197.103-.27 0-.167-.25-.305-.76-.462-.168-.052-.33-.101-.47-.142-1.084-.32-1.444-.72-1.444-1.118 0-.22.136-.445.356-.59.135-.09.31-.137.525-.137.15 0 .32.03.513.092.386.122.748.184 1.048.184.473 0 .728-.12.815-.164-.013-.244-.034-.5-.06-.787l-.034-.391c-.141-1.546-.236-3.449.284-4.585 1.594-3.494 4.702-3.571 5.986-3.574.033 0 .066 0 .099.001.033-.001.066-.001.099-.001z" />
                     </svg>
                     <span className="sr-only">Snapchat</span>
-                  </a>
+                  </a> */}
                 </div>
               </CardContent>
             </Card>

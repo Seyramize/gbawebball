@@ -197,21 +197,21 @@ export default function ContactPage() {
               <CardContent>
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/gbawe_basketballacademy/"
                     className="flex items-center gap-2 p-3 text-amber-900 hover:text-amber-600 transition-colors rounded-lg hover:bg-amber-50 border border-amber-200"
                   >
                     <Instagram className="h-5 w-5" />
                     <span className="text-sm font-medium">Instagram</span>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.youtube.com/@GbaweBasketballAcademy"
                     className="flex items-center gap-2 p-3 text-amber-900 hover:text-amber-600 transition-colors rounded-lg hover:bg-amber-50 border border-amber-200"
                   >
                     <Youtube className="h-5 w-5" />
                     <span className="text-sm font-medium">YouTube</span>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/share/17DsvuX15q/?mibextid=LQQJ4d"
                     className="flex items-center gap-2 p-3 text-amber-900 hover:text-amber-600 transition-colors rounded-lg hover:bg-amber-50 border border-amber-200"
                   >
                     <Facebook className="h-5 w-5" />

@@ -71,19 +71,19 @@ export default function Footer() {
           <div>
           <h3 className="mb-4 text-lg font-bold text-amber-400">Follow Us</h3>
           <div className="flex flex-wrap gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/gbawe_basketballacademy/" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
                 <span className="sr-only">Instagram</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
+              <a href="https://www.youtube.com/@GbaweBasketballAcademy" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
                 <Youtube className="w-5 h-5" />
                 <span className="sr-only">YouTube</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/17DsvuX15q/?mibextid=LQQJ4d" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="TikTok">
+              <a href="https://www.tiktok.com/@gbawebasketballacademy?is_from_webapp=1&sender_device=pc" className="text-gray-400 hover:text-white transition-colors" aria-label="TikTok">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
                 </svg>
@@ -95,12 +95,12 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">WhatsApp</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Snapchat">
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Snapchat">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.206 1.5c1.284.003 4.392.08 5.986 3.574.52 1.136.425 3.039.284 4.585l-.035.391c-.025.287-.046.543-.059.787.087.044.342.164.815.164.3 0 .662-.062 1.048-.184.193-.061.364-.092.513-.092.215 0 .39.046.525.137.22.145.356.37.356.59 0 .398-.36.798-1.444 1.118-.14.041-.302.09-.47.142-.51.157-.76.295-.76.462 0 .073.035.18.103.27.292.39 1.263 1.013 2.44 1.226.12.022.22.133.22.255 0 .405-.44.621-.532.703-.33.3-.772.453-1.957.453-.257 0-.514-.012-.763-.024l-.136-.007c-.157-.007-.31-.015-.456-.015-.319 0-.573.035-.784.107-.42.142-.794.283-1.178.43-1.004.385-2.147.821-3.834.821-.063 0-.124-.001-.185-.004-.057.003-.115.004-.174.004-1.687 0-2.83-.436-3.834-.821-.384-.147-.758-.288-1.179-.43-.207-.071-.459-.105-.775-.105-.147 0-.3.008-.458.015l-.135.007c-.25.012-.506.024-.764.024-1.184 0-1.626-.152-1.956-.453-.091-.082-.532-.298-.532-.703 0-.122.1-.233.22-.255 1.178-.213 2.148-.835 2.44-1.226.068-.09.103-.197.103-.27 0-.167-.25-.305-.76-.462-.168-.052-.33-.101-.47-.142-1.084-.32-1.444-.72-1.444-1.118 0-.22.136-.445.356-.59.135-.09.31-.137.525-.137.15 0 .32.03.513.092.386.122.748.184 1.048.184.473 0 .728-.12.815-.164-.013-.244-.034-.5-.06-.787l-.034-.391c-.141-1.546-.236-3.449.284-4.585 1.594-3.494 4.702-3.571 5.986-3.574.033 0 .066 0 .099.001.033-.001.066-.001.099-.001zm.008 1.299c-.034 0-.066 0-.098.001-.033-.001-.065-.001-.099-.001-.937.002-3.569.048-4.805 2.75-.377.824-.298 2.495-.175 3.828l.036.393c.037.421.068.776.079 1.097.005.15-.035.29-.112.394-.08.108-.194.176-.32.19-.377.042-.783-.146-1.315-.305-.175-.055-.367-.115-.568-.115-.142 0-.273.03-.386.09-.06.03-.116.07-.165.122.069.035.156.07.27.113.186.07.374.128.556.183.35.107.713.218.941.368.334.219.519.519.838 0 .267-.108.545-.322.826-.41.538-1.194 1.068-2.315 1.356.207.232.738.343 1.268.343.216 0 .435-.01.648-.021l.136-.007c.17-.008.339-.016.503-.016.418 0 .778.053 1.073.157.407.138.764.272 1.131.412 1.063.407 2.062.792 3.658.792.049 0 .097-.001.145-.003.048.002.096.003.145.003 1.596 0 2.595-.385 3.658-.792.367-.14.724-.274 1.13-.412.296-.104.656-.157 1.074-.157.164 0 .333.008.503.016l.136.007c.213.011.432.021.648.021.53 0 1.06-.111 1.268-.343-1.121-.288-1.905-.818-2.315-1.356-.214-.281-.322-.559-.322-.826 0-.321.185-.619.519-.838.228-.15.59-.261.941-.368.182-.055.37-.113.556-.183.114-.043.201-.078.27-.113-.049-.052-.105-.092-.165-.122-.113-.06-.244-.09-.386-.09-.201 0-.393.06-.568.115-.532.159-.938.347-1.315.305-.126-.014-.24-.082-.32-.19-.077-.104-.117-.244-.112-.394.011-.321.042-.676.079-1.097l.036-.393c.123-1.333.202-3.004-.175-3.828-1.236-2.702-3.868-2.748-4.805-2.75z" />
                 </svg>
                 <span className="sr-only">Snapchat</span>
-              </a>
+              </a> */}
               <div>
                 <span className=" text-amber-400 font-bold text-xs md:text-sm  rounded-lg shadow-md w-fit">
                   The Gbawe Basketball Academy is powered by Hunters Sports Academy.

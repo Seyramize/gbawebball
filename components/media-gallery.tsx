@@ -63,7 +63,7 @@ export function MediaGallery({ images }: MediaGalleryProps) {
               src={image.src || "/placeholder.svg"}
               alt={image.alt}
               fill
-              className="object-cover transition-transform hover:scale-105"
+              className="object-contain transition-transform hover:scale-105"
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 33vw"
             />
           </div>

@@ -155,8 +155,8 @@ export default function TeamPage() {
                     name: "David Nuertey Tetteh",
                     role: "Head Boys Coach",
                     image: "/hc.jpg?height=400&width=400",
-                    bio: "Former professional player with 15 years of coaching experience. Specializes in defensive systems and team culture building.",
-                    specialties: ["Defense", "Team Strategy", "Leadership"],
+                    bio: "Coach David Nuertey Tetteh is a seasoned basketball coach with nearly a decade of experience in shaping young athletes and building competitive programs. At St. John’s Grammar School, he guided teams to remarkable achievements, including winning the Greater Accra Girls Basketball Championship (2024&2025), the HoopRave National SHS 3x3 Tournament (2025), and securing consistent top finishes in the Greater Accra Super Zonals. As the new Head Boys Coach of Gbawe Basketball Academy, Coach David brings leadership, technical expertise, and a championship mindset. His vision is to transform the Academy into a recognized hub for basketball excellence—developing disciplined athletes, nurturing future stars, and raising talents who can compete at the highest levels both locally and internationally.",
+                    specialties: ["Two-time Greater Accra Champions", "National U16 FIBA 3x3 Champions", "Three-time Zonal Champions"],
                   },
                   {
                     name: "Kenneth Akpah",
@@ -241,10 +241,10 @@ export default function TeamPage() {
                   },
                   {
                     name: "Seyram Yao Alifo",
-                    role: "Web Developer",
-                    image: "/placeholder.svg?height=400&width=400",
+                    role: "Full Stack Developer",
+                    image: "/saysey.jpg?height=400&width=400",
                     bio: "Seyram Yao Alifo is a passionate basketball enthusiast and tech entrepreneur who believes in the power of sports to build discipline, teamwork, and community. Beyond the court, he runs ventures in technology and renewable energy, creating innovative solutions that impact everyday life. Seyram combines his love for basketball with his drive for innovation, supporting initiatives that inspire young athletes to grow both on and off the court.",
-                    specialties: ["Web Development", "UI/UX Design", "SEO"],
+                    specialties: ["Web Development", "UI/UX Design", "SEO", "Full Stack Development"],
                   },
                 ].map((coach, i) => (
                   <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">

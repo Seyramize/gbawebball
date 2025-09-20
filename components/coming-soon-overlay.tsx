@@ -171,7 +171,7 @@ export function ComingSoonOverlay({
                 <p className="text-amber-200 mb-2 xs:mb-3 sm:mb-4 text-xs xs:text-sm">Follow us for updates:</p>
                 <div className="flex flex-wrap justify-center gap-2 xs:gap-3 sm:gap-4">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/gbawe_basketballacademy/"
                     className="text-amber-300 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
                   >
                     <span className="sr-only">Instagram</span>
@@ -180,7 +180,7 @@ export function ComingSoonOverlay({
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/share/17DsvuX15q/?mibextid=LQQJ4d"
                     className="text-amber-300 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
                   >
                     <span className="sr-only">Facebook</span>
@@ -189,7 +189,7 @@ export function ComingSoonOverlay({
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.youtube.com/@GbaweBasketballAcademy"
                     className="text-amber-300 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
                   >
                     <span className="sr-only">YouTube</span>
@@ -198,7 +198,7 @@ export function ComingSoonOverlay({
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/@gbawebasketballacademy?is_from_webapp=1&sender_device=pc"
                     className="text-amber-300 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
                   >
                     <span className="sr-only">TikTok</span>
