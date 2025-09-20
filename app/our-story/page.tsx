@@ -55,7 +55,7 @@ export default function OurStoryPage() {
               ) : (
                 <div className="w-full h-full bg-black flex items-center justify-center">
                   <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                    src="https://www.youtube.com/@GbaweBasketballAcademy?autoplay=1"
                     title="Gbawe Basketball Academy Story"
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -26,7 +26,7 @@ const highlights = [
       premier basketball programs in Ghana.
     `,
     thumbnailUrl: "/basketball-championship.png",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
     date: "March 15, 2023",
     views: 1245,
     category: "Championship",
@@ -53,7 +53,7 @@ const highlights = [
       the players and coaching staff.
     `,
     thumbnailUrl: "/placeholder.svg?key=8bch4",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
     date: "February 22, 2023",
     views: 987,
     category: "Tournament",

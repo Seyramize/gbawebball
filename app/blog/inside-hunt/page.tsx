@@ -133,7 +133,7 @@ export default function InsideHuntPage() {
           <div className="max-w-4xl mx-auto">
             <div className="aspect-video relative mb-8">
               <VideoPlayer
-                videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                videoUrl="https://www.youtube.com/@GbaweBasketballAcademy"
                 thumbnailUrl="/placeholder.svg?key=6dcta"
                 title="A Day in the Life: Hunter Elites Training"
               />

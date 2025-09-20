@@ -11,7 +11,7 @@ export default function HighlightsPage() {
       title: "Vipers vs. Titans Championship Game",
       description: "Watch the thrilling final minutes of our championship victory against the Titans.",
       thumbnailUrl: "/placeholder.svg?key=3awlg",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
       date: "March 15, 2023",
     },
     {
@@ -19,7 +19,7 @@ export default function HighlightsPage() {
       title: "Hunter Elites Tournament Highlights",
       description: "Our Hunter Elites squad showing their skills at the regional tournament.",
       thumbnailUrl: "/placeholder.svg?key=dvjjr",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
       date: "February 22, 2023",
     },
     {
@@ -27,7 +27,7 @@ export default function HighlightsPage() {
       title: "Master Hunters Showcase",
       description: "Highlights from our Master Hunters showcase event featuring top talent.",
       thumbnailUrl: "/placeholder.svg?key=rcqbp",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
       date: "January 10, 2023",
     },
     {
@@ -35,7 +35,7 @@ export default function HighlightsPage() {
       title: "Hunter Cubs Exhibition Game",
       description: "Our youngest athletes showing their developing skills in a fun exhibition game.",
       thumbnailUrl: "/placeholder.svg?key=e47i3",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
       date: "December 5, 2022",
     },
     {
@@ -43,7 +43,7 @@ export default function HighlightsPage() {
       title: "Vipers vs. Eagles - Game Winning Shot",
       description: "Watch the incredible buzzer-beater that secured our victory against the Eagles.",
       thumbnailUrl: "/placeholder.svg?key=cxggl",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
       date: "November 18, 2022",
     },
     {
@@ -51,7 +51,7 @@ export default function HighlightsPage() {
       title: "Hunter Apprentices Skills Challenge",
       description: "Highlights from our annual skills challenge featuring our Hunter Apprentices.",
       thumbnailUrl: "/placeholder.svg?height=480&width=640&query=basketball+skills+challenge",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
       date: "October 30, 2022",
     },
   ]

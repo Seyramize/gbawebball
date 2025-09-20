@@ -106,14 +106,14 @@ export default function BlogClientPage() {
                       title: "Vipers vs. Tema Sharks",
                       date: "March 28, 2025",
                       description: "Highlights from our dominant performance against the Sharks.",
-                      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
                       thumbnailUrl: "/placeholder.svg?height=600&width=800",
                     },
                     {
                       title: "Hunter Elites Tournament Finals",
                       date: "March 15, 2025",
                       description: "Our Elite squad takes home the trophy in a nail-biting finish.",
-                      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
                       thumbnailUrl: "/placeholder.svg?height=600&width=800",
                     },
                   ].map((highlight, i) => (
@@ -219,7 +219,7 @@ export default function BlogClientPage() {
                   <h3 className="text-xl font-bold text-gray-900 mb-6">Training Day: Behind the Scenes</h3>
                   <div className="aspect-video relative mb-6">
                     <VideoPlayer
-                      videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      videoUrl="https://www.youtube.com/@GbaweBasketballAcademy"
                       thumbnailUrl="/placeholder.svg?height=600&width=1200"
                       title="A Day in the Life: Hunter Elites Training"
                     />
@@ -324,7 +324,7 @@ export default function BlogClientPage() {
                     </div>
                     <div className="aspect-video relative">
                       <VideoPlayer
-                        videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        videoUrl="https://www.youtube.com/@GbaweBasketballAcademy"
                         thumbnailUrl="/placeholder.svg?height=400&width=600"
                         title="Defensive Shell Drill Demonstration"
                       />
