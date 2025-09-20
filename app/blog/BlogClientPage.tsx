@@ -9,12 +9,12 @@ import { MediaGallery } from "@/components/media-gallery"
 import { VideoPlayer } from "@/components/video-player"
 
 export default function BlogClientPage() {
-  // Sample featured content
-  const featuredHighlight = {
-    title: "Vipers vs. Accra Lions - Game Highlights",
-    description: "Watch the full highlights from our thrilling victory against the Accra Lions.",
-    date: "April 10, 2025",
-    videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy", // Replace with actual video URL
+  // Introductory video content
+  const introductoryVideo = {
+    title: "Welcome to Gbawe Basketball Academy",
+    description: "Discover what makes our academy special. Learn about our programs, coaching philosophy, and the journey of becoming a Hunter.",
+    date: "2025",
+    videoUrl: "/jungle.mp4", // Local video file
     thumbnailUrl: "/images/gbawe-logo.png?height=600&width=1200",
   }
 
@@ -52,29 +52,29 @@ export default function BlogClientPage() {
         </div>
       </section>
 
-      {/* Featured Content */}
+      {/* Introductory Video */}
       <section className="py-16 bg-gray-50">
         <div className="container px-4 mx-auto">
           <div className="max-w-5xl mx-auto">
-            <h2 className="mb-8 text-3xl font-bold tracking-tight text-center text-gray-900">Featured Highlight</h2>
+            <h2 className="mb-8 text-3xl font-bold tracking-tight text-center text-gray-900">Welcome to Our Academy</h2>
 
             <div className="bg-amber-50 rounded-lg overflow-hidden shadow-md">
               <div className="aspect-video relative">
                 <VideoPlayer
-                  videoUrl={featuredHighlight.videoUrl}
-                  thumbnailUrl={featuredHighlight.thumbnailUrl}
-                  title={featuredHighlight.title}
+                  videoUrl={introductoryVideo.videoUrl}
+                  thumbnailUrl={introductoryVideo.thumbnailUrl}
+                  title={introductoryVideo.title}
                 />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-center mb-3">
-                  <h3 className="text-2xl font-bold text-amber-900">{featuredHighlight.title}</h3>
-                  <span className="text-sm text-gray-500">{featuredHighlight.date}</span>
+                  <h3 className="text-2xl font-bold text-amber-900">{introductoryVideo.title}</h3>
+                  <span className="text-sm text-gray-500">{introductoryVideo.date}</span>
                 </div>
-                <p className="text-gray-700 mb-4">{featuredHighlight.description}</p>
-                <div className="flex justify-end">
-                  <Button className="bg-amber-500 hover:bg-amber-600 text-amber-950">Watch Full Game</Button>
-                </div>
+                <p className="text-gray-700 mb-4">{introductoryVideo.description}</p>
+                {/* <div className="flex justify-end">
+                  <Button className="bg-amber-500 hover:bg-amber-600 text-amber-950">Learn More About Us</Button>
+                </div> */}
               </div>
             </div>
           </div>

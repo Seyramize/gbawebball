@@ -13,15 +13,24 @@ type VideoPlayerProps = {
 export function VideoPlayer({ videoUrl, thumbnailUrl, title }: VideoPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isMuted, setIsMuted] = useState(false)
-  const videoRef = useRef<HTMLIFrameElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const iframeRef = useRef<HTMLIFrameElement>(null)
+
+  // Check if the video URL is a local file or YouTube URL
+  const isLocalVideo = videoUrl.startsWith('/') || videoUrl.includes('.mp4') || videoUrl.includes('.mov') || videoUrl.includes('.webm')
 
   const handlePlayClick = () => {
     setIsPlaying(true)
+    if (isLocalVideo && videoRef.current) {
+      videoRef.current.play()
+    }
   }
 
   const toggleMute = () => {
     setIsMuted(!isMuted)
-    // Note: Actual muting would require YouTube API integration
+    if (isLocalVideo && videoRef.current) {
+      videoRef.current.muted = !isMuted
+    }
   }
 
   return (
@@ -45,9 +54,19 @@ export function VideoPlayer({ videoUrl, thumbnailUrl, title }: VideoPlayerProps)
             </button>
           </div>
         </>
+      ) : isLocalVideo ? (
+        <video
+          ref={videoRef}
+          src={videoUrl}
+          title={title}
+          controls
+          muted={isMuted}
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          onEnded={() => setIsPlaying(false)}
+        />
       ) : (
         <iframe
-          ref={videoRef}
+          ref={iframeRef}
           src={`${videoUrl}${isMuted ? "?mute=1" : ""}`}
           title={title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -56,7 +75,7 @@ export function VideoPlayer({ videoUrl, thumbnailUrl, title }: VideoPlayerProps)
         ></iframe>
       )}
 
-      {isPlaying && (
+      {isPlaying && !isLocalVideo && (
         <div className="absolute bottom-4 right-4 z-10">
           <button
             onClick={toggleMute}
