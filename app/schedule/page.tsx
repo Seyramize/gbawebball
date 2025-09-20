@@ -40,7 +40,7 @@ const sampleGames = [
   },
   {
     id: "game_003",
-    team: "Hunter Elite",
+    team: "Hunter Elites",
     opponent: "Accra Academy",
     date: "April 22, 2025",
     time: "2:00 PM",
@@ -73,7 +73,7 @@ const sampleGames = [
   },
   {
     id: "game_006",
-    team: "Hunter Elite",
+    team: "Hunter Elites",
     opponent: "Presec Legon",
     date: "April 8, 2025",
     time: "3:30 PM",
@@ -108,13 +108,13 @@ export default async function SchedulePage() {
   // Group games by team
   const upcomingByTeam = {
     Vipers: upcomingGames.filter((game) => game.team === "Vipers"),
-    "Hunter Elite": upcomingGames.filter((game) => game.team === "Hunter Elite"),
+    "Hunter Elites": upcomingGames.filter((game) => game.team === "Hunter Elites"),
     "Hunter Apprentices": upcomingGames.filter((game) => game.team === "Hunter Apprentices"),
   }
 
   const pastByTeam = {
     Vipers: pastGames.filter((game) => game.team === "Vipers"),
-    "Hunter Elite": pastGames.filter((game) => game.team === "Hunter Elite"),
+    "Hunter Elites": pastGames.filter((game) => game.team === "Hunter Elites"),
     "Hunter Apprentices": pastGames.filter((game) => game.team === "Hunter Apprentices"),
   }
 
@@ -213,12 +213,12 @@ export default async function SchedulePage() {
                   </div>
                 )}
 
-                {/* Hunter Elite Games */}
-                {upcomingByTeam["Hunter Elite"].length > 0 && (
+                {/* Hunter Elites Games */}
+                {upcomingByTeam["Hunter Elites"].length > 0 && (
                   <div className="mb-10">
-                    <h3 className="text-xl font-bold text-amber-900 mb-4">Hunter Elite (U17 Team)</h3>
+                    <h3 className="text-xl font-bold text-amber-900 mb-4">Hunter Elites (U17 Team)</h3>
                     <div className="space-y-4">
-                      {upcomingByTeam["Hunter Elite"].map((game) => (
+                      {upcomingByTeam["Hunter Elites"].map((game) => (
                         <div
                           key={game.id}
                           className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 hover:shadow-md transition-shadow"
@@ -232,9 +232,9 @@ export default async function SchedulePage() {
                                 <span className="text-sm text-gray-500">{game.competition}</span>
                               </div>
                               <h4 className="text-lg font-bold mt-1">
-                                {game.isHome ? "Hunter Elite vs " : ""}
+                                {game.isHome ? "Hunter Elites vs " : ""}
                                 {game.opponent}
-                                {!game.isHome ? " vs Hunter Elite" : ""}
+                                {!game.isHome ? " vs Hunter Elites" : ""}
                               </h4>
                             </div>
                             <div className="flex flex-wrap gap-4">
@@ -410,12 +410,12 @@ export default async function SchedulePage() {
                   </div>
                 )}
 
-                {/* Hunter Elite Results */}
-                {pastByTeam["Hunter Elite"].length > 0 && (
+                {/* Hunter Elites Results */}
+                {pastByTeam["Hunter Elites"].length > 0 && (
                   <div className="mb-10">
-                    <h3 className="text-xl font-bold text-amber-900 mb-4">Hunter Elite (U17 Team)</h3>
+                    <h3 className="text-xl font-bold text-amber-900 mb-4">Hunter Elites (U17 Team)</h3>
                     <div className="space-y-4">
-                      {pastByTeam["Hunter Elite"].map((game) => (
+                      {pastByTeam["Hunter Elites"].map((game) => (
                         <div
                           key={game.id}
                           className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 hover:shadow-md transition-shadow"
@@ -429,9 +429,9 @@ export default async function SchedulePage() {
                                 <span className="text-sm text-gray-500">{game.competition}</span>
                               </div>
                               <h4 className="text-lg font-bold mt-1">
-                                {game.isHome ? "Hunter Elite vs " : ""}
+                                {game.isHome ? "Hunter Elites vs " : ""}
                                 {game.opponent}
-                                {!game.isHome ? " vs Hunter Elite" : ""}
+                                {!game.isHome ? " vs Hunter Elites" : ""}
                               </h4>
                             </div>
                             <div className="flex flex-wrap gap-4 items-center">

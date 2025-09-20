@@ -57,7 +57,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold text-amber-400">Contact</h3>
             <address className="not-italic text-gray-400">
-              Near Gbawe Cluster of Schools
+              Inside Gbawe Cluster of Schools
               <br />
               Gbawe, Ghana
               <br />

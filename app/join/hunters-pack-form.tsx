@@ -28,7 +28,7 @@ export function HuntersPackForm({ formData, updateFormData }: Props) {
           onCheckedChange={(checked) => updateFormData({ huntersPackSelected: checked as boolean })}
         />
         <Label htmlFor="huntersPackSelected" className="text-sm font-medium">
-          I want to preorder the full Hunter's Pack (GHS 120)
+          I want to preorder the full Hunter's Pack (GHS 600)
         </Label>
       </div>
 

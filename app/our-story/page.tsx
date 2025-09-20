@@ -89,7 +89,7 @@ export default function OurStoryPage() {
                 <div className="mb-1 text-sm font-medium text-amber-700">2018</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">The Beginning</h3>
                 <p className="text-gray-700">
-                  Godwin and Thomas Cofie start training 8 local kids on a dirt court in Gbawe with just one basketball.
+                  Nii Okai and Thomas Cofie start training 8 local kids on a dirt court in Gbawe with just one basketball.
                 </p>
               </div>
 

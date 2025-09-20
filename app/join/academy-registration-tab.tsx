@@ -54,7 +54,7 @@ export function AcademyRegistrationTab({ formData, updateFormData }: Props) {
 
     // Here you would typically send the data to your backend
     console.log("Registration form submitted:", formData)
-    alert("Registration submitted successfully! You will receive a confirmation email shortly.")
+    alert("Dear Hunter thank you for completing your registration.Kindly note that registration starts on 3rd November,2025. Our team will get back to you soon. <br> Regards, Gbawe Basketball <br> Trust. Obey. Become")
   }
 
   return (
@@ -116,7 +116,7 @@ export function AcademyRegistrationTab({ formData, updateFormData }: Props) {
                   <SelectContent>
                     <SelectItem value="cubs">Hunter Cubs (Ages 6-9)</SelectItem>
                     <SelectItem value="apprentice">Hunter Apprentices (Ages 10-13)</SelectItem>
-                    <SelectItem value="elite">Hunter Elite (Ages 14-17)</SelectItem>
+                    <SelectItem value="elite">Hunter Elites (Ages 14-17)</SelectItem>
                     <SelectItem value="master">Master Hunters (18+)</SelectItem>
                   </SelectContent>
                 </Select>

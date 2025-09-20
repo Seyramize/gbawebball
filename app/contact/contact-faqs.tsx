@@ -37,7 +37,7 @@ export function ContactFAQs() {
                     <strong>Hunter Apprentices</strong> (Ages 10–13)
                   </li>
                   <li>
-                    <strong>Hunter Elite</strong> (Ages 14–17)
+                    <strong>Hunter Elites</strong> (Ages 14–17)
                   </li>
                   <li>
                     <strong>Master Hunters</strong> (18+)

@@ -244,7 +244,7 @@ export default function ActivationClient() {
                   <SelectContent>
                     <SelectItem value="cubs">🐾 Hunter Cubs (6–9)</SelectItem>
                     <SelectItem value="apprentices">🦅 Hunter Apprentices (10–13)</SelectItem>
-                    <SelectItem value="elites">🐺 Hunter Elites (14–17)</SelectItem>
+                    <SelectItem value="elites">🐺 Hunter Elitess (14–17)</SelectItem>
                     <SelectItem value="masters">🐉 Master Hunters (18+)</SelectItem>
                   </SelectContent>
                 </Select>

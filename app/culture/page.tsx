@@ -6,7 +6,7 @@ export default function CulturePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-96 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
             src="/culpic.jpg?height=600&width=1920"
@@ -56,7 +56,7 @@ export default function CulturePage() {
                     <td className="p-4">Build habits, discipline, and trust in structure</td>
                   </tr>
                   <tr className="border-b border-gray-200">
-                    <td className="p-4 font-medium">Hunter Elite (14–17)</td>
+                    <td className="p-4 font-medium">Hunter Elites (14–17)</td>
                     <td className="p-4 text-amber-700 font-medium">Leadership</td>
                     <td className="p-4">Lead with presence, confidence, and example</td>
                   </tr>

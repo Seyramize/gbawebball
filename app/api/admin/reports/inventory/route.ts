@@ -15,7 +15,7 @@ const sampleInventory = [
   },
   {
     id: "prod_002",
-    name: "Hunter Elite Practice Tee",
+    name: "Hunter Elites Practice Tee",
     category: "apparel",
     price: 35.0,
     stock: 24,

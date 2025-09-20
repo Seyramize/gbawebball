@@ -25,7 +25,7 @@ export default function DreamDiariesPage() {
         
         When the play started, everything seemed to move in slow motion. I came off a screen, caught the pass, and found myself open at the three-point line. Without thinking, I shot the ball just like I had practiced hundreds of times with Coach Benjamin. The ball went through the net with a perfect swish! We won the game, and my teammates lifted me onto their shoulders.
         
-        That moment changed everything for me. Now I'm one of the leading scorers on my team, and Coach says if I keep working hard, I could make the Hunter Elite team in a few years. But the best part isn't the points or the wins—it's knowing that I conquered my fear. I'm not scared anymore.
+        That moment changed everything for me. Now I'm one of the leading scorers on my team, and Coach says if I keep working hard, I could make the Hunter Elites team in a few years. But the best part isn't the points or the wins—it's knowing that I conquered my fear. I'm not scared anymore.
         
         My dream is to play for the Ghana national team someday. I know that's a big dream, but Coach Benjamin says big dreams are good because they make you work harder. So every day, I'm working on my game, getting stronger, and building my confidence.
         

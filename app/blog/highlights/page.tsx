@@ -19,8 +19,8 @@ export default function BlogHighlightsPage() {
     },
     {
       id: 2,
-      title: "Hunter Elite Tournament Highlights",
-      description: "Our Hunter Elite squad showing their skills at the regional tournament.",
+      title: "Hunter Elites Tournament Highlights",
+      description: "Our Hunter Elites squad showing their skills at the regional tournament.",
       thumbnailUrl: "/placeholder.svg?key=e0a6z",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       date: "February 22, 2023",
@@ -79,8 +79,8 @@ export default function BlogHighlightsPage() {
     },
     {
       id: 8,
-      title: "Hunter Elite Training Session",
-      description: "Behind-the-scenes look at an intense Hunter Elite training session.",
+      title: "Hunter Elites Training Session",
+      description: "Behind-the-scenes look at an intense Hunter Elites training session.",
       thumbnailUrl: "/placeholder.svg?key=lxa3t",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       date: "September 28, 2022",

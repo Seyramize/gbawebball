@@ -113,7 +113,7 @@ export function AddGameModal({ open, onOpenChange, onGameAdded }: AddGameModalPr
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="Vipers">Vipers</SelectItem>
-                    <SelectItem value="Hunter Elite">Hunter Elite</SelectItem>
+                    <SelectItem value="Hunter Elites">Hunter Elites</SelectItem>
                     <SelectItem value="Hunter Apprentices">Hunter Apprentices</SelectItem>
                   </SelectContent>
                 </Select>

@@ -16,8 +16,8 @@ export default function HighlightsPage() {
     },
     {
       id: 2,
-      title: "Hunter Elite Tournament Highlights",
-      description: "Our Hunter Elite squad showing their skills at the regional tournament.",
+      title: "Hunter Elites Tournament Highlights",
+      description: "Our Hunter Elites squad showing their skills at the regional tournament.",
       thumbnailUrl: "/placeholder.svg?key=dvjjr",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       date: "February 22, 2023",

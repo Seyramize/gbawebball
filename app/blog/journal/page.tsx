@@ -73,7 +73,7 @@ export default function JournalPage() {
         strategic aspects of basketball and find my identity as a player. I wasn't the fastest or the most skilled, but 
         I was tough, smart, and willing to do the unglamorous work that helps teams win.
         
-        The transition to Hunter Elite at age 15 was a wake-up call. Suddenly, I was competing against bigger, stronger, 
+        The transition to Hunter Elites at age 15 was a wake-up call. Suddenly, I was competing against bigger, stronger, 
         more experienced players. I struggled initially, often finding myself on the bench. This was perhaps the most 
         valuable period of my development—learning to contribute in limited minutes, to stay ready, to support my teammates 
         even when I wasn't on the court.
@@ -110,7 +110,7 @@ export default function JournalPage() {
         offensive threat I aspired to be. My shooting was inconsistent, my ball-handling merely adequate. For a while, 
         this was a source of frustration and disappointment. I felt like I was failing to reach my potential.
         
-        The turning point came during my second year with Hunter Elite. Coach Daniel called me into his office for a 
+        The turning point came during my second year with Hunter Elites. Coach Daniel called me into his office for a 
         conversation that would change my perspective entirely. Instead of focusing on my offensive limitations, he 
         highlighted my defensive abilities—  Instead of focusing on my offensive limitations, he 
         highlighted my defensive abilities—my lateral quickness, my anticipation, my tenacity, my willingness to take on the toughest assignments. He explained that every championship team needs defensive specialists, players who take pride in stopping the opponent's best scorer.

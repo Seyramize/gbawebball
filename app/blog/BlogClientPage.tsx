@@ -21,7 +21,7 @@ export default function BlogClientPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-96 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
             src="/blogpic.jpg?height=600&width=1920"
@@ -110,7 +110,7 @@ export default function BlogClientPage() {
                       thumbnailUrl: "/placeholder.svg?height=600&width=800",
                     },
                     {
-                      title: "Hunter Elite Tournament Finals",
+                      title: "Hunter Elites Tournament Finals",
                       date: "March 15, 2025",
                       description: "Our Elite squad takes home the trophy in a nail-biting finish.",
                       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -172,10 +172,10 @@ export default function BlogClientPage() {
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                   {[
                     {
-                      name: "Kwesi Amankwah",
-                      position: "Point Guard",
+                      name: "Emmanuel Basepoaw",
+                      position: "Combo Guard",
                       number: 5,
-                      image: "/placeholder.svg?height=400&width=400",
+                      image: "/amb.jpg?height=400&width=400",
                       bio: "Team captain and floor general. Known for his leadership and court vision.",
                       stats: {
                         ppg: "18.5",
@@ -185,10 +185,10 @@ export default function BlogClientPage() {
                       quote: "The game is won in practice, not just on game day.",
                     },
                     {
-                      name: "David Acheampong",
-                      position: "Shooting Guard",
-                      number: 23,
-                      image: "/placeholder.svg?height=400&width=400",
+                      name: "Jeffery Nana Sey",
+                      position: "Combo Guard",
+                      number: 8,
+                      image: "/sey.jpg?height=400&width=400",
                       bio: "Sharpshooter with unlimited range. Works tirelessly on his craft.",
                       stats: {
                         ppg: "22.3",
@@ -198,10 +198,10 @@ export default function BlogClientPage() {
                       quote: "Every shot I take, I've made 1000 times in practice.",
                     },
                     {
-                      name: "Michael Osei",
-                      position: "Small Forward",
-                      number: 8,
-                      image: "/placeholder.svg?height=400&width=400",
+                      name: "William Agyapong Ntiamoah",
+                      position: "Forward/Center",
+                      number: 23,
+                      image: "/wil.jpg?height=400&width=400",
                       bio: "Defensive specialist who can guard multiple positions. Heart and soul of our defense.",
                       stats: {
                         ppg: "14.2",
@@ -221,11 +221,11 @@ export default function BlogClientPage() {
                     <VideoPlayer
                       videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
                       thumbnailUrl="/placeholder.svg?height=600&width=1200"
-                      title="A Day in the Life: Hunter Elite Training"
+                      title="A Day in the Life: Hunter Elites Training"
                     />
                   </div>
                   <p className="text-gray-700 mb-6">
-                    Follow our Hunter Elite squad through a typical training day. From morning strength and conditioning
+                    Follow our Hunter Elites squad through a typical training day. From morning strength and conditioning
                     to afternoon skill work and evening scrimmages, see what it takes to become a Hunter.
                   </p>
                   <MediaGallery
@@ -252,21 +252,23 @@ export default function BlogClientPage() {
                 <div className="grid gap-8 md:grid-cols-2">
                   {[
                     {
+                      id: 1,
                       title: "Defensive Principles: The Hunter's Approach",
-                      coach: "Coach Daniel Adjei",
+                      coach: "Coach David Nuertey Tetteh",
                       date: "April 5, 2025",
                       description:
                         "Breaking down our defensive philosophy and key principles that make our defense elite.",
                       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                      thumbnailUrl: "/placeholder.svg?height=600&width=800",
+                      thumbnailUrl: "/hc.jpg?height=600&width=800",
                     },
                     {
+                      id: 2,
                       title: "Building Basketball IQ: Reading the Game",
-                      coach: "Coach Mercy Tagoe",
+                      coach: "Coach Kenneth Akpah",
                       date: "March 22, 2025",
                       description: "How we develop decision-making skills and game intelligence in our players.",
                       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-                      thumbnailUrl: "/placeholder.svg?height=600&width=800",
+                      thumbnailUrl: "/ac.jpg?height=600&width=800",
                     },
                   ].map((post, i) => (
                     <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -280,7 +282,7 @@ export default function BlogClientPage() {
                           <span className="text-sm text-gray-500">{post.date}</span>
                         </div>
                         <p className="text-gray-600 mb-4">{post.description}</p>
-                        <Link href={`/blog/coach/${i}`} className="text-amber-600 hover:text-amber-700 font-medium">
+                        <Link href={`/blog/coach/${post.id}`} className="text-amber-600 hover:text-amber-700 font-medium">
                           Read full breakdown →
                         </Link>
                       </div>
@@ -336,6 +338,7 @@ export default function BlogClientPage() {
                 <div className="grid gap-8 md:grid-cols-2">
                   {[
                     {
+                      id: 1,
                       title: "The Mental Game: Preparing for Pressure",
                       author: "Kwesi Amankwah, Team Captain",
                       date: "April 2, 2025",
@@ -343,6 +346,7 @@ export default function BlogClientPage() {
                       image: "/placeholder.svg?height=600&width=800",
                     },
                     {
+                      id: 2,
                       title: "My Journey: From Hunter Cub to Viper",
                       author: "Samuel Boateng, Power Forward",
                       date: "March 18, 2025",
@@ -368,7 +372,7 @@ export default function BlogClientPage() {
                           <span className="text-sm text-gray-500">{journal.date}</span>
                         </div>
                         <p className="text-gray-600 mb-4">{journal.excerpt}</p>
-                        <Link href={`/blog/journal/${i}`} className="text-amber-600 hover:text-amber-700 font-medium">
+                        <Link href={`/blog/journal/${journal.id}`} className="text-amber-600 hover:text-amber-700 font-medium">
                           Read full story →
                         </Link>
                       </div>
@@ -411,6 +415,7 @@ export default function BlogClientPage() {
                 <div className="grid gap-8 md:grid-cols-3">
                   {[
                     {
+                      id: 1,
                       title: "Finding My Confidence",
                       author: "Kofi, Height: 5'10ft",
                       excerpt:
@@ -418,6 +423,7 @@ export default function BlogClientPage() {
                       image: "/placeholder.svg?height=400&width=600",
                     },
                     {
+                      id: 2,
                       title: "My First Tournament",
                       author: "Ama, Height: 5'10ft",
                       excerpt:
@@ -425,6 +431,7 @@ export default function BlogClientPage() {
                       image: "/placeholder.svg?height=400&width=600",
                     },
                     {
+                      id: 3,
                       title: "Dreams of College Basketball",
                       author: "Emmanuel, Height: 6'2ft",
                       excerpt:
@@ -446,7 +453,7 @@ export default function BlogClientPage() {
                         <span className="text-sm text-amber-600 font-medium">{diary.author}</span>
                         <h3 className="text-xl font-bold text-amber-900 mb-2">{diary.title}</h3>
                         <p className="text-gray-600 mb-4">{diary.excerpt}</p>
-                        <Link href={`/blog/dream/${i}`} className="text-amber-600 hover:text-amber-700 font-medium">
+                        <Link href={`/blog/dream/${diary.id}`} className="text-amber-600 hover:text-amber-700 font-medium">
                           Read full diary →
                         </Link>
                       </div>

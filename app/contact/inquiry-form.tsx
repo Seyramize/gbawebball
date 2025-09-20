@@ -119,7 +119,7 @@ export function InquiryForm() {
             <SelectContent>
               <SelectItem value="cubs">Hunter Cubs (Ages 6-9)</SelectItem>
               <SelectItem value="apprentices">Hunter Apprentices (Ages 10-13)</SelectItem>
-              <SelectItem value="elite">Hunter Elite (Ages 14-17)</SelectItem>
+              <SelectItem value="elite">Hunter Elites (Ages 14-17)</SelectItem>
               <SelectItem value="unsure">Not sure yet</SelectItem>
             </SelectContent>
           </Select>

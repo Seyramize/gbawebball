@@ -61,7 +61,7 @@ export default function TeamPage() {
                     ],
                   },
                   {
-                    name: "Godwin Nii Okai Cofie",
+                    name: "Nii Okai Cofie",
                     role: "Co-Founder & Technical Director",
                     image: "/gidi.jpg?height=400&width=400",
                     bio: "Coach Nii Okai is dedicated to shaping well-rounded athletes through elite basketball training and mentorship.",
@@ -162,21 +162,14 @@ export default function TeamPage() {
                     name: "Kenneth Akpah",
                     role: "Head Girls Coach",
                     image: "/ac.jpg?height=400&width=400",
-                    bio: "National team veteran who brings international experience and tactical knowledge to our elite youth program.",
-                    specialties: ["Player Development", "Game IQ", "Competitive Preparation"],
+                    bio: "Coach Kenneth is a dedicated and successful girls' basketball coach with a proven track record of developing winning teams. His coaching philosophy emphasizes teamwork, discipline, and a strong fundamental skill set, which has led his teams to numerous championships. Among his notable achievements, His passion for the game and commitment to his players' growth, both on and off the court, make him a respected figure in the girls' basketball community.",
+                    specialties: ["Two-time Greater Accra Champions", "National U16 FIBA 3x3 Champions", "Three-time Zonal Champions"],
                   },
                   {
                     name: "Nelly Nana Akosua Antwiwaa Antwi",
-                    role: "Assistant Girl's Coach",
+                    role: "Assistant Girls Coach",
                     image: "/nf.jpg?height=400&width=400",
-                    bio: "National team veteran who brings international experience and tactical knowledge to our elite youth program.",
-                    specialties: ["Player Development", "Game IQ", "Competitive Preparation"],
-                  },
-                  {
-                    name: "Joel Addei Gyambrah",
-                    role: "Assistant Girl's Coach",
-                    image: "/nf.jpg?height=400&width=400",
-                    bio: "From leading Ghana’s U16 basketball team as captain in 2017 to shaping the next generation of athletes, Joel has always lived and breathed sports. With a deep passion for athletics and a commitment to coaching, Joel inspires athletes to push beyond limits, grow in confidence, and chase excellence both on and off the court.",
+                    bio: "Nelly is a dedicated and accomplished girls' basketball coach with a proven track record of success. As a two-time Greater Accra champion and a one-time Zonal champion, she has demonstrated her ability to build winning teams at the regional level. Her coaching prowess extends to the national stage, where she led her team to victory as the National U16 FIBA 3x3 champions. Coach Nelly is known for her commitment to developing young talent and fostering a love for the game in her players",
                     specialties: ["Player Development", "Game IQ", "Competitive Preparation"],
                   },
                 ].map((coach, i) => (
@@ -219,25 +212,39 @@ export default function TeamPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {[
                   {
-                    name: "Kwame Kyei",
-                    role: "Head Coach, Hunter Cubs",
-                    image: "/placeholder.svg?height=400&width=400",
-                    bio: "Early childhood educator and basketball enthusiast who makes learning the game fun and engaging.",
-                    specialties: ["Fun Learning", "Motor Skills", "Basketball Introduction"],
+                    name: "Joel Addei Gyambrah",
+                    role: "Technical Team Head",
+                    image: "/joe.jpg?height=400&width=400",
+                    bio: "From leading Ghana’s U16 basketball team as captain in 2017 to shaping the next generation of athletes, Joel has always lived and breathed sports. With a deep passion for athletics and a commitment to coaching, Joel inspires athletes to push beyond limits, grow in confidence, and chase excellence both on and off the court.",
+                    specialties: ["Management", "Technical", "Leadership"],
                   },
                   {
-                    name: "Coach Kofi Mensah",
-                    role: "Skills Development Coach",
+                    name: "Gideon Adipoeru Wedam",
+                    role: "Photographer/Videographer",
                     image: "/placeholder.svg?height=400&width=400",
-                    bio: "Ball handling and shooting specialist who works with players across all age groups.",
-                    specialties: ["Ball Handling", "Shooting", "Individual Skills"],
+                    bio: "Photographer/Videographer who captures the essence of the academy's journey.",
+                    specialties: ["Photography", "Videography", "Editing"],
                   },
                   {
-                    name: "Coach Sarah Owusu",
-                    role: "Strength & Conditioning",
+                    name: "Fiona Aku Adjor Freeman",
+                    role: "Graphic Designer",
                     image: "/placeholder.svg?height=400&width=400",
-                    bio: "Certified strength coach who designs age-appropriate fitness programs for basketball performance.",
-                    specialties: ["Athletic Development", "Injury Prevention", "Recovery"],
+                    bio: "Graphic designer who creates the academy's visual identity.",
+                    specialties: ["Graphic Design", "Branding", "Logo Design"],
+                  },
+                  {
+                    name: "Theodora Quaye",
+                    role: "Social Media Manager",
+                    image: "/placeholder.svg?height=400&width=400",
+                    bio: "Social media manager who creates and manages the academy's social media presence.",
+                    specialties: ["Social Media", "Content Creation", "Community Management"],
+                  },
+                  {
+                    name: "Seyram Yao Alifo",
+                    role: "Web Developer",
+                    image: "/placeholder.svg?height=400&width=400",
+                    bio: "Seyram Yao Alifo is a passionate basketball enthusiast and tech entrepreneur who believes in the power of sports to build discipline, teamwork, and community. Beyond the court, he runs ventures in technology and renewable energy, creating innovative solutions that impact everyday life. Seyram combines his love for basketball with his drive for innovation, supporting initiatives that inspire young athletes to grow both on and off the court.",
+                    specialties: ["Web Development", "UI/UX Design", "SEO"],
                   },
                 ].map((coach, i) => (
                   <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -305,7 +312,7 @@ export default function TeamPage() {
                     position: "Combo Guard",
                     image: "/amb.jpg?height=400&width=400",
                     height: "6'1\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "William Agyapong Ntiamoah",
@@ -313,7 +320,7 @@ export default function TeamPage() {
                     position: "Forward/Center",
                     image: "/wil.jpg?height=400&width=400",
                     height: "6'3\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Jeffery Nana Sey",
@@ -321,7 +328,7 @@ export default function TeamPage() {
                     position: "Combo Guard",
                     image: "/sey.jpg?height=400&width=400",
                     height: "6'5\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Clement Nana Osei Dodoo",
@@ -329,7 +336,7 @@ export default function TeamPage() {
                     position: "Combo Guard",
                     image: "/cle.jpg?height=400&width=400",
                     height: "6'7\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Samuel Akakpo",
@@ -337,7 +344,7 @@ export default function TeamPage() {
                     position: "Small Forward",
                     image: "/osko.jpg?height=400&width=400",
                     height: "6'9\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Wisdom Emmanuel Oyedeji",
@@ -345,7 +352,7 @@ export default function TeamPage() {
                     position: "Forward",
                     image: "/ss1.jpg?height=400&width=400",
                     height: "6'0\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "⁠⁠Wilfred Oko Sackey",
@@ -353,7 +360,7 @@ export default function TeamPage() {
                     position: "Guard",
                     image: "/oko.jpg?height=400&width=400",
                     height: "6'4\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Derek Ameti",
@@ -361,7 +368,7 @@ export default function TeamPage() {
                     position: "Center",
                     image: "/1.jpg?height=400&width=400",
                     height: "6'10\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Daniel Mensah Davordzie",
@@ -369,7 +376,7 @@ export default function TeamPage() {
                     position: "Forward",
                     image: "/2.jpg?height=400&width=400",
                     height: "5'11\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Matthew Tettey Osabutey",
@@ -377,15 +384,15 @@ export default function TeamPage() {
                     position: "Center",
                     image: "/3.jpg?height=400&width=400",
                     height: "6'2\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Tabi Anthony Yaw Ariba",
                     number: 21,
                     position: "Combo Guard",
-                    image: "/placeholder.svg?height=400&width=400",
+                    image: "/ss.jpg?height=400&width=400",
                     height: "6'6\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Sa-ad Suleiman",
@@ -393,7 +400,7 @@ export default function TeamPage() {
                     position: "Forward",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'8\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Andy Mawuli",
@@ -401,7 +408,7 @@ export default function TeamPage() {
                     position: "Forward/Center",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'6\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "Joseph Appiah Adjei",
@@ -409,7 +416,7 @@ export default function TeamPage() {
                     position: "Guard",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'8\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "⁠⁠Franklin Yartey",
@@ -417,7 +424,7 @@ export default function TeamPage() {
                     position: "Guard",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'6\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                   {
                     name: "⁠⁠Seyram Yao Alifo",
@@ -425,7 +432,7 @@ export default function TeamPage() {
                     position: "Forward",
                     image: "/placeholder.svg?height=400&width=400",
                     height: "6'8\"",
-                    academy: "Hunter Elite Graduate",
+                    academy: "Hunter Elites Graduate",
                   },
                 ].map((player, i) => (
                   <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">

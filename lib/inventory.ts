@@ -37,7 +37,7 @@ export function initializeInventory() {
     },
     {
       id: "prod_002",
-      name: "Hunter Elite Practice Tee",
+      name: "Hunter Elites Practice Tee",
       description: "Breathable performance tee for training sessions.",
       price: 35.0,
       stock: 75,

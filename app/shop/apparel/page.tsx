@@ -54,7 +54,7 @@ export default function ApparelPage() {
               },
               {
                 id: 2,
-                name: "Hunter Elite Practice Tee",
+                name: "Hunter Elites Practice Tee",
                 price: 35.0,
                 image: "/placeholder.svg?height=600&width=600",
                 description: "Breathable performance tee for training sessions.",

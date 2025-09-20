@@ -37,10 +37,11 @@ export function RegistrationForm() {
           </div>
           <h3 className="text-lg font-semibold text-green-900 mb-2">Registration Submitted Successfully!</h3>
           <p className="text-green-800 mb-4">
-            Thank you for registering with Gbawe Basketball Academy. We'll review your application and contact you
-            within 2-3 business days.
+            Dear Hunter, thank you for completing your registration.Kindly note that registration starts on 3rd November,2025.Our team will get back to you soon.
           </p>
-          <p className="text-sm text-green-700">You'll receive a confirmation email shortly with next steps.</p>
+          <p className="text-sm text-green-700">Regards,
+Gbawe Basketball 
+Trust .Obey.Become</p>
         </CardContent>
       </Card>
     )
@@ -179,7 +180,7 @@ export function RegistrationForm() {
             <SelectContent>
               <SelectItem value="cubs">Hunter Cubs (Ages 6-9)</SelectItem>
               <SelectItem value="apprentices">Hunter Apprentices (Ages 10-13)</SelectItem>
-              <SelectItem value="elite">Hunter Elite (Ages 14-17)</SelectItem>
+              <SelectItem value="elite">Hunter Elites (Ages 14-17)</SelectItem>
             </SelectContent>
           </Select>
         </div>

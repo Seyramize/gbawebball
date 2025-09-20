@@ -34,10 +34,10 @@ const highlights = [
   },
   {
     id: 2,
-    title: "Hunter Elite Tournament Highlights",
-    description: "Our Hunter Elite squad showing their skills at the regional tournament.",
+    title: "Hunter Elites Tournament Highlights",
+    description: "Our Hunter Elites squad showing their skills at the regional tournament.",
     fullDescription: `
-      The Hunter Elite Tournament brought together the best youth basketball teams from across the region, and our 
+      The Hunter Elites Tournament brought together the best youth basketball teams from across the region, and our 
       Elite squad did not disappoint. Facing stiff competition from teams with older and more experienced players, 
       our young hunters showed why they're considered one of the most promising groups in the academy's history.
       

@@ -78,7 +78,7 @@ export function AcademyRegistrationForm({ formData, updateFormData }: Props) {
           <SelectContent>
             <SelectItem value="cubs">Hunter Cubs (6-9 years)</SelectItem>
             <SelectItem value="apprentices">Hunter Apprentices (10-13 years)</SelectItem>
-            <SelectItem value="elite">Hunter Elite (14-17 years)</SelectItem>
+            <SelectItem value="elite">Hunter Elites (14-17 years)</SelectItem>
             <SelectItem value="masters">Master Hunters (18+ years)</SelectItem>
           </SelectContent>
         </Select>

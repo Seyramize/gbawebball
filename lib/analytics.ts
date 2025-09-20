@@ -308,7 +308,7 @@ function addSampleSalesData() {
   // Sample product IDs
   const products = [
     { id: "prod_001", name: "Official Vipers Jersey", category: "apparel", price: 65.0 },
-    { id: "prod_002", name: "Hunter Elite Practice Tee", category: "apparel", price: 35.0 },
+    { id: "prod_002", name: "Hunter Elites Practice Tee", category: "apparel", price: 35.0 },
     { id: "prod_003", name: "Hunter's Fuel - Mango", category: "fuel", price: 5.0 },
   ]
 

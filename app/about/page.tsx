@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-96 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image src="/12.jpg?height=600&width=1920" alt="Basketball court" fill className="object-cover object-top" />
         </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
                   image: "/tommy.jpg?height=400&width=400",
                 },
                 {
-                  name: "Godwin Nii Okai Cofie",
+                  name: "Nii Okai Cofie",
                   role: "Co-Founder",
                   image: "/gidi.jpg?height=400&width=400",
                 },
@@ -123,7 +123,7 @@ export default function AboutPage() {
             </div>
             <div className="mt-8 prose prose-lg max-w-none">
               <p className="text-center">
-                Godwin Nii Okai Cofie and Thomas Nii Adu Cofie established the academy with a shared dream: to raise a
+                Nii Okai Cofie and Thomas Nii Adu Cofie established the academy with a shared dream: to raise a
                 new generation of focused, fearless, and future-ready African athletes.
               </p>
             </div>

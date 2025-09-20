@@ -135,15 +135,15 @@ export default function InsideHuntPage() {
               <VideoPlayer
                 videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
                 thumbnailUrl="/placeholder.svg?key=6dcta"
-                title="A Day in the Life: Hunter Elite Training"
+                title="A Day in the Life: Hunter Elites Training"
               />
             </div>
             <div className="prose prose-amber max-w-none mb-8">
               <p className="text-lg text-gray-700">
-                Follow our Hunter Elite squad through a typical training day. From morning strength and conditioning to
+                Follow our Hunter Elites squad through a typical training day. From morning strength and conditioning to
                 afternoon skill work and evening scrimmages, see what it takes to become a Hunter.
               </p>
-              <h3 className="text-xl font-bold text-gray-900 mt-6">The Hunter Elite Training Schedule</h3>
+              <h3 className="text-xl font-bold text-gray-900 mt-6">The Hunter Elites Training Schedule</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-700">
                 <li>
                   <strong>6:00 AM - 7:30 AM:</strong> Strength and conditioning with Coach Daniel
@@ -197,7 +197,7 @@ export default function InsideHuntPage() {
             {[
               {
                 name: "Coach Daniel Adjei",
-                title: "Head Coach, Hunter Elite",
+                title: "Head Coach, Hunter Elites",
                 image: "/placeholder.svg?height=400&width=400&query=basketball+coach",
                 bio: "Former professional player with 15 years of coaching experience. Known for developing elite defenders.",
                 quote: "We don't just build players, we build character.",

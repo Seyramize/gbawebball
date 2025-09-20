@@ -27,7 +27,7 @@ const sampleGames = [
   },
   {
     id: "game_003",
-    team: "Hunter Elite",
+    team: "Hunter Elitess",
     opponent: "Accra Academy",
     date: "April 22, 2025",
     time: "2:00 PM",
@@ -60,7 +60,7 @@ const sampleGames = [
   },
   {
     id: "game_006",
-    team: "Hunter Elite",
+    team: "Hunter Elites",
     opponent: "Presec Legon",
     date: "April 8, 2025",
     time: "3:30 PM",

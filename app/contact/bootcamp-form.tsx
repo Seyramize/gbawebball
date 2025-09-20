@@ -80,7 +80,7 @@ export function BootCampForm() {
             <SelectContent>
               <SelectItem value="hunter-cubs">Hunter Cubs (6–9)</SelectItem>
               <SelectItem value="hunter-apprentices">Hunter Apprentices (10–13)</SelectItem>
-              <SelectItem value="hunter-elite">Hunter Elite (14–17)</SelectItem>
+              <SelectItem value="hunter-elite">Hunter Elites (14–17)</SelectItem>
               <SelectItem value="master-hunters">Master Hunters (18+)</SelectItem>
             </SelectContent>
           </Select>

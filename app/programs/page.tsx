@@ -6,7 +6,7 @@ export default function ProgramsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="relative w-full py-60 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-96 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image src="/13.jpg?height=600&width=1920" alt="Basketball court" fill className="object-cover object-top" />
         </div>
@@ -110,18 +110,18 @@ export default function ProgramsPage() {
               </div>
             </div>
 
-            {/* Hunter Elite */}
+            {/* Hunter Elites */}
             <div className="grid gap-8 md:grid-cols-2 items-center">
               <div className="relative h-96 md:h-[400px] rounded-lg overflow-hidden">
                 <Image
                   src="/elitee.jpg?height=600&width=800"
-                  alt="Hunter Elite training"
+                  alt="Hunter Elites training"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
-                <h3 className="mb-2 text-2xl font-bold text-amber-900">3. Hunter Elite (Ages 14-17)</h3>
+                <h3 className="mb-2 text-2xl font-bold text-amber-900">3. Hunter Elites (Ages 14-17)</h3>
                 <p className="mb-4 text-lg italic text-gray-700">Where potential is sharpened.</p>
                 <div className="prose prose-lg">
                   <p>

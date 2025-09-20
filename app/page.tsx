@@ -150,7 +150,7 @@ export default function HomePage() {
                 description: "Where habits are built. Structure, repetition, and team concepts.",
               },
               {
-                title: "Hunter Elite",
+                title: "Hunter Elitess",
                 ages: "Ages 14-17",
                 description: "Where potential is sharpened. Intensity, tactical IQ, and competitive play.",
               },

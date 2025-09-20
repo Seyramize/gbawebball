@@ -80,7 +80,7 @@ export function ContactPageClient() {
                     <div className="text-gray-600 text-sm space-y-1">
                       <p>• Hunter Cubs (6-9)</p>
                       <p>• Hunter Apprentices (10-13)</p>
-                      <p>• Hunter Elite (14-17)</p>
+                      <p>• Hunter Elites (14-17)</p>
                       <p>• Master Hunters (18+)</p>
                     </div>
                   </div>

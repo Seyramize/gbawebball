@@ -280,7 +280,7 @@ export function MonthlyPackagesTab({ formData, updateFormData }: Props) {
                 onCheckedChange={(checked) => updateFormData({ huntersPackSeparate: checked as boolean })}
               />
               <Label htmlFor="huntersPackSeparate" className="text-sm">
-                Add Hunter's Pack to my order (GHS 120)
+                Add Hunter's Pack to my order (GHS 600)
               </Label>
             </div>
 

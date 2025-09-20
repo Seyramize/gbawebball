@@ -144,7 +144,7 @@ export default function ContactPage() {
                         <Badge variant="secondary" className="bg-purple-100 text-purple-800">
                           14-17 years
                         </Badge>
-                        <h4 className="font-semibold text-purple-900">Hunter Elite</h4>
+                        <h4 className="font-semibold text-purple-900">Hunter Elites</h4>
                       </div>
                       <div className="space-y-1 text-sm text-purple-800">
                         <p>
