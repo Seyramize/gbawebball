@@ -14,8 +14,8 @@ export default function BlogClientPage() {
     title: "Vipers vs. Accra Lions - Game Highlights",
     description: "Watch the full highlights from our thrilling victory against the Accra Lions.",
     date: "April 10, 2025",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
-    thumbnailUrl: "/placeholder.svg?height=600&width=1200",
+    videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy", // Replace with actual video URL
+    thumbnailUrl: "/images/gbawe-logo.png?height=600&width=1200",
   }
 
   return (
@@ -246,11 +246,11 @@ export default function BlogClientPage() {
                   />
                 </div>
 
-                <div className="mt-8 text-center">
+                {/* <div className="mt-8 text-center">
                   <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-amber-950">
-                    <Link href="/blog/inside-hunt">Meet All Players</Link>
+                    <Link href="/team/#vipers">Meet All Players</Link>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </TabsContent>
 
@@ -348,19 +348,19 @@ export default function BlogClientPage() {
                     {
                       id: 1,
                       title: "The Mental Game: Preparing for Pressure",
-                      author: "Kwesi Amankwah, Team Captain",
-                      date: "April 2, 2025",
-                      excerpt: "How I prepare mentally for big games and high-pressure moments on the court.",
-                      image: "/placeholder.svg?height=600&width=800",
+                      author: "Clement Nana Osei Dodoo, Vipers Combo Guard",
+                      date: "September 20, 2025",
+                      excerpt: "How I prepare mentally for big games and high-pressure moments on the court as a Vipers player.",
+                      image: "/cle.jpg?height=600&width=800",
                     },
                     {
                       id: 2,
                       title: "My Journey: From Hunter Cub to Viper",
-                      author: "Samuel Boateng, Power Forward",
-                      date: "March 18, 2025",
+                      author: "Samuel Akakpo, Vipers Small Forward",
+                      date: "September 20, 2025",
                       excerpt:
-                        "Reflecting on my 10-year journey through the Gbawe Academy system and the lessons learned.",
-                      image: "/placeholder.svg?height=600&width=800",
+                        "Reflecting on my 10-year journey through the Gbawe Academy system and the lessons learned as a Vipers player.",
+                      image: "/osko.jpg?height=600&width=800",
                     },
                   ].map((journal, i) => (
                     <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -424,27 +424,27 @@ export default function BlogClientPage() {
                   {[
                     {
                       id: 1,
-                      title: "Finding My Confidence",
-                      author: "Kofi, Height: 5'10ft",
+                      title: "From Hunter Elites to Vipers: My Journey",
+                      author: "Wilfred Oko Sackey, Height: 6'4\"",
                       excerpt:
-                        "When I first came to Gbawe Academy, I was scared to even shoot the ball. Now I'm leading my team in scoring.",
-                      image: "/placeholder.svg?height=400&width=600",
+                        "When I first came to Gbawe Academy, I was scared to even shoot the ball. Now I'm a starting guard for the Vipers team.",
+                      image: "/oko.jpg?height=400&width=600",
                     },
                     {
                       id: 2,
-                      title: "My First Tournament",
-                      author: "Ama, Height: 5'10ft",
+                      title: "Leading the Vipers to Victory",
+                      author: "Emmanuel Basepoaw, Height: 6'1\"",
                       excerpt:
-                        "I never thought I'd play in a real tournament. The feeling of wearing that jersey was something I'll never forget.",
-                      image: "/placeholder.svg?height=400&width=600",
+                        "As a combo guard for the Vipers, I never thought I'd be the one leading our team to championship glory. The feeling of lifting that trophy was something I'll never forget.",
+                      image: "/amb.jpg?height=400&width=600",
                     },
                     {
                       id: 3,
                       title: "Dreams of College Basketball",
-                      author: "Emmanuel, Height: 6'2ft",
+                      author: "Jeffery Nana Sey, Height: 6'5\"",
                       excerpt:
-                        "Coach says I have what it takes to play college basketball in America. I'm working every day to make that happen.",
-                      image: "/placeholder.svg?height=400&width=600",
+                        "Coach David says I have what it takes to play college basketball in America. As a Vipers combo guard, I'm working every day to make that happen.",
+                      image: "/sey.jpg?height=400&width=600",
                     },
                   ].map((diary, i) => (
                     <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -477,9 +477,9 @@ export default function BlogClientPage() {
                         Every great journey begins with a dream. If you&apos;re a young player with big dreams, we want
                         to hear from you. Share your basketball dreams and inspire others.
                       </p>
-                      <Button asChild className="bg-amber-500 hover:bg-amber-600 text-amber-950">
+                      {/* <Button asChild className="bg-amber-500 hover:bg-amber-600 text-amber-950">
                         <Link href="/blog/dream/submit">Share Your Dream</Link>
-                      </Button>
+                      </Button> */}
                     </div>
                     <div className="relative h-64 rounded-lg overflow-hidden">
                       <Image

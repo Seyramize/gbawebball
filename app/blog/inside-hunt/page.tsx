@@ -9,10 +9,10 @@ export default function InsideHuntPage() {
   // Sample player data
   const players = [
     {
-      name: "Kwesi Amankwah",
-      position: "Point Guard",
+      name: "Emmanuel Basepoaw",
+      position: "Combo Guard",
       number: 5,
-      image: "/placeholder.svg?height=400&width=400&query=basketball+player+portrait",
+      image: "/amb.jpg?height=400&width=400",
       bio: "Team captain and floor general. Known for his leadership and court vision.",
       stats: {
         ppg: "18.5",
@@ -22,10 +22,23 @@ export default function InsideHuntPage() {
       quote: "The game is won in practice, not just on game day.",
     },
     {
-      name: "David Acheampong",
-      position: "Shooting Guard",
+      name: "William Agyapong Ntiamoah",
+      position: "Forward/Center",
       number: 23,
-      image: "/placeholder.svg?height=400&width=400&query=basketball+player+shooting",
+      image: "/wil.jpg?height=400&width=400",
+      bio: "Assistant captain and defensive specialist. Heart and soul of our defense.",
+      stats: {
+        ppg: "14.2",
+        rpg: "6.5",
+        bpg: "1.3",
+      },
+      quote: "Defense isn't just about stopping your man, it's about protecting your brothers.",
+    },
+    {
+      name: "Jeffery Nana Sey",
+      position: "Combo Guard",
+      number: 8,
+      image: "/sey.jpg?height=400&width=400",
       bio: "Sharpshooter with unlimited range. Works tirelessly on his craft.",
       stats: {
         ppg: "22.3",
@@ -33,19 +46,6 @@ export default function InsideHuntPage() {
         spg: "1.8",
       },
       quote: "Every shot I take, I've made 1000 times in practice.",
-    },
-    {
-      name: "Michael Osei",
-      position: "Small Forward",
-      number: 8,
-      image: "/placeholder.svg?height=400&width=400&query=basketball+player+dribbling",
-      bio: "Defensive specialist who can guard multiple positions. Heart and soul of our defense.",
-      stats: {
-        ppg: "14.2",
-        rpg: "6.5",
-        bpg: "1.3",
-      },
-      quote: "Defense isn't just about stopping your man, it's about protecting your brothers.",
     },
     {
       name: "Samuel Boateng",

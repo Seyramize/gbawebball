@@ -9,8 +9,8 @@ export default function CoachCornerPage() {
     {
       id: 1,
       title: "Defensive Principles: The Hunter's Approach",
-      coach: "Coach Daniel Adjei",
-      date: "April 5, 2023",
+      coach: "Coach David Nuertey Tetteh",
+      date: "September 20, 2025",
       description: "Breaking down our defensive philosophy and key principles that make our defense elite.",
       content: `
         Defense is the foundation of our program at Gbawe Basketball Academy. While offensive skills often get the spotlight, 
@@ -44,15 +44,15 @@ export default function CoachCornerPage() {
         our players commit to our defensive principles, they become part of something greater than themselves: a defensive 
         unit that moves, thinks, and reacts as one.
       `,
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      thumbnailUrl: "/placeholder.svg?height=600&width=800&query=basketball+defense+drill",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
+      thumbnailUrl: "/images/gbawe-logo.png?height=600&width=800&query=basketball+defense+drill",
       category: "Defense",
     },
     {
       id: 2,
       title: "Building Basketball IQ: Reading the Game",
-      coach: "Coach Mercy Tagoe",
-      date: "March 22, 2023",
+      coach: "Coach Kenneth Akpah",
+      date: "September 20, 2025",
       description: "How we develop decision-making skills and game intelligence in our players.",
       content: `
         Basketball IQ is often discussed but rarely taught systematically. At Gbawe Basketball Academy, we believe that 
@@ -88,15 +88,15 @@ export default function CoachCornerPage() {
         Remember, basketball IQ isn't about being the smartest person off the court—it's about making smart decisions on 
         the court. With deliberate practice and proper guidance, every player can improve their basketball intelligence.
       `,
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      thumbnailUrl: "/placeholder.svg?height=600&width=800&query=basketball+coach+teaching",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
+      thumbnailUrl: "/images/gbawe-logo.png?height=600&width=800&query=basketball+coach+teaching",
       category: "Player Development",
     },
     {
       id: 3,
       title: "Developing Elite Shooters: The Gbawe Method",
-      coach: "Coach Benjamin Osei",
-      date: "March 5, 2023",
+      coach: "Coach Nelly Nana Akosua Antwiwaa Antwi",
+      date: "September 20, 2025",
       description: "Our systematic approach to developing consistent, confident shooters at all levels.",
       content: `
         Shooting is both an art and a science. At Gbawe Basketball Academy, we've developed a comprehensive approach to 
@@ -128,15 +128,15 @@ export default function CoachCornerPage() {
         Remember, great shooters aren't born—they're developed through proper instruction, deliberate practice, and 
         unwavering confidence. With the right approach, any player can become an effective shooter.
       `,
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      thumbnailUrl: "/placeholder.svg?height=600&width=800&query=basketball+shooting+form",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
+      thumbnailUrl: "/images/gbawe-logo.png?height=600&width=800&query=basketball+shooting+form",
       category: "Shooting",
     },
     {
       id: 4,
       title: "Building Team Chemistry: Beyond X's and O's",
-      coach: "Coach Daniel Adjei",
-      date: "February 15, 2023",
+      coach: "Coach Kenneth Akpah",
+      date: "September 20, 2025",
       description: "How we foster strong relationships and team unity that translates to success on the court.",
       content: `
         Basketball is a team sport, and the strength of those team bonds often determines success more than individual 
@@ -171,8 +171,8 @@ export default function CoachCornerPage() {
         Remember, team chemistry isn't just about liking each other—it's about trusting each other, communicating effectively, 
         and being willing to sacrifice for the good of the team. When these elements are present, magic happens on the court.
       `,
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      thumbnailUrl: "/placeholder.svg?height=600&width=800&query=basketball+team+huddle",
+      videoUrl: "https://www.youtube.com/@GbaweBasketballAcademy",
+      thumbnailUrl: "/images/gbawe-logo.png?height=600&width=800&query=basketball+team+huddle",
       category: "Team Building",
     },
   ]
@@ -180,13 +180,13 @@ export default function CoachCornerPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="relative w-full py-20 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-96 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
-            src="/placeholder.svg?height=600&width=1920&query=basketball+coach+teaching"
+            src="/both.jpg?height=600&width=1920&query=basketball+coach+teaching"
             alt="Basketball coach teaching"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="100vw"
           />
         </div>
@@ -236,7 +236,7 @@ export default function CoachCornerPage() {
               <div key={post.id} className="bg-white rounded-lg shadow-sm overflow-hidden">
                 <div className="aspect-video relative">
                   <Image
-                    src={post.thumbnailUrl || "/placeholder.svg"}
+                    src={post.thumbnailUrl || "/images/gbawe-logo.png"}
                     alt={post.title}
                     fill
                     className="object-cover"
@@ -289,7 +289,7 @@ export default function CoachCornerPage() {
               <div className="grid md:grid-cols-2 gap-6 items-center">
                 <div>
                   <p className="text-gray-700 mb-4">
-                    Coach Daniel breaks down our signature defensive shell drill that builds communication, rotation,
+                    Coach David Nuertey Tetteh breaks down our signature defensive shell drill that builds communication, rotation,
                     and help defense principles.
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
@@ -306,12 +306,12 @@ export default function CoachCornerPage() {
                       <strong>Simulates game-like defensive scenarios</strong>
                     </li>
                   </ul>
-                  <Button className="bg-amber-500 hover:bg-amber-600 text-amber-950">Download Drill Sheet</Button>
+                  {/* <Button className="bg-amber-500 hover:bg-amber-600 text-amber-950">Download Drill Sheet</Button> */}
                 </div>
                 <div className="aspect-video relative">
                   <VideoPlayer
-                    videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    thumbnailUrl="/placeholder.svg?height=400&width=600&query=basketball+defensive+drill"
+                    videoUrl="https://www.youtube.com/@GbaweBasketballAcademy"
+                    thumbnailUrl="/images/gbawe-logo.png?height=400&width=600&query=basketball+defensive+drill"
                     title="Defensive Shell Drill Demonstration"
                   />
                 </div>
@@ -322,7 +322,7 @@ export default function CoachCornerPage() {
       </section>
 
       {/* Ask a Coach */}
-      <section className="py-16 bg-amber-50">
+      {/* <section className="py-16 bg-amber-50">
         <div className="container px-4 mx-auto text-center">
           <h2 className="mb-4 text-3xl font-bold text-gray-900">Have a Question for Our Coaches?</h2>
           <p className="mb-8 text-lg text-gray-600 max-w-2xl mx-auto">
@@ -341,7 +341,7 @@ export default function CoachCornerPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

@@ -367,7 +367,7 @@ export function MonthlyPackagesTab({ formData, updateFormData }: Props) {
                 <>
                   <div className="flex justify-between">
                     <span>Hunter's Pack</span>
-                    <span>GHS 120</span>
+                    <span>GHS 600</span>
                   </div>
                   {formData.deliveryOption === "delivery" && (
                     <div className="flex justify-between text-sm">

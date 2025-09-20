@@ -21,7 +21,7 @@ export default function BlogHighlightsPage() {
       id: 2,
       title: "Hunter Elites Tournament Highlights",
       description: "Our Hunter Elites squad showing their skills at the regional tournament.",
-      thumbnailUrl: "/placeholder.svg?key=e0a6z",
+      thumbnailUrl: "/images/gbawe-logo.png?key=e0a6z",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       date: "February 22, 2023",
       views: 987,
@@ -81,9 +81,9 @@ export default function BlogHighlightsPage() {
       id: 8,
       title: "Hunter Elites Training Session",
       description: "Behind-the-scenes look at an intense Hunter Elites training session.",
-      thumbnailUrl: "/placeholder.svg?key=lxa3t",
+      thumbnailUrl: "/images/gbawe-logo.png?key=lxa3t",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      date: "September 28, 2022",
+      date: "September 20, 2025",
       views: 721,
       category: "Training",
     },
@@ -95,13 +95,13 @@ export default function BlogHighlightsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <section className="relative w-full py-20 bg-amber-950 text-white overflow-hidden">
+      <section className="relative w-full py-96 bg-amber-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
-            src="/placeholder.svg?height=600&width=1920&query=basketball+court+arena"
+            src="/curr.jpg?height=600&width=1920&query=basketball+court+arena"
             alt="Basketball court"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="100vw"
           />
         </div>
