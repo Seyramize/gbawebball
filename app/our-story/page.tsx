@@ -159,7 +159,7 @@ export default function OurStoryPage() {
               <Link href="/contact">Join The Hunt</Link>
             </Button>
             <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-amber-900 font-bold">
-              <Link href="/support">Support Our Mission</Link>
+              <Link href="https://gbawebballfoundation.vercel.app/">Support Our Mission</Link>
             </Button>
           </div>
         </div>

@@ -27,7 +27,7 @@ const sampleGames = [
   },
   {
     id: "game_003",
-    team: "Hunter Elitess",
+    team: "Hunter Elites",
     opponent: "Accra Academy",
     date: "April 22, 2025",
     time: "2:00 PM",
